@@ -1,0 +1,273 @@
+Sentore,Valore,Famiglia
+aromatico,12
+acacia,100,1
+artemisia,100,1
+biancospino,100,1
+caprifoglio,100,1
+ciclamino,100,1
+fiori d'arancio,100,1
+camomilla,100,1
+fiori di campo,100,1
+fiori di vite,100,1
+garofano,100,1
+gelsomino,100,1
+geranio,100,1
+giacinto,100,1
+giaggiolo,100,1
+ginestra,100,1
+glicine,100,1
+ibisco,100,1
+iris,100,1
+lavanda,100,1
+lillà,100,1
+magnolia,100,1
+mimosa,100,1
+mugheso,100,1
+narciso,100,1
+passiflora,100,1
+peonia,100,1
+pot-pourri,100,1
+rosa,100,1
+rosa canina,100,1
+r. damascena,100,1
+rosa tea,100,1
+ranuncolo,100,1
+sambuco,100,1
+viola,100,1
+viola mammola,100,1
+tiglio,100,1
+tuberosa,100,1
+zagara,100,1
+albicocca,100,2
+amarena,100,2
+ananas,100,2
+anguria,100,2
+banana,100,2
+bergamotto,100,2
+buccia d'arancia,100,2
+carruba,100,2
+cassis,100,2
+cedro,100,2
+chinotto,100,2
+ciliegia,100,2
+cocco,100,2
+datteri,100,2
+fico,100,2
+fragola,100,2
+fragolina,100,2
+frutta candita,100,2
+frutta caramellata,100,2
+frutta cotta,100,2
+frutta disidratata,100,2
+frutta distillata,100,2
+f. in gelatina,100,2
+f. in confettura,100,2
+frutta sciroppata,100,2
+f. sotto spirito,100,2
+frutti di bosco,100,2
+gelso,100,2
+giuggiola,100,2
+kiwi,100,2
+lampone,100,2
+lime,100,2
+limone,100,2
+litchi,100,2
+macis,100,2
+mandarino,100,2
+mandorla,100,2
+mango,100,2
+marasca,100,2
+mela,100,2
+melagrana,100,2
+melone,100,2
+mirtillo,100,2
+mirto,100,2
+mora,100,2
+nespola,100,2
+nocciola,100,2
+noce,100,2
+papaia,100,2
+pera,100,2
+pesca,100,2
+pompelmo,100,2
+prugna,100,2
+ribes,100,2
+susina,100,2
+uva moscato,100,2
+uva spina,100,2
+uva passa,100,2
+visciola,100,2
+acero,100,3
+alga marina,100,3
+asparagi,100,3
+bosso,100,3
+cipresso,100,3
+corteccia,100,3
+dragoncello,100,3
+erba medica,100,3
+erba sfalciata,100,3
+erbe agresti,100,3
+e. aromatiche,100,3
+erbe officinali,100,3
+elicriso,100,3
+fagiolini,100,3
+felce,100,3
+fieno,100,3
+fiore di veccia,100,3
+foglia di cappero,3
+foglia di fico,100,3
+f. di pomodoro,100,3
+foglie secche,100,3
+fresia,100,3
+friggitello,100,3
+frutta acerba,100,3
+fungo,100,3
+genziana,100,3
+humus,100,3
+lentisco,100,3
+m. mediterranea,100,3
+mallo di noce,100,3
+malva,100,3
+muschio,100,3
+pacciame,100,3
+peperone,100,3
+prugnolo,100,3
+sottobosco,100,3
+rabarbaro,100,3
+ruta,100,3
+tartufo,100,3
+verdura cotta,100,3
+aneto,100,3
+alloro,100,3
+balsamico,100,3
+basilico,100,3
+cardo,100,3
+finocchio,100,3
+maggiorana,100,3
+melissa,100,3
+menta,100,3
+origano,100,3
+ortica,100,3
+prezzemolo,100,3
+rosmarino,100,3
+salvia,100,3
+santoreggia,100,3
+tartufo,100,3
+terriccio,100,3
+timo,100,3
+verbena,100,3
+ardesia,100,4
+argilla,100,4
+benzina,100,4
+cenere,100,4
+gesso,100,4
+ghiaia,100,4
+grafite,100,4
+ferro,100,4
+idrocarburi,100,4
+inchiostro,100,4
+petrolio,100,4
+pietra focaia,100,4
+pietrisco,100,4
+polvere da sparo,100,4
+ruggine,100,4
+salmastro,100,4
+silice,100,4
+talco,100,4
+torba,100,4
+anice,100,5
+cannella,100,5
+cardamomo,100,5
+c. di garofano,100,5
+coriandolo,100,5
+cumino,100,5
+curcuma,100,5
+curry,100,5
+ginepro,100,5
+noce moscata,100,5
+pepe bianco,100,5
+pepe nero,100,5
+pepe rosa,100,5
+pepe verde,100,5
+peperoncino,100,5
+senape,100,5
+sandalo,100,5
+vaniglia,100,5
+zafferano,100,5
+zenzero,100,5
+affumicato,100,6
+cacao,100,6
+caffè,100,6
+cioccolato,100,6
+fava tonka,100,6
+fava di cacao,100,6
+fumo,100,6
+catrame,100,6
+mandorla tostata,100,6
+nocciola tostata,100,6
+orzo tostato,100,6
+pane tostato,100,6
+pinolo tostato,100,6
+pipa,100,6
+scatola di sigari,100,6
+tabacco,100,6
+vinoso,100,7
+fragrante,100,11
+cuoio,100,8
+ematico,100,8
+lana bagnata,100,8
+pellame,100,8
+selvaggina,100,8
+alchermes,100,9
+cera,100,9
+ceralacca,100,9
+cioccolato al rum,100,9
+iodio,100,9
+medicinale,100,9
+plastica,100,9
+sapone,100,9
+smalto,100,9
+vermouth,100,9
+amaretto,100,10
+amaro alle erbe,100,10
+angostura,100,10
+biscotto,100,10
+boero,100,10
+brioche,100,10
+burro,100,10
+caramella,100,10
+caramello,100,10
+cera d'api,100,10
+china,100,10
+cipria,100,10
+colatura di alici,100,10
+confetto,100,10
+creme caramel,100,10
+croccante,100,10
+crosta di pane,100,10
+eucalipto,100,10
+foglia di tè,100,10
+formaggio,100,10
+incenso,100,10
+legna arsa,100,10
+legno (boisè),100,10
+lievito,100,10
+liquirizia,100,10
+marron glacee,100,10
+marzapane,100,10
+mentolo,100,10
+miele,100,10
+oliva,100,10
+pan brioche,100,10
+pan biscotto,100,10
+pan pepato,100,10
+pasticceria,100,10
+pino,100,10
+pane,100,10
+plum cake,100,10
+propoli,100,10
+resina,100,10
+tamarindo,100,10
+torrone,100,10
+zucchero a velo,100,10
+zucchero filato,100,10
