@@ -22,9 +22,17 @@ export function statusTable() {
     }
   }
   //Checks
-  d3.text(`/csv/status-docg.csv`).then( function(data) {
+  const tables = document.querySelectorAll(".table-container")
+  const tableIndexArray = []
+  for (const i of tables){
+    const tableIndex = i.getAttribute("tabindex")
+    tableIndexArray.push(tableIndex)
+  }
+  console.log(tableIndexArray)
+  for (const i of tableIndexArray){ 
+  d3.text(`/csv/status-${i}.csv`).then( function(data) {
      var csv = d3.csvParse(data), allheaders = d3.csvParseRows(data)[0],
-    table = d3.select('.summary-table[tabindex="0"]')
+    table = d3.select(`.table-container[tabindex="${i}"] .summary-table`)
         var titles = Object.keys(data[0]);
         var headers = table.append('thead').append('tr')
                     .selectAll('th')
@@ -51,7 +59,7 @@ export function statusTable() {
       });
   }).then(function(){
   //start dataTable
-    const dataTable = new simpleDatatables.DataTable(`.summary-table`, {
+    const dataTable = new simpleDatatables.DataTable(`.table-container[tabindex="${i}"] .summary-table`, {
       layout: {
         top: "{search}",
         bottom: "{pager}",
@@ -63,10 +71,10 @@ export function statusTable() {
         info: "{start} to {end} of {rows} entries",
       },
     searchable: true,
-      perPage: 20,
+      perPage: 10,
       columns: [
         { select: [2,3,4], type: "number"},
-        { select: 3, type: "number", sort: "desc"}
+        { select: 2, type: "number", sort: "desc"}
       ],
       nextPrev: false
     })
@@ -82,4 +90,5 @@ export function statusTable() {
   }).then(function(){
       cssTable()
      })
+  }
 }
