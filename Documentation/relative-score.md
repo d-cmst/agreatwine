@@ -2,7 +2,7 @@
 title: 2. Relative Score
 description: 
 published: true
-date: 2022-11-15T10:31:34.694Z
+date: 2022-11-15T13:55:52.428Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:21:00.990Z
@@ -127,4 +127,4 @@ $$
 
 where $n$ is the set of all weighted averages of the wines we are ranking. The outcome of this computation is the **Relative Score**, which tells how a wine performs with respect of other wines of the same category, or more specifically with respect to the **best** wine in the same cateogory.
 
-You can read on about [how are wine categories populated](/Documentation/wine-categories) 
+You can read on about [fair comparisons](/Documentation/wine-categories) 
