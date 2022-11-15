@@ -2,12 +2,11 @@
 title: Comparisons: third level
 description: 
 published: true
-date: 2022-11-13T15:37:30.048Z
+date: 2022-11-15T11:06:38.515Z
 tags: 
 editor: markdown
-dateCreated: 2022-11-11T17:43:40.412Z
+dateCreated: 2022-11-14T15:20:51.549Z
 ---
-
 
 # Third Level Comparisons
 ## by Region
