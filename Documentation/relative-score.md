@@ -2,7 +2,7 @@
 title: 2. Relative Score
 description: 
 published: true
-date: 2022-11-15T13:55:52.428Z
+date: 2022-11-15T19:25:44.919Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:21:00.990Z
@@ -34,7 +34,7 @@ Assuming the above classification, a wine with a grade of 78 falls in the "C" cl
 ### Sources selection
 Not all sources who qualify (i.e. offer a classification of grades) are used in *AGReATWine*: some are excluded for the lack of resources needed to scrape them from their original medium (website, mobile app, traditional publication, etc.); some others cannot be used because their classification is inconsistent with the others and turn out to be difficult/impossible to aggregate. Details about source selection are provided where the selection happens, which is usually at the country level.
 
-## Evaluations aggregation and weighted averages
+## Evaluations and weighted averages
 
 Let's assume we have the following evaluations for a wine called *Wine A* and we want to compute it's **Relative Score**: 
 
