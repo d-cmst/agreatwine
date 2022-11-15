@@ -950,6 +950,10 @@ div.t1:nth-of-type(5) .star:before{
     display: none!important
   }
 }
+/*new table layout 2.9.1 fix*/
+td[data-th="2022"],td[data-th="2021"],td[data-th="2020"],td[data-th="2019"],td[data-th="2018"],td[data-th="2017"],td[data-th="2016"],td[data-th="2015"],td[data-th="2014"],td[data-th="2013"],td[data-th="2012"],td[data-th="2011"],td[data-th="2010"],td[data-th="2009"],td[data-th="2008"],td[data-th="2007"],td[data-th="2006"],td[data-th="2005"],td[data-th="2004"],td[data-th="2003"],td[data-th="2002"]{
+  background-color: transparent!important  
+ }
 /*first word bold description vitigni*/
 .description-bold {
   font-weight: 900;
