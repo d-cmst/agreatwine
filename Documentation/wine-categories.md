@@ -2,7 +2,7 @@
 title: 3. Wine Fair Comparisons
 description: 
 published: true
-date: 2022-11-15T09:42:37.585Z
+date: 2022-11-15T10:27:26.762Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:21:11.567Z
@@ -24,4 +24,10 @@ As already stated, comparison of wines in the same appellation is not really a c
 1. some appellations include different types of wine;
 2. some appellations include wines with different composition and type.
 
-As an example of the first issue, consider the DOCG Albana (Romagna - Italy) which includes: white wines, sweet white wines, sweet passito white wines and sparkling wines all made with the same grape
+As an example of the first issue, consider the [DOCG Romagna Albana](http://catalogoviti.politicheagricole.it/scheda_denom.php?t=dsc&q=1058) (Romagna - Italy) which includes five different types of wine (dry, semi-sweet, sweet, sweet passito and sparkling) made with the same grape. In cases such as this the type takes precedence over the appellation, so the comparison is limited to same-type wine, as can be seen in the [Romagna Albana](/Appellations/Italy/Romagna/DOCG-Romagna-Albana). 
+
+The second issue arises in the so-called "mixed appellations", which include wines with both different type and different composition. An example of a mixed appellation is the [DOC Alto Adige](http://catalogoviti.politicheagricole.it/scheda_denom.php?t=dsc&q=2010) appellation, which allows the production of more than 50 different permutations of wine type/wine composition. In cases such as this, the appellation is split between multiple sub-appellation which include same-composition wines and where only same-type wines are compared. So, we don't have a DOC Alto Adige comparison but a [DOC Alto Adige Chardonnay](/Appellations/Italy/Alto-Adige/DOC-Alto-Adige-Chardonnay), [DOC Alto Adige Sauvignon](/Appellations/Italy/Alto-Adige/DOC-Alto-Adige-Sauvignon), etc.
+
+There are some exceptions to the above rules, discussed when they happen.
+
+## Wine Composition
