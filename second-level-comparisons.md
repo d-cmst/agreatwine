@@ -2,10 +2,10 @@
 title: Comparisons: second level
 description: 
 published: true
-date: 2022-11-13T15:31:40.745Z
+date: 2022-11-15T11:06:17.532Z
 tags: 
 editor: markdown
-dateCreated: 2022-11-11T17:41:03.608Z
+dateCreated: 2022-11-14T15:20:48.114Z
 ---
 
 # Second Level Comparisons 
