@@ -114,9 +114,9 @@ const listCheck = document.querySelector("div[role='list'] .v-list-item__title")
     } 
     
     //status
-    //if (window.location.href.indexOf("/status") != -1) {
-    //    statusTable()
-    //}
+    if (window.location.href.indexOf("/status") != -1) {
+        statusTable()
+    }
     // vitigni first word bold
     //if (window.location.href.indexOf("/vitigni/") != -1) {
     //    firstWordBold()

@@ -1,0 +1,78 @@
+Tipo,Regione,Denominazione,Indicizzati,Totali,Percentuale
+-,Tutte,Tutte,3383,4507,75
+DOCG,Abruzzo,Montepulciano d’Abruzzo Colline Teramane,0,47,0
+DOCG,Basilicata,Aglianico del Vulture Superiore,0,90,0
+DOCG,Campania,Taurasi,0,64,0
+DOCG,Campania,Fiano di Avellino,0,59,0
+DOCG,Campania,Greco di Tufo,0,39,0
+DOCG,Campania,Aglianico del Taburno,0,22,0
+DOCG,Emilia,Colli Bolognesi Classico Pignoletto,50,50,100
+DOCG,Friuli,Colli Orientali del Friuli Picolit,30,30,100
+DOCG,Friuli,Ramandolo,11,11,100
+DOCG,Friuli,Rosazzo,5,5,100
+DOCG,Lazio,Cesanese del Piglio / Piglio***,52,52,100
+DOCG,Lazio,Frascati Superiore,25,25,100
+DOCG,Lazio,Cannellino di Frascati,5,5,100
+DOCG,Lombardia,Franciacorta,333,333,100
+DOCG,Lombardia,Oltrepò Pavese metodo classico,88,88,100
+DOCG,Lombardia,Sforzato di Valtellina / Sfursat di Valtellina,24,24,100
+DOCG,Lombardia,Valtellina Superiore,0,61,0
+DOCG,Lombardia,Scanzo / Moscato di Scanzo,0,11,0
+DOCG,Marche,Castelli di Jesi Verdicchio Riserva,32,32,100
+DOCG,Marche,Offida,0,47,0
+DOCG,Marche,Cònero,0,43,0
+DOCG,Marche,Verdicchio di Matelica Riserva,0,36,0
+DOCG,Marche,Vernaccia di Serrapetrona,0,3,0
+DOCG,Piemonte,Barolo,508,508,100
+DOCG,Piemonte,Barbera d’Asti,189,189,100
+DOCG,Piemonte,Barbaresco,175,175,100
+DOCG,Piemonte,Alta Langa,52,52,100
+DOCG,Piemonte,Gattinara,25,25,100
+DOCG,Piemonte,Ghemme,22,22,100
+DOCG,Piemonte,Asti,0,187,0
+DOCG,Piemonte,Gavi Cortese di Gavi,80,80,100
+DOCG,Piemonte,Roero,0,85,0
+DOCG,Piemonte,Erbaluce di Caluso / Caluso,0,30,0
+DOCG,Piemonte,Nizza,46,46,100
+DOCG,Piemonte,Dogliani (Dolcetto),0,28,0
+DOCG,Piemonte,Ruchè di Castagnole Monferrato (Ruchè),0,14,0
+DOCG,Piemonte,Barbera del Monferrato Superiore,9,9,100
+DOCG,Piemonte,Bardolino Superiore,0,9,0
+DOCG,Piemonte,Dolcetto di Diano d’Alba / Diano d’Alba,0,6,0
+DOCG,Piemonte,Terre Alfieri,1,1,100
+DOCG,Piemonte,Brachetto d’Acqui / Acqui,0,2,0
+DOCG,Piemonte,Ovada (Dolcetto),0,2,0
+DOCG,Puglia,Castel del Monte Nero di Troia Riserva,0,12,0
+DOCG,Puglia,Castel del Monte Bombino Nero,0,6,0
+DOCG,Puglia,Castel del Monte Rosso Riserva,0,5,0
+DOCG,Puglia,Primitivo di Manduria Dolce Naturale,0,5,0
+DOCG,Romagna,Romagna Albana,97,97,100
+DOCG,Sardegna,Vermentino di Gallura,0,29,0
+DOCG,Sicilia,Cerasuolo di Vittoria,0,13,0
+DOCG,Toscana,Chianti Classico,355,355,100
+DOCG,Toscana,Brunello di Montalcino,183,183,100
+DOCG,Toscana,Chianti,176,176,100
+DOCG,Toscana,Vino Nobile di Montepulciano,90,90,100
+DOCG,Toscana,Morellino di Scansano,59,59,100
+DOCG,Toscana,Vernaccia di San Gimignano,42,42,100
+DOCG,Toscana,Elba Aleatico Passito / Aleatico Passito dell’Elba,2,2,100
+DOCG,Toscana,Carmignano,0,27,0
+DOCG,Toscana,Montecucco Sangiovese,0,24,0
+DOCG,Toscana,Val di Cornia Rosso / Rosso della Val di Cornia,0,4,0
+DOCG,Toscana,Suvereto,0,3,0
+DOCG,Umbria,Montefalco Sagrantino,0,44,0
+DOCG,Umbria,Torgiano Rosso Riserva,0,5,0
+DOCG,Veneto,Amarone della Valpolicella,176,176,100
+DOCG,Veneto,Recioto della Valpolicella,47,47,100
+DOCG,Veneto,Recioto di Soave,20,20,100
+DOCG,Veneto,Soave Superiore,13,13,100
+DOCG,Veneto,Recioto di Gambellara,8,8,100
+DOCG,Veneto,Conegliano Valdobbiadene – Prosecco / Conegliano – Prosecco / Valdobbiadene – Prosecco,293,293,100
+DOCG,Veneto,Colli Asolani – Prosecco / Asolo – Prosecco,60,60,100
+DOCG,Veneto,Colli Euganei Fior d’Arancio / Fior d’Arancio Colli Euganei,0,28,0
+DOCG,Veneto,Colli di Conegliano,0,8,0
+DOCG,Veneto,Montello rosso / Montello,0,4,0
+DOCG,Veneto,Piave Malanotte / Malanotte del Piave,0,4,0
+DOCG,Veneto,Bagnoli Friularo / Friularo di Bagnoli,0,1,0
+DOCG,Veneto/Friuli,Lison (in Friuli Venezia Giulia e Veneto),0,17,0
+DOCG,Abruzzo,Terre Tollesi Tullum,0,0,100

@@ -19,9 +19,9 @@ export function statusTable() {
     }
   }
   //Checks
-  d3.text(`/vini/status.csv`).then( function(data) {
+  d3.text(`/csv/status-docg.csv`).then( function(data) {
      var csv = d3.csvParse(data), allheaders = d3.csvParseRows(data)[0],
-    table = d3.select('.summary-table')
+    table = d3.select('.summary-table docg-table')
         var titles = Object.keys(data[0]);
         var headers = table.append('thead').append('tr')
                     .selectAll('th')
@@ -54,9 +54,9 @@ export function statusTable() {
         bottom: "{pager}",
       },
       labels: {
-        placeholder: "Cerca nella tabella",
-        perPage: "{select} risultati per pagina",
-        noRows: "Nessun risultato corrispondente",
+        placeholder: "Filter",
+        perPage: "{select} results for page",
+        noRows: "No results",
         info: "{start} to {end} of {rows} entries",
       },
     searchable: true,
