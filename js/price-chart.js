@@ -34,6 +34,8 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   .append("g")
   .attr("transform", `translate(${margin.left},${margin.top})`);
 
+  //append second svg
+
   
   // Get annate
   let tutteLeAnnate = []
@@ -61,10 +63,10 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
     .tickPadding([20])
     )
   .selectAll("text")    
-.style("text-anchor", "end")
-.attr("dx", "-.5em")
-.attr("dy", "-.6em")
-.attr("transform", "rotate(-60)");
+  .style("text-anchor", "end")
+  .attr("dx", "-.5em")
+  .attr("dy", "-.6em")
+  .attr("transform", "rotate(-60)");
 
   // create objects for plots
   //plot avg
@@ -162,17 +164,45 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   svg.append("path")
     .datum(plotAvg)
     .attr("fill", "none")
-    .attr("stroke", "steelblue")
-    .attr("stroke-width", 1.5)
+    .attr("stroke", "#FEBD11")
+    .attr("stroke-width", 5)
     .attr("d", line1)
+    //.style("stroke-dasharray", ("12, 2"))
 
   // Add wine plot
   svg.append("path")
     .datum(plotWine)
     .attr("fill", "none")
-    .attr("stroke", "red")
-    .attr("stroke-width", 1.5)
+    .attr("stroke", "#4caf50")
+    .attr("stroke-width", 5)
     .attr("d", line2)
   
+  const l1X = 100 
+  const l1Y = 330
+  const firstRect = svg.append('rect')
+  .attr('x', l1X)
+  .attr('y', l1Y)
+  .attr('width', 15)
+  .attr('height', 15)
+  .attr('stroke', 'none')
+  .attr('fill', '#4caf50');
+   svg.append("text")
+     .attr('x', l1X + 20)
+     .attr('y', l1Y + 13) 
+     .text(headlineArray[0])
+     .attr('width', 200) 
+  const secondRect = svg.append('rect')
+  .attr('x', l1X)
+  .attr('y', l1Y + 30)
+  .attr('width', 15)
+  .attr('height', 15)
+  .attr('stroke', 'none')
+  .attr('fill', '#FEBD11');
+   svg.append("text")
+     .attr('x', l1X + 20)
+     .attr('y', l1Y + 30 + 14) 
+     .text("Appellation Avg Price")
+     .attr('width', 200) 
 })
 }
+
