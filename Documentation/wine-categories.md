@@ -2,7 +2,7 @@
 title: 3. Wine Fair Comparisons
 description: 
 published: true
-date: 2022-11-15T09:21:07.035Z
+date: 2022-11-15T09:42:37.585Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:21:11.567Z
@@ -17,6 +17,11 @@ What does constitute a fair comparison among wines would probably be a matter of
 - second level comparison: wine composition;
 - third level comparison: region.
 
-## Appellations
+## Appellation
 
+As already stated, comparison of wines in the same appellation is not really a controversial topic as appellations exist for the purpose of aggregating similar wines which are fair to compare. There is, however, a residual issue with appellation comparison since some appellations include completely different types of wines or wines with completely different compositions and type. Let's break this issue down into smaller parts:
 
+1. some appellations include different types of wine;
+2. some appellations include wines with different composition and type.
+
+As an example of the first issue, consider the DOCG Albana (Romagna - Italy) which includes: white wines, sweet white wines, sweet passito white wines and sparkling wines all made with the same grape
