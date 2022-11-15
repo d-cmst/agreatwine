@@ -1465,6 +1465,17 @@ max-width: 350px
 }
 
 /* #region status*/
+/*Stats*/
+.status-stats{
+  display:grid;
+  column-gap: 20px;
+  grid-template-columns: max-content auto;
+  margin-top:7px
+}
+.status-stats div:nth-child(odd){
+  font-weight: bold
+}
+/**/
 .docg-table th:nth-child(1n+2) {
   text-align:left
 }

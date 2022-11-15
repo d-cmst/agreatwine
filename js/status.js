@@ -23,12 +23,12 @@ export function statusTable() {
   }
   //Checks
   const tables = document.querySelectorAll(".table-container")
-  const tableIndexArray = []
+  let tableIndexArray = []
   for (const i of tables){
     const tableIndex = i.getAttribute("tabindex")
     tableIndexArray.push(tableIndex)
   }
-  console.log(tableIndexArray)
+  let totalGrand = 0
   for (const i of tableIndexArray){ 
   d3.text(`/csv/status-${i}.csv`).then( function(data) {
      var csv = d3.csvParse(data), allheaders = d3.csvParseRows(data)[0],
@@ -57,6 +57,11 @@ export function statusTable() {
       .text(function (d) {
         return d.value;
       });
+     const totalWines = document.querySelector(`.table-container[tabindex="${i}"] .summary-table tbody tr td[data-th="Wines"]:nth-of-type(3)`)
+     //for (const i of totalWinesArray){
+       totalGrand += Number(totalWines.innerText)
+     //}
+     return totalWines
   }).then(function(){
   //start dataTable
     const dataTable = new simpleDatatables.DataTable(`.table-container[tabindex="${i}"] .summary-table`, {
@@ -89,6 +94,7 @@ export function statusTable() {
     })
   }).then(function(){
       cssTable()
+      document.querySelector(".ev-total").innerText = totalGrand
      })
   }
 }
