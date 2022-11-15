@@ -2,10 +2,10 @@
 title: 2. Relative Score
 description: 
 published: true
-date: 2022-11-14T11:18:40.280Z
+date: 2022-11-15T10:31:34.694Z
 tags: 
 editor: markdown
-dateCreated: 2022-11-11T18:16:16.154Z
+dateCreated: 2022-11-14T15:21:00.990Z
 ---
 
 # Relative Scores
@@ -103,6 +103,7 @@ To express this principle mathematically, the **Relative Score** computation use
 3. part three will be described after explaining the first two.
 
 These first two steps can be written in a more formal fashion in the following way:
+
 
 $$
 \frac{\sum_{i=1}^{avg} x_i + (ev_5 \times 1000) + (ev_4 \times 333.3) + (ev_3 \times 111.1) + (ev_2 \times 37)}{5\times (ev_5 \times 1000) + 5 \times (ev_4 \times 333.3) +  5  \times (ev_3 \times 111.1) + 5 \times (ev_2 \times 37)} = wa
