@@ -24,7 +24,7 @@ export function statusTable() {
   //Checks
   d3.text(`/csv/status-docg.csv`).then( function(data) {
      var csv = d3.csvParse(data), allheaders = d3.csvParseRows(data)[0],
-    table = d3.select('.summary-table.docg-table')
+    table = d3.select('.summary-table[tabindex="0"]')
         var titles = Object.keys(data[0]);
         var headers = table.append('thead').append('tr')
                     .selectAll('th')
@@ -81,6 +81,5 @@ export function statusTable() {
     })
   }).then(function(){
       cssTable()
-    console.log("test")
      })
 }

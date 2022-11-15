@@ -139,9 +139,9 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
                 bottom: "{pager}",
             },
             labels: {
-                placeholder: "Cerca nella tabella",
-                perPage: "{select} risultati per pagina",
-                noRows: "Nessun risultato corrispondente",
+                placeholder: "Filter",
+                perPage: "{select} results per page",
+                noRows: "No results",
                 info: "{start} to {end} of {rows} entries",
             },
             searchable: true,
