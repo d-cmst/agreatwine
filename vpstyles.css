@@ -929,10 +929,6 @@ div.t1:nth-of-type(5) .star:before{
 /* #endregion */
 
 /* #region ORIGINAL THEME FIX*/
-/*katex*/
-.katex-display{
-  overflow-x:scroll
-}
 /*dataTable fixes*/
 .v-main .contents table {margin:0px}
 /**/
@@ -946,6 +942,11 @@ div.t1:nth-of-type(5) .star:before{
 }
 
 @media only screen and (max-width:550px) {
+  /*katex*/
+  .katex-display{
+    overflow-x:scroll
+  } 
+  /**/
   .container.grey .no-gutters {
     display: none!important
   }
