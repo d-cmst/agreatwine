@@ -2,10 +2,10 @@
 title: Comparisons: appellations 
 description: 
 published: true
-date: 2022-11-13T16:27:03.061Z
+date: 2022-11-15T11:06:52.679Z
 tags: 
 editor: markdown
-dateCreated: 2022-11-11T17:00:49.555Z
+dateCreated: 2022-11-14T15:20:37.783Z
 ---
 
 # Appellation comparisons
