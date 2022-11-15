@@ -2,7 +2,7 @@
 title: 3. Fair Comparison
 description: 
 published: true
-date: 2022-11-15T10:42:07.408Z
+date: 2022-11-15T11:09:51.194Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:21:11.567Z
@@ -31,4 +31,17 @@ The second issue arises in the so-called "mixed appellations", which include win
 Exceptions to the above rules are discussed where they happen.
 
 ## Wine Composition
+Building from the idea that it is fair to compare wines included in the same appellation, we may be tempted to ask ourselves if comparing wines with the same composition, from two different but geographically overlapping or close by appellations could *also* be fair. In the world of wine appellations there many such cases: Chardonnay based, adjacent appellations in Bourgogne; Sangiovese based overlapping/adjacent appellations in Toscana, etc. If we conceded that comparisons *within* the same appellation are fair, we may also concede that comparisons between same-composition wines, from different but overlapping appellations could also be fair.   
+
+Without engaging is too much academy, *AGReATWine* provides partially controversial, second level comparisons of wines which meet all the following criteria:
+- same region
+- same composition (grape or grapes)
+- different appellations
+
+The available second level comparisons can be found in the [second level comparison](/second-level-comparisons) index page.
+
+## Region
+At the top of the speculative mountain, *AGReATWine* also provide ~~not-so-fair~~ regional comparisons, whose only significance could be to discover which wine has the best track record of evaluations within a region, whatever that may mean.
+
+The available second level comparisons can be found in the [third level comparison](/third-level-comparisons) index page.
 
