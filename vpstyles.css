@@ -929,6 +929,10 @@ div.t1:nth-of-type(5) .star:before{
 /* #endregion */
 
 /* #region ORIGINAL THEME FIX*/
+/*katex*/
+.katex-display{
+  overflow-x:scroll
+}
 /*dataTable fixes*/
 .v-main .contents table {margin:0px}
 /**/
