@@ -11,17 +11,20 @@ export function statusTable() {
     //    }
     // }
     //}
-    const allPercent = document.querySelectorAll(".summary-table td:nth-child(6)");
+    const allPercent = document.querySelectorAll(".summary-table td:nth-child(5)");
     for (const i of allPercent) {
       const percentValue = i.innerText
-      
-      i.setAttribute("width",((percentValue*90)/100) + "%")
+      if (window.innerWidth < 600) {
+        i.setAttribute("width",((percentValue*98.5)/100) + "%")
+      } else {
+        i.setAttribute("width",((percentValue*90)/100) + "%")
+      }
     }
   }
   //Checks
   d3.text(`/csv/status-docg.csv`).then( function(data) {
      var csv = d3.csvParse(data), allheaders = d3.csvParseRows(data)[0],
-    table = d3.select('.summary-table docg-table')
+    table = d3.select('.summary-table.docg-table')
         var titles = Object.keys(data[0]);
         var headers = table.append('thead').append('tr')
                     .selectAll('th')
@@ -62,8 +65,8 @@ export function statusTable() {
     searchable: true,
       perPage: 20,
       columns: [
-        { select: [3,4,5], type: "number"},
-        { select: 4, type: "number", sort: "desc"}
+        { select: [2,3,4], type: "number"},
+        { select: 3, type: "number", sort: "desc"}
       ],
       nextPrev: false
     })
@@ -78,5 +81,6 @@ export function statusTable() {
     })
   }).then(function(){
       cssTable()
+    console.log("test")
      })
 }

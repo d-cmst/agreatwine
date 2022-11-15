@@ -1465,37 +1465,46 @@ max-width: 350px
 }
 
 /* #region status*/
-.status-table th:nth-child(1n+1) {
+.docg-table th:nth-child(1n+2) {
   text-align:left
 }
-.status-table th:nth-child(1n+4) {
+.docg-table th:nth-child(1n+3) {
   text-align:-webkit-right
 }
 
-  .status-table td:nth-child(6){
-    position:relative;
-    color: transparent;
-    text-align: right;
-    max-width:100%;
-  }
-.status-table td:nth-child(6):after{
-    position: absolute;
-    content: '';
-    height:18px;
-    background: linear-gradient(
+.docg-table td:nth-child(5){
+  position:relative;
+  color: transparent;
+  text-align: right;
+  max-width:100%;
+}
+.docg-table td:nth-child(5):after{
+  position: absolute;
+  content: '';
+  height:18px;
+  background: linear-gradient(
     90deg,
-    #a4d7a6,
-    #4caf50 100%
+    #FEBD11,
+    #4caf50 270px
+  );
+  left:0;
+  top:2px;
+  max-width:100%;
+  width: inherit;
+  border-radius:2px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  color: transparent;
+}
+@media screen and (min-width: 600px) {
+  .docg-table td:nth-child(5):after{
+    background: linear-gradient(
+      90deg,
+      #FEBD11,
+      #4caf50 80px
     );
-    left:0;
-    top:2px;
-    max-width:100%;
-    width: inherit;
-    border-radius:2px;
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    color: transparent;
   }
-  .status-table td:nth-child(6):after{
+}
+  .docg-table td:nth-child(5):after{
     position:absolute;
     content: "";
     font-weight: normal;
@@ -1507,61 +1516,61 @@ max-width: 350px
   }
 
 @media screen and (min-width: 600px) {
-  .status-table td:nth-child(3) {
+  .docg-table td:nth-child(3) {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     max-width: 200px
   }
-  .status-table td:nth-child(2) {
+  .docg-table td:nth-child(2) {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     max-width: 200px
   }
-  .summary-table.status-table td{
+  .summary-table.docg-table td{
     padding:0px 3px!important
   }
 }
 @media screen and (max-width: 599px) {
-   .status-table tr{
+   .docg-table tr{
     position: relative;
     text-align: left;
   }
-   .status-table{
+   .docg-table{
     overflow:hidden;
     width: 100%
   }
-   .status-table tbody td:nth-child(1){
+   .docg-table tbody td:nth-child(1){
     background-color:#f1f1f1;
   }
-   .status-table tbody td{
+   .docg-table tbody td{
     padding:2px 3px!important;
     border: 0px solid white!important
   }
-   .status-table tbody td:first-child{
+   .docg-table tbody td:first-child{
     padding:2px 3px!important;
   }
  
-   .status-table td {
+   .docg-table td {
     display: block;
     font-size: 1em;
     text-align: left
   }
-   .status-table td:nth-child(1) {
+   .docg-table td:nth-child(1) {
     font-weight:bold
   }
-   .status-table td:nth-child(n+1){
+   .docg-table td:nth-child(n+1){
     text-align: right;
   }
   
-   .status-table td:nth-child(n+4):before {
+   .docg-table td:nth-child(n+4):before {
     content: attr(data-th);
     float: left;
     font-weight: normal
   } 
 
-   .status-table thead {
+   .docg-table thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -1570,27 +1579,29 @@ max-width: 350px
     padding: 0;
     /* position: absolute; */
     width: 1px; }
-   .status-table thead tr {
+   .docg-table thead tr {
     display: flex;
     justify-content: space-around;
     position: sticky;
   }
   
-   .status-table th{padding:0px}
-   .status-table th:nth-child(1n-4) {
+   .docg-table th{padding:0px}
+   .docg-table th:nth-child(1n-4) {
     border-bottom: 0px solid transparent!important; 
     font-size: 90%;
     padding:0px 5px!important
   }
-   .status-table {
+  .docg-table.summary-table th:nth-child(1n+4) {
+    display: block
+  }
+   .docg-table {
     border: 0; 
     margin: 0 0px!important;
   }
-  .status-data td[data-th="Percentuale"]{
+  .status-data td[data-th="Progress"]{
     color:black!important
   }
 }
-
 /* #endregion status */
 
 /* #region grafico-prezzi */
