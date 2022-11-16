@@ -177,7 +177,7 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
     .attr("stroke-width", 5)
     .attr("d", line2)
   
-  const l1X = 100 
+  const l1X = 0 
   const l1Y = 330
   const firstRect = svg.append('rect')
   .attr('x', l1X)
