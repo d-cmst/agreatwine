@@ -1,5 +1,5 @@
 ---
-title: 1. Why another wine scores website?
+title: 2. About (extended version)
 description: documentation
 published: true
 date: 2022-11-14T11:18:21.042Z
