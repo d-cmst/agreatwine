@@ -1,14 +1,14 @@
 ---
-title: Appellation Comparisons
+title: ¹Appellation Comparisons
 description: 
 published: true
-date: 2022-11-16T14:22:34.787Z
+date: 2022-11-16T14:23:26.227Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:20:37.783Z
 ---
 
-# Appellation comparisons¹
+# ¹Appellation comparisons
 
 Comparisons by appellation are first level comparisons according to the *AGReATWine* methodology. You can read more about different types of comparisons in the [fair comparison](/Documentation/wine-categories) page. 
 
