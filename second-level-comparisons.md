@@ -1,8 +1,8 @@
 ---
-title: Composition Comparisons²
+title: ²Composition Comparisons
 description: 
 published: true
-date: 2022-11-16T14:23:46.443Z
+date: 2022-11-16T14:24:09.235Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:20:48.114Z
