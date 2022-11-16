@@ -2,15 +2,18 @@
 title: Appellation Comparisons
 description: 
 published: true
-date: 2022-11-16T14:04:00.737Z
+date: 2022-11-16T14:22:34.787Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:20:37.783Z
 ---
 
-# Appellation comparisons
+# Appellation comparisons¹
+
+Comparisons by appellation are first level comparisons according to the *AGReATWine* methodology. You can read more about different types of comparisons in the [fair comparison](/Documentation/wine-categories) page. 
 
 ## Italy
+Italy has 78 DOCG appellations, 341 DOC appellations and 118 IGT appellations. 
 
 ## Italy {.tabset}
 ### DOCG by region
