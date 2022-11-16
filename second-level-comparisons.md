@@ -14,24 +14,24 @@ Comparisons by wine composition (the grape or set of grapes from which a wine is
 ## By region
 - Italy
   - Alto Adige
-    - [Riesling](/Appellations/Italy/Alto-Adige/All-Riesling-Wines)
-    - [Schiava](/Appellations/Italy/Alto-Adige/All-Schiava-Wines)
+    - [Riesling](/Appellations/Italy/Alto-Adige/Alto-Adige-Riesling)
+    - [Schiava](/Appellations/Italy/Alto-Adige/Alto-Adige-Schiava)
   - Emilia
-    - [Lambrusco](/Appellations/Italy/Emilia/All-Lambrusco-Wines)
-    - [Pignoletto](/Appellations/Italy/Emilia/All-Pignoletto-Wines)
+    - [Lambrusco](/Appellations/Italy/Emilia/Emilia-Lambrusco)
+    - [Pignoletto](/Appellations/Italy/Emilia/Emilia-Pignoletto)
   - Friuli
-    - [Friulano](/Appellations/Italy/Friuli-Venezia-Giulia/All-Friulano-Wines)
-    - [Ribolla Gialla](/Appellations/Italy/Friuli-Venezia-Giulia/All-Ribolla-Gialla-Wines)
+    - [Friulano](/Appellations/Italy/Friuli-Venezia-Giulia/Friuli-Venezia-Giulia-Friulano)
+    - [Ribolla Gialla](/Appellations/Italy/Friuli-Venezia-Giulia/Friuli-Venezia-Giulia-Ribolla-Gialla)
   - Lazio
-    - [Cesanese](/Appellations/Italy/Lazio/All-Cesanese-Wines)
+    - [Cesanese](/Appellations/Italy/Lazio/Lazio-Cesanese)
   - Piemonte
-    - [Barbera](/Appellations/Italy/Piemonte/All-Barbera-Wines)
-    - [Nebbiolo](/Appellations/Italy/Piemonte/All-Nebbiolo-Wines)
+    - [Barbera](/Appellations/Italy/Piemonte/Piemonte-Barbera)
+    - [Nebbiolo](/Appellations/Italy/Piemonte/Piemonte-Nebbiolo)
   - Romagna
-    - [Albana](/Appellations/Italy/Romagna/All-Albana-Wines)
+    - [Albana](/Appellations/Italy/Romagna/Romagna-Albana)
   - Toscana
-    - [Sangiovese](/Appellations/Italy/Toscana/All-Sangiovese-Wines)
+    - [Sangiovese](/Appellations/Italy/Toscana/Toscana-Sangiovese)
   - Veneto
-    - [Prosecco](/Appellations/Italy/Veneto/All-Prosecco-Wines)
-    - [Soave](/Appellations/Italy/Veneto/All-Soave-Wines)
-    - [Valpolicella](/Appellations/Italy/Veneto/All-Valpolicella-Wines)
+    - [Prosecco](/Appellations/Italy/Veneto/Veneto-Prosecco)
+    - [Soave](/Appellations/Italy/Veneto/Veneto-Soave)
+    - [Valpolicella](/Appellations/Italy/Veneto/Veneto-Valpolicella)
