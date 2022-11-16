@@ -2,20 +2,10 @@
 title: AGReATWine
 description: Another Geeky Retrospective Aggregator Tool (for) Wine
 published: true
-date: 2022-11-16T17:39:08.270Z
+date: 2022-11-16T17:39:36.595Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-16T17:39:08.270Z
----
-
----
-title: AGReATWine
-description: Another Geeky Retrospective Aggregator Tool (for) Wine
-published: true
-date: 2022-11-15T13:50:28.361Z
-tags: 
-editor: markdown
-dateCreated: 2022-11-14T15:20:41.638Z
 ---
 
 # AGReATWine
