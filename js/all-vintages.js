@@ -29,6 +29,7 @@ export function allVintages(regionS, headlineArray, listCheck) {
       const avNotes = csv.filter(allVintagesData)[0].Notes;
       const avSLC = csv.filter(allVintagesData)[0].SLC;
       const avTLC = csv.filter(allVintagesData)[0].TLC;
+        console.log(avTLC)
       //AllVintagesData ScoreAIS
       const avRS = csv.filter(allVintagesData)[0].RS;
       const avQP = csv.filter(allVintagesData)[0].QP;
@@ -59,7 +60,7 @@ export function allVintages(regionS, headlineArray, listCheck) {
           ${avSLC == "" ? "" : 
             `<div>2nd Level: </div><div><a class="second-level" href="/en/Appellations/Italy/${sanitizeInputCc(avRegion)}/${sanitizeInputCc(avSLC)}.html">${avSLC}</a></div>`
           }
-          ${avTLC == "" ? "" : 
+          ${avTLC == "" || avTLC == undefined ? "" : 
             `<div>3nd Level: </div><div><a class="third-level" href="/en/Appellations/Italy/${sanitizeInputCc(avRegion)}/${sanitizeInputCc(avTLC)}.html">${avTLC}</a></div>`
           }
           </div>
