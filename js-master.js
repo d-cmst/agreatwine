@@ -139,4 +139,5 @@ const listCheck = document.querySelector("div[role='list'] .v-list-item__title")
     if (window.location.href.indexOf("vintage-") != -1) {
         schedaSingolaImport()
     }
+    document.querySelector('.contents').style.opacity = "1"
 })
