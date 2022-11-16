@@ -154,7 +154,7 @@ Italy has 78 DOCG appellations, 341 DOC appellations and 118 IGT appellations.
     - [Mitterberg Sylvaner](/Appellations/Italy/Alto-Adige/IGT-Mitterberg-Sylvaner)
     - [Mitterberg Riesling](/Appellations/Italy/Alto-Adige/IGT-Mitterberg-Riesling)
   - Vigneti Delle Dolomiti
-    - [Vigneti Delle Dolomiti Chardonnay](/Appellations/Italy/Alto-Adige/IGT-Vigneti-Delle-Dolomiti-Chrdonnay)
+    - [Vigneti Delle Dolomiti Chardonnay](/Appellations/Italy/Alto-Adige/IGT-Vigneti-Delle-Dolomiti-Chardonnay)
     - [Vigneti Delle Dolomiti Kerner](/Appellations/Italy/Alto-Adige/IGT-Vigneti-Delle-Dolomiti-Kerner)
     - [Vigneti Delle Dolomiti Pinot Bianco](/Appellations/Italy/Alto-Adige/IGT-Vigneti-Delle-Dolomiti-Pinot-Bianco)
 - Friuli
