@@ -10,9 +10,7 @@ dateCreated: 2022-11-11T16:35:52.829Z
 
 # Why another wine scores website?
 
-This website presents ~~yet~~ another approach to wines comparison, with the aim of providing a *fair* comparison between wines and building a database around it.
-
-If you are interested in knowing why I think we need another method for wine comparison, here is your answer.
+This website presents ~~yet~~ another approach to wines comparison, with the aim of providing a *fair* comparison and building a database around it.
 
 ## How wines are compared
 
