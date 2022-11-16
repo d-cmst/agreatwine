@@ -1,6 +1,6 @@
 ---
 title: 1. About
-description: documentation
+description: Documentation
 published: true
 date: 2022-11-14T11:26:24.971Z
 tags: 

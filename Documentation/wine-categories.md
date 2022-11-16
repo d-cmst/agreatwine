@@ -1,6 +1,6 @@
 ---
 title: 4. Fair Comparison
-description: 
+description: Documentation
 published: true
 date: 2022-11-15T11:09:51.194Z
 tags: 

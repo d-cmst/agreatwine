@@ -1,6 +1,6 @@
 ---
 title: 3. Relative Score
-description: 
+description: Documentation
 published: true
 date: 2022-11-15T19:25:44.919Z
 tags: 
