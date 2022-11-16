@@ -1,14 +1,16 @@
 ---
-title: Comparisons: second level
+title: Composition Comparisons
 description: 
 published: true
-date: 2022-11-15T11:06:17.532Z
+date: 2022-11-16T14:08:45.903Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:20:48.114Z
 ---
 
-# Second Level Comparisons 
+# Grape Comparisons 
+Comparisons by wine composition (the grape or set of grapes from which a wine is made) are second level comparisons according to the *AGReATWine* methodology. You can read more about different types of comparisons in the [fair comparison](/Documentation/wine-categories)
+
 ## By region
 - Italy
   - Alto Adige
