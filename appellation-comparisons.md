@@ -2,7 +2,7 @@
 title: Comparisons: appellations 
 description: 
 published: true
-date: 2022-11-15T11:06:52.679Z
+date: 2022-11-16T09:20:40.607Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:20:37.783Z
@@ -89,7 +89,7 @@ dateCreated: 2022-11-14T15:20:37.783Z
   - Colli D'Imola
 	- [Colli D'Imola Pignoletto](/Appellations/Italy/Emilia/DOC-Colli-D-Imola-Pignoletto)
   - [Colli Di Parma Lambrusco](/Appellations/Italy/Emilia/DOC-Colli-Di-Parma-Lambrusco)  
-  - [Colli Di Scandiano E Canossa Lambrusco](/Appellations/Italy/Emilia/DOC-Colli-Di-Scandiano-E-Canossa-Lambrusco)  
+  - [Colli Di Scandiano E Canossa Lambrusco](/Appellations/Italy/Emilia/DOC-Colli-Di-Scandiano-E-Di-Canossa-Lambrusco)  
   - [Lambrusco Di Sorbara](/Appellations/Italy/Emilia/DOC-Lambrusco-Di-Sorbara)
   - [Lambrusco Grasparossa](/Appellations/Italy/Emilia/DOC-Lambrusco-Grasparossa)
   - [Lambrusco Mantovano](/Appellations/Italy/Emilia/DOC-Lambrusco-Mantovano)
@@ -98,7 +98,6 @@ dateCreated: 2022-11-14T15:20:37.783Z
     - [Modena Lambrusco](/Appellations/Italy/Emilia/DOC-Modena-Lambrusco)
     - [Modena Pignoletto](/Appellations/Italy/Emilia/DOC-Modena-Pignoletto)
   - [Reggiano](/Appellations/Italy/Emilia/DOC-Reggiano)
-  - [Reno Lambrusco](/Appellations/Italy/Emilia/DOC-Reno-Lambrusco)
 - Friuli
    - Collio
      - [Collio Friulano](/Appellations/Italy/Friuli-Venezia-Giulia/DOC-Friuli-Collio-Friulano)
