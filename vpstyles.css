@@ -815,6 +815,9 @@ table.summary-table td:nth-child(1n+4) {text-align: right;}
 .basic-data div:nth-child(odd),.comparison div:nth-child(odd){
   font-weight:bold
 }
+.basic-data .winery{
+ padding-right: 33px 
+}
 /* #endregion basic data*/
 
 /* #region vintages*/

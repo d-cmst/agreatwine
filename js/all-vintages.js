@@ -65,7 +65,7 @@ export function allVintages(regionS, headlineArray, listCheck) {
           }
           </div>
           <div class="basic-data">
-          <div>Winery: </div><div><a href="/en/Wineries/Italy/${sanitizeInputCc(avRegion)}/${sanitizeInputCc(avWineryName)}.html">${avWineryName}</a></div>
+          <div class="winery">Winery: </div><div><a href="/en/Wineries/Italy/${sanitizeInputCc(avRegion)}/${sanitizeInputCc(avWineryName)}.html">${avWineryName}</a></div>
           <div>Grapes: </div><div>${avGrapes}</div>
           <div>Aging: </div><div>${avAgingMonths} months in ${avAgingType}</div>
           <div>Alcohol: </div><div>${avAlcohol}°</div>
