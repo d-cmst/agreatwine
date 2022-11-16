@@ -100,9 +100,8 @@ const listCheck = document.querySelector("div[role='list'] .v-list-item__title")
         const region = headlineCaptionArray[2]
         const regionS = sanitizeInput(region)
         wineryPage(wineryName, wineryNameS, region, regionS, countryName, years, listCheck)
-    }
-    // denominazione table
-    if (window.location.href.indexOf("/Appellations/") != -1) {
+        document.querySelector('.contents').style.opacity = "1"
+    } else if (window.location.href.indexOf("/Appellations/") != -1) {
         const headlineTitle = document.querySelector(".headline").innerText
         const headlineCaption = document.querySelector(".caption").innerText.split(' | ')
         const pageCat = headlineCaption[0]
@@ -111,18 +110,11 @@ const listCheck = document.querySelector("div[role='list'] .v-list-item__title")
         const regionS = sanitizeInput(region)
         const regionCc = sanitizeInputCc(region)
         denominazioneSummaryTable(headlineTitle, pageCat, region, regionS, regionCc, country, years, listCheck) 
-    } 
-    
-    //status
-    if (window.location.href.indexOf("/status") != -1) {
+        document.querySelector('.contents').style.opacity = "1"
+    } else if (window.location.href.indexOf("/status") != -1) {
         statusTable()
-    }
-    // vitigni first word bold
-    //if (window.location.href.indexOf("/vitigni/") != -1) {
-    //    firstWordBold()
-    //}
-    // scheda globale import csv
-    if (window.location.href.indexOf("/all-vintages") != -1) {
+        document.querySelector('.contents').style.opacity = "1"
+    } else if (window.location.href.indexOf("/all-vintages") != -1) {
         //
         //page headline input
         //
@@ -134,10 +126,10 @@ const listCheck = document.querySelector("div[role='list'] .v-list-item__title")
         //function exec
         //
         allVintages(regionS, headlineArray,listCheck)
-    }
-    // scheda singola import csv
-    if (window.location.href.indexOf("vintage-") != -1) {
+    } else if (window.location.href.indexOf("vintage-") != -1) {
         schedaSingolaImport()
+        document.querySelector('.contents').style.opacity = "1"
+    } else {
+     document.querySelector('.contents').style.opacity = "1"
     }
-    document.querySelector('.contents').style.opacity = "1"
 })
