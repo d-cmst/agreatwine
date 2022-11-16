@@ -28,6 +28,7 @@ export function allVintages(regionS, headlineArray, listCheck) {
       const avPairingArray = avPairing.split(' – ')
       const avNotes = csv.filter(allVintagesData)[0].Notes;
       const avSLC = csv.filter(allVintagesData)[0].SLC;
+      const avTLC = csv.filter(allVintagesData)[0].TLC;
       //AllVintagesData ScoreAIS
       const avRS = csv.filter(allVintagesData)[0].RS;
       const avQP = csv.filter(allVintagesData)[0].QP;
@@ -49,14 +50,26 @@ export function allVintages(regionS, headlineArray, listCheck) {
 
       //HTML templates
       const htmlTemplateBasicData =`
+          <div class="basic-data">
           <div>Wine Name: </div><div>${avFullName}</div>
           <div>Wine Type: </div><div class="winetype">${avWineType}</div>
+          </div>
+          <div class="comparison">
           <div>Appellation: </div><div><a class="appellation" href="/en/Appellations/Italy/${sanitizeInputCc(avRegion)}/${avAppellationLevel}-${sanitizeInputCc(avAppellationName)}.html">${avAppellationLevel} ${avAppellationName}</a></div>
+          ${avSLC == "" ? "" : 
+            `<div>2nd Level: </div><div><a class="second-level" href="/en/Appellations/Italy/${sanitizeInputCc(avRegion)}/${sanitizeInputCc(avSLC)}.html">${avSLC}</a></div>`
+          }
+          ${avTLC == "" ? "" : 
+            `<div>3nd Level: </div><div><a class="third-level" href="/en/Appellations/Italy/${sanitizeInputCc(avRegion)}/${sanitizeInputCc(avTLC)}.html">${avTLC}</a></div>`
+          }
+          </div>
+          <div class="basic-data">
           <div>Winery: </div><div><a href="/en/Wineries/Italy/${sanitizeInputCc(avRegion)}/${sanitizeInputCc(avWineryName)}.html">${avWineryName}</a></div>
           <div>Grapes: </div><div>${avGrapes}</div>
           <div>Aging: </div><div>${avAgingMonths} months in ${avAgingType}</div>
           <div>Alcohol: </div><div>${avAlcohol}°</div>
           <div>Price: </div><div>${avPrice}€</div>
+          </div>
       `
       const rs2Template = `
           <div class="rs2-label">2nd Level Relative Score</div><div class="rs2" title="${avRS2}" data-content="${avRS2}" style="width:${avRS2}%"></div>

@@ -799,12 +799,20 @@ table.summary-table td:nth-child(1n+4) {text-align: right;}
 /* #endregion */
 
 /* #region basic data*/
-.t1:nth-of-type(2){
+.basic-data,.comparison{
   display:grid;
   column-gap: 20px;
   grid-template-columns: max-content auto
 }
-div.t1:nth-of-type(2) div:nth-child(odd){
+.comparison{
+  width: max-content;
+  background: url(brush.svg);
+  padding-right:10px;
+  background-repeat: no-repeat;
+  background-position: -8px center;
+  background-size: cover;
+}
+.basic-data div:nth-child(odd),.comparison div:nth-child(odd){
   font-weight:bold
 }
 /* #endregion basic data*/
@@ -1697,3 +1705,7 @@ max-width: 350px
   
 }
 /* #endregion scores */
+.contents{
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
