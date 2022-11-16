@@ -10,11 +10,12 @@ dateCreated: 2022-11-14T11:25:34.677Z
 
 # Documentation Index
 
-1. [Why another Wine Scores Website](/Documentation/why-this-website)
-2. [Relative Score](/Documentation/relative-score)
-3. [Wine Categories](/Documentation/wine-categories)
+1. [About](/Documentation/about.md)
+2. [Why another Wine Scores Website](/Documentation/why-this-website)
+3. [Relative Score](/Documentation/relative-score)
+4. [Wine Categories](/Documentation/wine-categories)
 
 # Technical Index
-
+98. [Technical Stuff](/Documentation/technical-stuff)
 98. [Status](/Documentation/status)
 99. [Changelog](/Documentation/changelog)
