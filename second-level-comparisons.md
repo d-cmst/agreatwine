@@ -1,15 +1,15 @@
 ---
-title: Composition Comparisons
+title: Composition Comparisons²
 description: 
 published: true
-date: 2022-11-16T14:08:45.903Z
+date: 2022-11-16T14:16:31.319Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:20:48.114Z
 ---
 
-# Grape Comparisons 
-Comparisons by wine composition (the grape or set of grapes from which a wine is made) are second level comparisons according to the *AGReATWine* methodology. You can read more about different types of comparisons in the [fair comparison](/Documentation/wine-categories)
+# Grape Comparisons² 
+Comparisons by wine composition (the grape or set of grapes from which a wine is made) are second level comparisons according to the *AGReATWine* methodology. You can read more about different types of comparisons in the [fair comparison](/Documentation/wine-categories) page.
 
 ## By region
 - Italy
