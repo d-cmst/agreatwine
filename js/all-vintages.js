@@ -142,6 +142,7 @@ export function allVintages(regionS, headlineArray, listCheck) {
       }  
       
   }).then(function() {
+      document.querySelector('.contents').style.opacity = "1"
       priceChart(regionS, headlineArray)
   })
 }
