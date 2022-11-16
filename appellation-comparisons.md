@@ -2,7 +2,7 @@
 title: Comparisons: appellations 
 description: 
 published: true
-date: 2022-11-16T09:20:40.607Z
+date: 2022-11-16T09:26:29.565Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:20:37.783Z
@@ -156,4 +156,4 @@ dateCreated: 2022-11-14T15:20:37.783Z
     - [Vigneti Delle Dolomiti Pinot Bianco](/Appellations/Italy/Alto-Adige/IGT-Vigneti-Delle-Dolomiti-Pinot-Bianco)
 - Friuli
   - Venezia Giulia
-    - [Venezia Giulia Ribolla Gialla](/Appellations/Italy/Friuli/IGT-Venezia-Giulia-Ribolla-Gialla)
+    - [Venezia Giulia Ribolla Gialla](/Appellations/Italy/Friuli-Venezia-Giulia/IGT-Venezia-Giulia-Ribolla-Gialla)
