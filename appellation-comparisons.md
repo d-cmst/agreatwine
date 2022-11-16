@@ -1,8 +1,8 @@
 ---
-title: Comparisons: appellations 
+title: Appellation Comparisons
 description: 
 published: true
-date: 2022-11-16T09:26:29.565Z
+date: 2022-11-16T14:04:00.737Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:20:37.783Z
