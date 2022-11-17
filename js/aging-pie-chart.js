@@ -37,11 +37,29 @@ const sumValues = obj => Object.values(obj).reduce((a, b) => a + b, 0);
 
 let agingChartData = [];
 for (var key in result) {
-agingChartData.push({
-  name: key,
-  value: result[key]
-})
+    if (key == '-'){
+    agingChartData.push({name: key, value: result[key], color: 'lightgray'})
+  } else if (key == 'amphora'){
+    agingChartData.push({name: key, value: result[key], color: '#FEBD11'})
+  } else if (key == 'big oak'){
+    agingChartData.push({name: key, value: result[key], color: '#877366'})
+  } else if (key == 'concrete'){
+    agingChartData.push({name: key, value: result[key], color: 'gray'})
+  } else if (key == 'medium oak'){
+    agingChartData.push({name: key, value: result[key], color: '#958073'})
+  } else if (key == 'oak'){
+    agingChartData.push({name: key, value: result[key], color: '#a18e82'})
+  } else if (key == 'small oak'){
+    agingChartData.push({name: key, value: result[key], color: '#ac9c92'})
+  } else if (key == 'steel'){
+    agingChartData.push({name: key, value: result[key], color: '#84BAF0'})
+  } else if (key == 'sur lie'){
+    agingChartData.push({name: key, value: result[key], color: '#FFFC5C'})
+  } else {
+    agingChartData.push({name: "unknown", value: result[key], color: 'black'})
+  }
 };
+//agingChartData.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))  
 agingChartData.sort((a,b) => b.value - a.value);
 
 console.log(agingChartData)
@@ -50,7 +68,6 @@ var arc = d3.arc().outerRadius(100).innerRadius(0);
 var pie = d3.pie().value(function(d) {
 return d.value
 });
-var colors = d3.scaleOrdinal(d3.schemeCategory10)
 var svg = d3.select(".appellation-aging svg")
 .append("g")
 .attr("transform", "translate(100,100)")
@@ -59,8 +76,8 @@ svg.selectAll(null)
 .enter()
 .append("path")
 .attr("d", arc)
-.style("fill", function(d, i) {
-  return colors(i)
+.style("fill", function(d) {
+  return d.data.color
 })
 //
   var legendG = svg.selectAll("g .legend")
@@ -76,8 +93,8 @@ svg.selectAll(null)
     legendG.append("rect")
         .attr("width", 10)
         .attr("height", 10)
-        .attr("fill",  function(d, i) {
-  return colors(i)
+        .attr("fill",  function(d) {
+  return d.data.color
 });
   console.log()
           legendG.append("text")
