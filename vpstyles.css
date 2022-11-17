@@ -328,6 +328,22 @@ t1:nth-of-type(7) =
 .appellation-basic-data div:nth-child(1){
 padding-right: 57px;  
 }
+/*aging pie*/
+.appellation-aging{
+  display: grid;
+  grid-template-columns: auto;
+  padding-left: 20px;
+  width: 400px;
+  vertical-align: middle;
+  height: 230px;
+  justify-items:center;
+}
+.appellation-aging div{
+ font-size:120%;
+  font-weight: bold;
+}
+
+
 .denominazione-table td[data-th='Price']:after{
   content: '€'
 }
@@ -1110,9 +1126,9 @@ max-width: 350px
   width: 400px;
   /* padding-bottom: inherit; */
   vertical-align: middle;
-  /*overflow: scroll;*/
   max-width: 700px;
   height: 512px;
+  /* min-height: 100%; */
   resize: both;
 }
 @media only screen and (max-width:550px) {
@@ -1124,11 +1140,11 @@ max-width: 350px
 
 .svg-content {
   display: inline-block;
-	position: absolute;
-	top: 0;
-	left: 0;
-    resize: horizontal;
-    overflow: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  resize: horizontal;
+  overflow: auto;
 }
 /* #endregion */
 

@@ -1,4 +1,5 @@
-import {agingPie} from './aging-pie-chart.js';
+import { agingPie } from "./aging-pie-chart"
+
 export function denominazioneSummaryTable(headlineTitle, pageCat, region, regionS, regionCc, country, years, listCheck) {
   const typeCounterArray = document.querySelectorAll('.t1A')
   document.querySelector('h1').textContent = headlineTitle
@@ -335,10 +336,10 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
         document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(2)`).innerText = arrayWines.length
         document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(4)`).innerText = globalPrice + "€"
         document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(6)`).innerText = Math.max(...arrayPrice) + "€"
-        document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(8)`).innerText = globalAvg
-        //aging
+        document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(8)`).innerText = globalAvg    
+        //
         agingPie(allVintagesArray)
-    
+
   }).then(function() {
         myDataTable()
     })
