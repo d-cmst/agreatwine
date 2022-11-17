@@ -1,4 +1,4 @@
-import { agingPie } from "./aging-pie-chart"
+import { agingPie } from "./aging-pie-chart.js"
 
 export function denominazioneSummaryTable(headlineTitle, pageCat, region, regionS, regionCc, country, years, listCheck) {
   const typeCounterArray = document.querySelectorAll('.t1A')
