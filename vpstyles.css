@@ -329,10 +329,6 @@ t1:nth-of-type(7) =
 padding-right: 57px;  
 }
 /*aging pie*/
-.appellation-charts{
-  display: grid;
-  grid-template-columns: auto auto;
-}
 
 .appellation-aging,.appellation-pricing{
   display: grid;
@@ -344,8 +340,19 @@ padding-right: 57px;
   justify-items:center;
 }
 .appellation-aging div,.appellation-pricing div{
- font-size:120%;
+
   font-weight: bold;
+}
+@media screen and (max-width: 599px) {
+.appellation-charts{
+  display: grid;
+  grid-template-columns: auto;
+}  
+.appellation-aging,.appellation-pricing{
+  max-width:90vw;
+  justify-items:left;
+  padding-left: 0px;
+}
 }
 
 

@@ -291,8 +291,7 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
                 <svg viewBox="0 0 400 400" preserveAspectRatio="xMinYMin meet"></svg>
               </div>
               <div class="appellation-pricing">
-                <div>Aging</div>
-                <svg viewBox="0 0 400 400" preserveAspectRatio="xMinYMin meet"></svg>
+                <div>Pricing</div>
               </div>
             </div>
           <div class="table-container" role="region" aria-labelledby="caption" tabindex="0">
