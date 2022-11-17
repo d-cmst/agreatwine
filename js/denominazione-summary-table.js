@@ -1,4 +1,5 @@
 import { agingPie } from "./aging-pie-chart.js"
+import {priceChartAppellation} from "./price-chart.js"
 
 export function denominazioneSummaryTable(headlineTitle, pageCat, region, regionS, regionCc, country, years, listCheck) {
   const typeCounterArray = document.querySelectorAll('.t1A')
@@ -339,6 +340,7 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
         document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(8)`).innerText = globalAvg    
         //
         agingPie(allVintagesArray)
+        priceChartAppellation(regionS, appellationName, wineType)
 
   }).then(function() {
         myDataTable()
