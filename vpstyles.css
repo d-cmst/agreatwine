@@ -317,6 +317,17 @@ t1:nth-of-type(7) =
 
 /* #region SUMMARY TABLES DENOMINAZIONE*/
 
+.appellation-basic-data,.appellation-stats{
+  display:grid;
+  column-gap: 20px;
+  grid-template-columns: max-content auto
+}
+.appellation-basic-data,.appellation-stats div:nth-child(odd){
+  font-weight: bold
+}
+.appellation-basic-data div:nth-child(1){
+padding-right: 57px;  
+}
 .denominazione-table td[data-th='Price']:after{
   content: '€'
 }

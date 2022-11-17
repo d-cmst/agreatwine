@@ -270,18 +270,18 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
       }
       //templates
       const htmlTemplate = `
-        <ul>
-          <li><b>Name: </b><span class="denominazioneNome">${headlineTitle}</span></li>
-          <li><b>Region: </b><span class="denominazioneRegione">${region}</span></li>
+        <div class="appellation-basic-data">
+          <div><b>Name: </b></div><div class="denominazioneNome">${headlineTitle}</div>
+          <div><b>Region: </b></div><div class="denominazioneRegione">${region}</div>
           ${appellationsList()}
-        </ul>
+        </div>
         <div data-tab="${typeCounter}">
-          <ul class="appellation-stats">
-            <li>Wines listed: <span></span></li>
-            <li>Average Price: <span></span></li>
-            <li>Highest Price: <span></span></li>
-            <li>Raw Average Evaluation: <span></span></li>
-          </ul>
+            <div class="appellation-stats">
+                <div>Wines listed: </div><div></div>
+                <div>Average Price: </div><div></div>
+                <div>Highest Price: </div><div></div>
+                <div>Raw Avg: </div><div></div>
+            </div>
           <div class="table-container" role="region" aria-labelledby="caption" tabindex="0">
             <table class="denominazione-table">
               <thead>
@@ -327,11 +327,45 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
         const sumPrice = arrayPrice.reduce((a,b)=>a + b, 0);
         const globalPrice = ((sumPrice / arrayPrice.length) || 0).toFixed(0);
         //
-        document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats li:nth-child(1) span`).innerText = arrayWines.length
-        document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats li:nth-child(2) span`).innerText = globalPrice + "€"
-        document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats li:nth-child(3) span`).innerText = Math.max(...arrayPrice) + "€"
-        document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats li:nth-child(4) span`).innerText = globalAvg
-        //return RSper50;  
+        document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(2)`).innerText = arrayWines.length
+        document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(4)`).innerText = globalPrice + "€"
+        document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(6)`).innerText = Math.max(...arrayPrice) + "€"
+        document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(8)`).innerText = globalAvg
+        //aging
+        let agingTypeArray = []
+        for (const i of allVintagesArray){
+           if (i.AgingType.includes("+")){
+               const splitted = i.AgingType.split("+")
+               agingTypeArray.push(splitted[0])
+               agingTypeArray.push(splitted[1])
+           } else if (i.AgingType.includes("/")){
+               const splitted = i.AgingType.split("/")
+               agingTypeArray.push(splitted[0])
+               agingTypeArray.push(splitted[1])
+           } else {
+             agingTypeArray.push(i.AgingType)                    
+           }
+        }
+      
+        var counted = [];
+        var result = {};
+        agingTypeArray.forEach(type => {// refer to each item in this array with the parameter "answer"
+        if(!counted.includes(type)){ // check if answer is not in counted array
+            counted.push(type); // add the answer to counted [array]
+            result[type] = 1; // add answer to result{object} as a key with a value of 1
+        }else if(counted.includes(type)){// here we check if answer is in counted [array]
+            result[type] += 1    // now, we just need to increment its value by 1
+        }
+    })
+
+    console.log(result); // {true: 2, false: 3, not sure: 2, I don't know: 1}
+    const numOfOak = result["big oak"];
+
+    const sumValues = obj => Object.values(obj).reduce((a, b) => a + b, 0);
+
+
+    console.log(numOfOak);// 2
+    console.log(sumValues(result));// 2
   }).then(function() {
         myDataTable()
     })
