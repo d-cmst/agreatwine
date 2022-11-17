@@ -2,18 +2,32 @@ export function agingPie(allVintagesArray){
 
   let agingTypeArray = []
   for (const i of allVintagesArray){
-     if (i.AgingType.includes("+")){
-         const splitted = i.AgingType.split("+")
-         agingTypeArray.push(splitted[0])
-         agingTypeArray.push(splitted[1])
+     if (i.AgingType.includes("+") && i.AgingType.includes("/")){
+         const splitted = i.AgingType.split(/[+/]/)
+         const splittedClean = splitted.filter(x => x !== "sur lie");
+         agingTypeArray.push(splittedClean[0]) 
+         agingTypeArray.push(splittedClean[1])   
      } else if (i.AgingType.includes("/")){
          const splitted = i.AgingType.split("/")
-         agingTypeArray.push(splitted[0])
-         agingTypeArray.push(splitted[1])
+         const splittedClean = splitted.filter(x => x !== "sur lie");
+         agingTypeArray.push(splittedClean[0]) 
+         if (splittedClean[1]){
+           agingTypeArray.push(splittedClean[1])
+         }
+     }  else if (i.AgingType.includes("+")){
+         const splitted = i.AgingType.split("+")
+         const splittedClean = splitted.filter(x => x !== "sur lie");
+         agingTypeArray.push(splittedClean[0]) 
+       if (splittedClean[1]){
+         agingTypeArray.push(splittedClean[1])   
+       }
      } else {
-       agingTypeArray.push(i.AgingType)                    
+       if (i.AgingType !== "sur lie"){
+         agingTypeArray.push(i.AgingType)
+       }
      }
   }
+  console.log(agingTypeArray)
 
   var counted = [];
   var result = {};
@@ -53,8 +67,8 @@ for (var key in result) {
     agingChartData.push({name: key, value: result[key], color: '#ac9c92'})
   } else if (key == 'steel'){
     agingChartData.push({name: key, value: result[key], color: '#84BAF0'})
-  } else if (key == 'sur lie'){
-    agingChartData.push({name: key, value: result[key], color: '#FFFC5C'})
+  } else if (key == 'drying'){
+    agingChartData.push({name: key, value: result[key], color: '#642F45'})
   } else {
     agingChartData.push({name: "unknown", value: result[key], color: 'black'})
   }
