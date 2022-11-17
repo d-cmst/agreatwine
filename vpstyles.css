@@ -340,9 +340,12 @@ padding-right: 57px;
   justify-items:center;
 }
 .appellation-aging div,.appellation-pricing div{
-
   font-weight: bold;
 }
+.appellation-aging .pie{
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
 @media screen and (max-width: 599px) {
 .appellation-charts{
   display: grid;

@@ -71,6 +71,7 @@ return d.value
 var svg = d3.select(".appellation-aging svg")
 .append("g")
 .attr("transform", "translate(100,100)")
+.attr("class", "pie")  
 svg.selectAll(null)
 .data(pie(agingChartData))
 .enter()
@@ -79,13 +80,18 @@ svg.selectAll(null)
 .style("fill", function(d) {
   return d.data.color
 })
+.style("stroke", "white")
+.style("stroke-width", "0.5px")
 //
-  var legendG = svg.selectAll("g .legend")
+  const legendContainer =  d3.select(".appellation-aging svg").append("g")
+    .attr("class","legend-container")
+  
+  var legendG = legendContainer.selectAll(".legend")
   .data(pie(agingChartData))
   .enter()
   .append("g")
   .attr("transform", function(d,i){
-      return "translate(" + (130) + "," + (i * 22 + -80) + ")";
+      return "translate(" + (230) + "," + (i * 22 + 10) + ")";
   })
   .attr("class", "legend");  
 
