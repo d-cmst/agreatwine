@@ -29,7 +29,7 @@ export function allVintages(regionS, headlineArray, listCheck) {
       const avNotes = csv.filter(allVintagesData)[0].Notes;
       const avSLC = csv.filter(allVintagesData)[0].SLC;
       const avTLC = csv.filter(allVintagesData)[0].TLC;
-        console.log(avTLC)
+        
       //AllVintagesData ScoreAIS
       const avRS = csv.filter(allVintagesData)[0].RS;
       const avQP = csv.filter(allVintagesData)[0].QP;

@@ -26,14 +26,14 @@ export function agingPie(allVintagesArray){
   }
 })
 
-console.log(result); // {true: 2, false: 3, not sure: 2, I don't know: 1}
+
 const numOfOak = result["big oak"];
 
 const sumValues = obj => Object.values(obj).reduce((a, b) => a + b, 0);
 
 
-//console.log(numOfOak);// 2
-//console.log(sumValues(result));// 2
+//
+//
 
 let agingChartData = [];
 for (var key in result) {
@@ -62,7 +62,7 @@ for (var key in result) {
 //agingChartData.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))  
 agingChartData.sort((a,b) => b.value - a.value);
 
-console.log(agingChartData)
+
 
 var arc = d3.arc().outerRadius(100).innerRadius(0);
 var pie = d3.pie().value(function(d) {
@@ -102,7 +102,7 @@ svg.selectAll(null)
         .attr("fill",  function(d) {
   return d.data.color
 });
-  console.log()
+  
           legendG.append("text")
         .text(function(d){ 
             const percent = ((d.data.value * 100)/sumValues(result)).toFixed(0)
