@@ -150,13 +150,13 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   const line1 = d3.line()
   .x(d => xScale(d.x))
   .y(d => yScale(d.y))
-  .curve(d3.curveLinear)
+  .curve(d3.curveBasis)
 
   // this wine line
   const line2 = d3.line()
   .x(d => xScale(d.x))
   .y(d => yScale(d.y))
-  .curve(d3.curveLinear)
+  .curve(d3.curveBasis)
 
   // Add avg plot
   svg.append("path")
@@ -326,13 +326,13 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   const line1 = d3.line()
   .x(d => xScale(d.x))
   .y(d => yScale(d.y))
-  .curve(d3.curveLinear)
+  .curve(d3.curveBasis)
 
   // this wine line
   const line2 = d3.line()
   .x(d => xScale(d.x))
   .y(d => yScale(d.y))
-  .curve(d3.curveLinear)
+  .curve(d3.curveBasis)
 
   // Add avg plot
   svg.append("path")
