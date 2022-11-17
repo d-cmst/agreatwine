@@ -294,6 +294,7 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
                 <div>Pricing</div>
               </div>
             </div>
+          <div><b>Wines</b></div>
           <div class="table-container" role="region" aria-labelledby="caption" tabindex="0">
             <table class="denominazione-table">
               <thead>
