@@ -29,8 +29,6 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   .attr("viewBox", "0 0 512 512")
   .attr("preserveAspectRatio", "xMinYMin meet")
   .attr("class","svg-content")
-  //.attr("width", width + margin.left + margin.right)
-  //.attr("height", height + margin.top + margin.bottom)
   .append("g")
   .attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -223,18 +221,15 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   const filterTuttiDenominazione = function(d) {return d.WineType == wineType && d.AppellationName == appellationName && d.Entry === "2"}
   const tuttiDenominazione = csv.filter(filterTuttiDenominazione)    
   //Assi
-  const margin = {top: 50, right: 30, bottom: 30, left: 60},
-  width = 300 - margin.left - margin.right,
-  height = 350 - margin.top - margin.bottom;
+  const margin = {top: 20, right: 30, bottom: 10, left: 60},
+  width = 20,
+  height = 200
 
   // append the svg object to the body of the page
-  const svg = d3.select(".t1:nth-of-type(6)")
+  const svg = d3.select(".appellation-pricing")
   .append("svg")
-  .attr("viewBox", "0 0 512 512")
+  .attr("viewBox", "0 0 500 300")
   .attr("preserveAspectRatio", "xMinYMin meet")
-  .attr("class","svg-content")
-  //.attr("width", width + margin.left + margin.right)
-  //.attr("height", height + margin.top + margin.bottom)
   .append("g")
   .attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -255,7 +250,7 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   const xmin = Math.min(...tutteLeAnnate)
   const xmax = Math.max(...tutteLeAnnate)
   //Add X axis
-  const svgCont = document.querySelector(".t1:nth-of-type(6)")
+  const svgCont = document.querySelector(".appellation-pricing")
   const xScale = d3.scaleLinear()
     .domain([xmin,xmax])
     .range([ 0, svgCont.offsetWidth ]);
@@ -304,8 +299,6 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   tuttiIPrezzi = [...new Set(tuttiIPrezzi)].sort() //cancella duplicati
   let plotAvgMin = Math.min(...plotAvg.map(item => item.y))
   let plotAvgMax = Math.max(...plotAvg.map(item => item.y))
-  let plotWineMin = Math.min(...plotWine.map(item => item.y))
-  let plotWineMax = Math.max(...plotWine.map(item => item.y))
   
   let ymin = plotAvgMin 
   let ymax = plotAvgMax
