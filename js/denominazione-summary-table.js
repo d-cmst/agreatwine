@@ -244,7 +244,7 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
         let tableHead = d3.select(`div[data-tab="${typeCounter}"] .denominazione-table thead tr`)
         tableHead.append("th").text("Winery")
         tableHead.append("th").text("Wine")
-        tableHead.append("th").text("Raw Avg Ev")
+        tableHead.append("th").text("Raw-Avg-Ev")
         tableHead.append("th").text("Price")
         tableHead.append("th").text("RS")
         tableHead.append("th").text("QP")
