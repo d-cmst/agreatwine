@@ -1,3 +1,4 @@
+import {agingPie} from './aging-pie-chart.js';
 export function denominazioneSummaryTable(headlineTitle, pageCat, region, regionS, regionCc, country, years, listCheck) {
   const typeCounterArray = document.querySelectorAll('.t1A')
   document.querySelector('h1').textContent = headlineTitle
@@ -282,6 +283,10 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
                 <div>Highest Price: </div><div></div>
                 <div>Raw Avg: </div><div></div>
             </div>
+            <div class="appellation-aging">
+            <div>Aging</div>
+            <svg viewBox="0 0 400 400" preserveAspectRatio="xMinYMin meet"></svg>
+            </div>
           <div class="table-container" role="region" aria-labelledby="caption" tabindex="0">
             <table class="denominazione-table">
               <thead>
@@ -332,40 +337,8 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
         document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(6)`).innerText = Math.max(...arrayPrice) + "€"
         document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(8)`).innerText = globalAvg
         //aging
-        let agingTypeArray = []
-        for (const i of allVintagesArray){
-           if (i.AgingType.includes("+")){
-               const splitted = i.AgingType.split("+")
-               agingTypeArray.push(splitted[0])
-               agingTypeArray.push(splitted[1])
-           } else if (i.AgingType.includes("/")){
-               const splitted = i.AgingType.split("/")
-               agingTypeArray.push(splitted[0])
-               agingTypeArray.push(splitted[1])
-           } else {
-             agingTypeArray.push(i.AgingType)                    
-           }
-        }
-      
-        var counted = [];
-        var result = {};
-        agingTypeArray.forEach(type => {// refer to each item in this array with the parameter "answer"
-        if(!counted.includes(type)){ // check if answer is not in counted array
-            counted.push(type); // add the answer to counted [array]
-            result[type] = 1; // add answer to result{object} as a key with a value of 1
-        }else if(counted.includes(type)){// here we check if answer is in counted [array]
-            result[type] += 1    // now, we just need to increment its value by 1
-        }
-    })
-
-    console.log(result); // {true: 2, false: 3, not sure: 2, I don't know: 1}
-    const numOfOak = result["big oak"];
-
-    const sumValues = obj => Object.values(obj).reduce((a, b) => a + b, 0);
-
-
-    console.log(numOfOak);// 2
-    console.log(sumValues(result));// 2
+        agingPie(allVintagesArray)
+    
   }).then(function() {
         myDataTable()
     })
