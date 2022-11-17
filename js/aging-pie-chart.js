@@ -1,4 +1,4 @@
-export function agingPie(allVintagesArray){
+export function agingPie(allVintagesArray, typeCounter){
 
   let agingTypeArray = []
   for (const i of allVintagesArray){
@@ -82,7 +82,7 @@ var arc = d3.arc().outerRadius(100).innerRadius(0);
 var pie = d3.pie().value(function(d) {
 return d.value
 });
-var svg = d3.select(".appellation-aging svg")
+var svg = d3.select(`div[data-tab="${typeCounter}"] .appellation-aging svg`)
 .append("g")
 .attr("transform", "translate(100,100)")
 .attr("class", "pie")  
@@ -97,7 +97,7 @@ svg.selectAll(null)
 .style("stroke", "white")
 .style("stroke-width", "0.5px")
 //
-  const legendContainer =  d3.select(".appellation-aging svg").append("g")
+  const legendContainer =  d3.select(`div[data-tab="${typeCounter}"] .appellation-aging svg`).append("g")
     .attr("class","legend-container")
   
   var legendG = legendContainer.selectAll(".legend")

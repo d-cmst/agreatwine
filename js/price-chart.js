@@ -95,7 +95,7 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
         y : avgPrice
       }
     plotWine.push(pointWinePlot)
-      
+      console.log(pointWinePlot)
     }
   }
   
@@ -150,13 +150,13 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   const line1 = d3.line()
   .x(d => xScale(d.x))
   .y(d => yScale(d.y))
-  .curve(d3.curveNatural)
+  .curve(d3.curveBasis)
 
   // this wine line
   const line2 = d3.line()
   .x(d => xScale(d.x))
   .y(d => yScale(d.y))
-  .curve(d3.curveNatural)
+  .curve(d3.curveLinear)
 
   // Add avg plot
   svg.append("path")
@@ -204,7 +204,7 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
 })
 }
 
-export function priceChartAppellation(regionS, appellationName, wineType){
+export function priceChartAppellation(regionS, appellationName, wineType, typeCounter){
   //median calculator function
   const myMedian = arr => {
   const mid = Math.floor(arr.length / 2),
@@ -226,7 +226,7 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   height = 200
 
   // append the svg object to the body of the page
-  const svg = d3.select(".appellation-pricing")
+  const svg = d3.select(`div[data-tab="${typeCounter}"] .appellation-pricing`)
   .append("svg")
   .attr("viewBox", "0 0 500 300")
   .attr("preserveAspectRatio", "xMinYMin meet")
@@ -250,7 +250,7 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   const xmin = Math.min(...tutteLeAnnate)
   const xmax = Math.max(...tutteLeAnnate)
   //Add X axis
-  const svgCont = document.querySelector(".appellation-pricing")
+  const svgCont = document.querySelector(`div[data-tab="${typeCounter}"] .appellation-pricing`)
   const xScale = d3.scaleLinear()
     .domain([xmin,xmax])
     .range([ 0, svgCont.offsetWidth ]);
@@ -326,13 +326,13 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   const line1 = d3.line()
   .x(d => xScale(d.x))
   .y(d => yScale(d.y))
-  .curve(d3.curveNatural)
+  .curve(d3.curveBasis)
 
   // this wine line
   const line2 = d3.line()
   .x(d => xScale(d.x))
   .y(d => yScale(d.y))
-  .curve(d3.curveNatural)
+  .curve(d3.curveLinear)
 
   // Add avg plot
   svg.append("path")

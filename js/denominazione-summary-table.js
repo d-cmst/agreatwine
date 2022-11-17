@@ -345,8 +345,8 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
         document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(6)`).innerText = Math.max(...arrayPrice) + "€"
         document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(8)`).innerText = globalAvg    
         //
-        agingPie(allVintagesArray)
-        priceChartAppellation(regionS, appellationName, wineType)
+        agingPie(allVintagesArray, typeCounter)
+        priceChartAppellation(regionS, appellationName, wineType, typeCounter)
 
   }).then(function() {
         myDataTable()
