@@ -285,9 +285,15 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
                 <div>Highest Price: </div><div></div>
                 <div>Raw Avg: </div><div></div>
             </div>
-            <div class="appellation-aging">
-            <div>Aging</div>
-            <svg viewBox="0 0 400 400" preserveAspectRatio="xMinYMin meet"></svg>
+            <div class="appellation-charts">
+              <div class="appellation-aging">
+                <div>Aging</div>
+                <svg viewBox="0 0 400 400" preserveAspectRatio="xMinYMin meet"></svg>
+              </div>
+              <div class="appellation-pricing">
+                <div>Aging</div>
+                <svg viewBox="0 0 400 400" preserveAspectRatio="xMinYMin meet"></svg>
+              </div>
             </div>
           <div class="table-container" role="region" aria-labelledby="caption" tabindex="0">
             <table class="denominazione-table">
