@@ -281,7 +281,7 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
         <div data-tab="${typeCounter}">
             <div class="appellation-stats">
                 <div>Wines listed: </div><div></div>
-                <div>Average Price: </div><div></div>
+                <div>Median Price: </div><div></div>
                 <div>Highest Price: </div><div></div>
                 <div>Raw Avg: </div><div></div>
             </div>
@@ -337,11 +337,18 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
             arrayPriceString.push(i.innerText)
         }
         const arrayPrice = arrayPriceString.map(Number)
+        //median calculator function
+        const myMedian = arr => {
+            const mid = Math.floor(arr.length / 2),
+                nums = [...arr].sort((a, b) => a - b);
+            return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
+        };
         const sumPrice = arrayPrice.reduce((a,b)=>a + b, 0);
-        const globalPrice = ((sumPrice / arrayPrice.length) || 0).toFixed(0);
+        //prefer median over avg
+        //const globalPrice = ((sumPrice / arrayPrice.length) || 0).toFixed(0);
         //
         document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(2)`).innerText = arrayWines.length
-        document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(4)`).innerText = globalPrice + "€"
+        document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(4)`).innerText = myMedian(arrayPrice) + "€"
         document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(6)`).innerText = Math.max(...arrayPrice) + "€"
         document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(8)`).innerText = globalAvg    
         //
