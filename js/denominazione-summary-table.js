@@ -330,15 +330,15 @@ const RSper25 = arrayRSSort[RSper25Calc];
           produttoreBodyRow.append("td").attr("data-th", "Price").html(`${calcPrice(i)}`)
           produttoreBodyRow.append("td").attr("data-th", "RS").attr("title", `${RS}`).style("width", function(d) {
               if (RS > RSper90) {
-                    return "100%"    
+                    return (100 * 90) / 100 + "%"     
                 } else if (RS <= RSper90 && RS >= RSper75) {
-                    return "75%" 
+                    return  (75 * 90) / 100 + "%" 
                 } else if (RS < RSper75 && RS > RSper50) {
-                    return "50%" 
+                    return  (50 * 90) / 100 + "%" 
                 } else if (RS < RSper50 && RS > RSper25) {
-                    return "25%" 
+                    return  (25 * 90) / 100 + "%" 
                 } else if (RS <= RSper25) {
-                    return "1%" 
+                    return  (1 * 90) / 100 + "%"  
                 }
           }).attr("class", function(d) {
               if (RS > RSper90) {
@@ -355,15 +355,15 @@ const RSper25 = arrayRSSort[RSper25Calc];
           }).text(`${RS}`)
           produttoreBodyRow.append("td").attr("data-th", "QP").attr("title", `${QP}`).style("width", function(d) {
               if (QP > QPper90) {
-                    return "100%"    
+                    return  (100 * 90) / 100 + "%"    
               } else if (QP <= QPper90 && QP >= QPper75) {
-                 return "75%" 
+                 return  (75 * 90) / 100 + "%" 
               } else if (QP < QPper75 && QP > QPper50) {
-                 return "50%" 
+                 return  (50 * 90) / 100 + "%" 
               } else if (QP < QPper50 && QP > QPper25) {
-                 return "25%" 
+                 return  (25 * 90) / 100 + "%" 
              } else if (QP <= QPper25) {
-                 return "1%" 
+                 return  (1 * 90) / 100 + "%"  
             }
           }).attr("class", function(d) {
               if (QP > QPper90) {
