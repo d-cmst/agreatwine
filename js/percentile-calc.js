@@ -91,6 +91,7 @@ function  rawCalcRS(input, rslevel){
           //
           const awardArray = csv.filter(awardFilter)
           const rslevel = "rs3"
+          const qplevel = "qp3"
           //
           let percentileArray =  rawCalcrs3(awardArray, rs3level)
           if (document.querySelector(".rs3").getAttribute('data-content') > percentileArray[0]){
@@ -127,6 +128,7 @@ function  rawCalcRS(input, rslevel){
           }
           const awardArray = csv.filter(awardFilter)
           const rslevel = "rs2"
+          const qplevel = "qp2"
           //
           let percentileArray =  rawCalcRS(awardArray, rslevel)
           if (document.querySelector(".rs2").getAttribute('data-content') > percentileArray[0]){
@@ -164,6 +166,7 @@ function  rawCalcRS(input, rslevel){
           //
           const awardArray = csv.filter(awardFilter)
           const rslevel = "rs"
+          const qplevel = "qp"
           //
           let percentileArray =  rawCalcRS(awardArray, rslevel)
           if (document.querySelector(".rs").getAttribute('data-content') > percentileArray[0]){
