@@ -46,7 +46,7 @@ function  rawCalcRS(input, rslevel){
     for (const j of input) {
        arrayQPString.push(j.QP3)
         } 
-    } else if (QPlevel == "QP2"){
+    } else if (qplevel == "QP2"){
       for (const j of input) {
        arrayQPString.push(j.QP2)
         }
