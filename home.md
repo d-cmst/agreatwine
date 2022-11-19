@@ -2,7 +2,7 @@
 title: AGReATWine
 description: Another Geeky Retrospective Aggregator Tool (for) Wine
 published: true
-date: 2022-11-19T17:59:38.072Z
+date: 2022-11-19T18:23:31.000Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-16T17:39:08.270Z
@@ -18,7 +18,7 @@ Tool
 //for
 Wine
 ```
-> This website Is in heavy development. Do not surf. Do not report bugs. Do not.
+> This website Is in heavy development. Full of typos. Do not surf. Do not report bugs unless you have a fix.
 {.is-warning}
 
 
