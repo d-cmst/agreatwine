@@ -109,7 +109,7 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
             for (const k of singleVintageArray) {
                 d3.select(`div[data-tab="${typeCounter}"] .denominazione-table tr[data-th="${k.WineryName}-${k.FullName}"] td[data-th="${k.Vintage}"]`).attr("title", `${k.EvaluationAvg}`).text(`${k.EvaluationAvg}`)
             }
-        }).then(awardAdd).then(destroyEmptiness)
+        }).then(destroyEmptiness)//awardAdd
     }
     //singleWineFill
     function singleWineFill() {
@@ -132,7 +132,7 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
             for (const j of singleVintagesArray) {
                 d3.select(`div[data-tab="${typeCounter}"] table tr[data-th="${j.WineryName}-${j.FullName}"] td[data-th="${j.Vintage}"]`).attr("title", `${j.EvaluationAvg}`).text(`${j.EvaluationAvg}`)
             }
-        }).then(awardAdd).then(destroyEmptiness)
+        }).then(destroyEmptiness)//then(awardAdd)
     }
     //datatable
     function myDataTable() {
@@ -254,6 +254,66 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
       }
       //table row pop
       function tableRow(){
+          //RS calc
+          const arrayRSString = []
+            for (const j of allVintagesArray) {
+                let RS
+                let QP
+                if(pageCat == "Second Level Comparison"){RS = j.RS2} else if(pageCat == "Third Level Comparison"){RS = j.RS3} else {RS = j.RS}
+                arrayRSString.push(RS)
+            }
+            const arrayRS = arrayRSString.map(Number)
+            const sumRS = arrayRS.reduce((a,b)=>a + b, 0);
+            let globalRS = ((sumRS / arrayRS.length) || 0).toFixed(1);
+            //
+            const arrayRSSort = arrayRS.slice().sort((a,b)=>a - b);
+            let arrayRSLength = arrayRSSort.length;
+            let middleIndex = Math.floor(arrayRSLength / 2);
+            let oddLength = arrayRSLength % 2 != 0;
+            let medianRS;
+            if (oddLength) {
+                // if array length is odd -> return element at middleIndex
+                medianRS = arrayRSSort[middleIndex];
+            } else {
+                medianRS = (arrayRSSort[middleIndex] + arrayRSSort[middleIndex - 1]) / 2;
+            }
+            const RSper90Calc = Math.floor(arrayRSLength * .9) - 1;
+            const RSper75Calc = Math.floor(arrayRSLength * .75) - 1;
+            const RSper50Calc = Math.floor(arrayRSLength * .5) - 1;
+            const RSper90 = arrayRSSort[RSper90Calc];
+            const RSper75 = arrayRSSort[RSper75Calc];
+            const RSper50 = arrayRSSort[RSper50Calc];
+          //
+          //QP calc
+          const arrayQPString = []
+            for (const j of allVintagesArray) {
+                let RS
+                let QP
+                if(pageCat == "Second Level Comparison"){QP = j.QP2} else if(pageCat == "Third Level Comparison"){QP = j.QP3} else {QP = j.QP}
+                arrayQPString.push(QP)
+            }
+            const arrayQP = arrayQPString.map(Number)
+            const sumQP = arrayQP.reduce((a,b)=>a + b, 0);
+            let globalQP = ((sumQP / arrayQP.length) || 0).toFixed(1);
+            //
+            const arrayQPSort = arrayQP.slice().sort((a,b)=>a - b);
+            let arrayQPLength = arrayQPSort.length;
+            let middleIndexQP = Math.floor(arrayQPLength / 2);
+            let oddLengthQP = arrayQPLength % 2 != 0;
+            let medianQP;
+            if (oddLengthQP) {
+                // if array length is odd -> return element at middleIndex
+                medianQP = arrayQPSort[middleIndexQP];
+            } else {
+                medianQP = (arrayQPSort[middleIndexQP] + arrayQPSort[middleIndexQP - 1]) / 2;
+            }
+            const QPper90Calc = Math.floor(arrayQPLength * .9) - 1;
+            const QPper75Calc = Math.floor(arrayQPLength * .75) - 1;
+            const QPper50Calc = Math.floor(arrayQPLength * .5) - 1;
+            const QPper90 = arrayQPSort[QPper90Calc];
+            const QPper75 = arrayQPSort[QPper75Calc];
+            const QPper50 = arrayQPSort[QPper50Calc];
+            //
           for (const i of allVintagesArray) {
             let RS
             let QP
@@ -264,11 +324,47 @@ export function denominazioneSummaryTable(headlineTitle, pageCat, region, region
           produttoreBodyRow.append("td").attr("data-th", "Raw-Avg-Ev").text(`${i.RawAvg}`)
           produttoreBodyRow.append("td").attr("data-th", "Price").html(`${calcPrice(i)}`)
           produttoreBodyRow.append("td").attr("data-th", "RS").attr("title", `${RS}`).style("width", function(d) {
-              return ((RS * 90) / 100) + "%"
+              if (RS > RSper90) {
+                    return ((100 * 90) / 100) + "%"    
+                } else if (RS <= RSper90 && RS >= RSper75) {
+                    return ((75 * 90) / 100) + "%"
+                } else if (RS < RSper75 && RS > RSper50) {
+                    return ((50 * 90) / 100) + "%"
+                } else if (RS <= RSper50) {
+                    return ((1 * 90) / 100) + "%"
+                }
+          }).attr("class", function(d) {
+              if (RS > RSper90) {
+                    return "p100"    
+                } else if (RS <= RSper90 && RS >= RSper75) {
+                   return "p75" 
+                } else if (RS < RSper75 && RS > RSper50) {
+                    return "p50" 
+                } else if (RS <= RSper50) {
+                    return "p1" 
+                }
           }).text(`${RS}`)
           produttoreBodyRow.append("td").attr("data-th", "QP").attr("title", `${QP}`).style("width", function(d) {
-              return ((QP * 90) / 100) + "%"
-          }).text(`${QP}`)
+              if (QP > QPper90) {
+                    return ((100 * 90) / 100) + "%"
+                } else if (QP <= QPper90 && QP >= QPper75) {
+                    return ((75 * 90) / 100) + "%"
+                } else if (QP < QPper75 && QP > QPper50) {
+                    return ((50 * 90) / 100) + "%"
+                } else if (QP <= QPper50) {
+                    return ((1 * 90) / 100) + "%"
+                }
+          }).attr("class", function(d) {
+              if (QP > QPper90) {
+                    return "p100"    
+                } else if (QP <= QPper90 && QP >= QPper75) {
+                   return "p75" 
+                } else if (QP < QPper75 && QP > QPper50) {
+                    return "p50" 
+                } else if (QP <= QPper50) {
+                    return "p1" 
+                }
+           }).text(`${QP}`)
         }
       }
       //templates

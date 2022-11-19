@@ -125,8 +125,8 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
         wineryTableBodyRow.append("td").attr("data-th", "Wine").attr("title", `${i.FullName}`).html(`<a href="/en/Wines/${countryName}/${regionS}/${wineryNameS}/${i.FullName.replaceAll(' ', '-').replaceAll("'", '-')}/all-vintages.html">${i.FullName}</a>`)
         wineryTableBodyRow.append("td").attr("data-th", "Raw-Avg-Ev").text(`${i.RawAvg}`)
         wineryTableBodyRow.append("td").attr("data-th", "Price").html(`${calcPrice(i)}`)
-        wineryTableBodyRow.append("td").attr("data-th", "RS").attr("title", `${i.RS}`).style("width", function (d) {return ((i.RS*90)/100) + "%"}).text(`${i.RS}`)
-        wineryTableBodyRow.append("td").attr("data-th", "QP").attr("title", `${i.QP}`).style("width", function (d) {return ((i.QP*90)/100) + "%"}).text(`${i.QP}`)
+        wineryTableBodyRow.append("td").attr("data-th", "RS").attr("title", `${i.RS}`).text(`${i.RS}`)
+        wineryTableBodyRow.append("td").attr("data-th", "QP").attr("title", `${i.QP}`).text(`${i.QP}`)
         for (const j in years) {
             wineryTableBodyRow.append("td").attr("data-th", `${years[j]}`).attr("title", "sv").text("sv")
         }  
@@ -134,8 +134,9 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
       //90percentile
       for (const i of allVintagesArray){
           const denominazioneTemp = i.AppellationName
+          const wineTypeTemp = i.WineType
           const denominazioneFilter = function(d) {
-              return d.AppellationName == denominazioneTemp && d.Entry === "1"
+              return d.AppellationName == denominazioneTemp && d.WineType == wineTypeTemp && d.Entry === "1"
           }
           const denominazioneList = csv.filter(denominazioneFilter)
           const arrayRSString = []
@@ -159,15 +160,81 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
           const RSper90 = arrayRSSort[RSper90Calc];
           const RSper75 = arrayRSSort[RSper75Calc];
           const RSper50 = arrayRSSort[RSper50Calc];
-          if (i.RS > RSper90) {
-            document.querySelector(`table tr[data-th="${i.WineryName}-${i.FullName}"] td[data-th='Wine']`).classList.add("award90")
-          } else if (i.RS <= RSper90 && i.RS >= RSper75) {
-            document.querySelector(`table tr[data-th="${i.WineryName}-${i.FullName}"] td[data-th='Wine']`).classList.add("award75")
-          } else if (i.RS < RSper75 && i.RS >= RSper50) {
-            document.querySelector(`table tr[data-th="${i.WineryName}-${i.FullName}"] td[data-th='Wine']`).classList.add("award51")
-          } else if (i.RS < RSper50) {
-            document.querySelector(`table tr[data-th="${i.WineryName}-${i.FullName}"] td[data-th='Wine']`).classList.add("award50")
+          //QP calc
+          const arrayQPString = []
+          for (const j of denominazioneList) {
+              arrayQPString.push(j.QP)
           }
+            const arrayQP = arrayQPString.map(Number)
+            const sumQP = arrayQP.reduce((a,b)=>a + b, 0);
+            let globalQP = ((sumQP / arrayQP.length) || 0).toFixed(1);
+            //
+            const arrayQPSort = arrayQP.slice().sort((a,b)=>a - b);
+            let arrayQPLength = arrayQPSort.length;
+            let middleIndexQP = Math.floor(arrayQPLength / 2);
+            let oddLengthQP = arrayQPLength % 2 != 0;
+            let medianQP;
+            if (oddLengthQP) {
+                // if array length is odd -> return element at middleIndex
+                medianQP = arrayQPSort[middleIndexQP];
+            } else {
+                medianQP = (arrayQPSort[middleIndexQP] + arrayQPSort[middleIndexQP - 1]) / 2;
+            }
+            const QPper90Calc = Math.floor(arrayQPLength * .9) - 1;
+            const QPper75Calc = Math.floor(arrayQPLength * .75) - 1;
+            const QPper50Calc = Math.floor(arrayQPLength * .5) - 1;
+            const QPper90 = arrayQPSort[QPper90Calc];
+            const QPper75 = arrayQPSort[QPper75Calc];
+            const QPper50 = arrayQPSort[QPper50Calc];
+            //
+          
+            d3.select(`table tr[data-th="${i.WineryName}-${i.FullName}"] td[data-th='RS']`).style("width",function(d) {
+              const RS =  i.RS 
+              if (RS > RSper90) {
+                    return "100%"    
+                } else if (RS <= RSper90 && RS >= RSper75) {
+                    return "75%" 
+                } else if (RS < RSper75 && RS > RSper50) {
+                    return "50%" 
+                } else if (RS <= RSper50) {
+                    return "1%" 
+                }
+            }).attr("class", function(d){
+                const RS =  i.RS 
+                if (RS > RSper90) {
+                    return "p100"    
+                } else if (RS <= RSper90 && RS >= RSper75) {
+                    return "p75" 
+                } else if (RS < RSper75 && RS > RSper50) {
+                    return "p50" 
+                } else if (RS <= RSper50) {
+                    return "p1" 
+                }
+            })
+            d3.select(`table tr[data-th="${i.WineryName}-${i.FullName}"] td[data-th='QP']`).style("width",function(d) {
+              const QP =  i.QP 
+              if (QP > QPper90) {
+                    return "100%"    
+              } else if (QP <= QPper90 && QP >= QPper75) {
+                 return "75%" 
+              } else if (QP < QPper75 && QP > QPper50) {
+                 return "50%" 
+              } else if (QP <= QPper50) {
+                 return "1%" 
+            }
+            }).attr("class", function(d){
+                const QP =  i.QP 
+                if (QP > QPper90) {
+                    return "p100"    
+                } else if (QP <= QPper90 && QP >= QPper75) {
+                    return "p75" 
+                } else if (QP < QPper75 && QP > QPper50) {
+                    return "p50" 
+                } else if (QP <= QPper50) {
+                    return "p1" 
+                }
+            })
+           
       } 
       //statistiche wineryName prima di dataTable
       const arrayWines = document.querySelectorAll(".winery-table td[data-th='Wine']")

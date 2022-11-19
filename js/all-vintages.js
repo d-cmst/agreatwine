@@ -78,8 +78,8 @@ export function allVintages(regionS, headlineArray, listCheck) {
           </div>
       `
       const rs2Template = `
-          <div class="rs2-label">2nd Level Relative Score</div><div class="rs2" title="${avRS2}" data-content="${avRS2}" style="width:${avRS2}%"></div>
-          <div class="qp2-label">2nd Level Quality/Price </div><div class="qp2" title="${avRS2}" data-content="${avQP2}" style="width:${avQP2}%"></div>
+          <div class="rs2-label">2nd Level Relative Score</div><div class="rs2" title="${avRS2}" data-content="${avRS2}" ></div>
+          <div class="qp2-label">2nd Level Quality/Price </div><div class="qp2" title="${avRS2}" data-content="${avQP2}" ></div>
       `
       const rs3Template = `
           <div class="rs3-label">3rd Level Relative Score</div><div class="rs3" title="${avRS3}" data-content="${avRS3}" style="width:${avRS3}%"></div>
