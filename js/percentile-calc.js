@@ -95,27 +95,27 @@ function  rawCalcRS(input, rslevel){
           //
           let percentileArray =  rawCalcrs3(awardArray, rs3level)
           if (document.querySelector(".rs3").getAttribute('data-content') > percentileArray[0]){
-              d3.select(".rs3").attr("data-per","P90").style("width", "100%")
+              d3.select(".rs3").attr("data-per","P90").style("width", "100%").attr("class", "p100")
           } else if (document.querySelector(".rs3").getAttribute('data-content') >= percentileArray[1]){
-              d3.select(".rs3").attr("data-per","P75").style("width", "75%")
+              d3.select(".rs3").attr("data-per","P75").style("width", "75%").attr("class", "p75")
           } else if (document.querySelector(".rs3").getAttribute('data-content') >= percentileArray[2]){
-              d3.select(".rs3").attr("data-per","P50").style("width", "50%")
+              d3.select(".rs3").attr("data-per","P50").style("width", "50%").attr("class", "p50")
           } else if (document.querySelector(".rs3").getAttribute('data-content') >= percentileArray[3]){
-            d3.select(".rs3").attr("data-per","P25").style("width", "25%")
+            d3.select(".rs3").attr("data-per","P25").style("width", "25%").attr("class", "p25")
          } else {
-              d3.select(".rs3").attr("data-per","P0").style("width", "1%")
+              d3.select(".rs3").attr("data-per","P0").style("width", "1%").attr("class", "p1")
           }
           percentileArray =  rawCalcqp3(awardArray, qp3level)
           if (document.querySelector(".qp3").getAttribute('data-content') > percentileArray[0]){
-              d3.select(".qp3").attr("data-per","P90").style("width", "100%")
+              d3.select(".qp3").attr("data-per","P90").style("width", "100%").attr("class", "p100")
           } else if (document.querySelector(".qp3").getAttribute('data-content') >= percentileArray[1]){
-              d3.select(".qp3").attr("data-per","P75").style("width", "75%")
+              d3.select(".qp3").attr("data-per","P75").style("width", "75%").attr("class", "p75")
           } else if (document.querySelector(".qp3").getAttribute('data-content') >= percentileArray[2]){
-              d3.select(".qp3").attr("data-per","P50").style("width", "50%")
+              d3.select(".qp3").attr("data-per","P50").style("width", "50%").attr("class", "p50")
           } else if (document.querySelector(".qp3").getAttribute('data-content') >= percentileArray[3]){
-            d3.select(".qp3").attr("data-per","P25").style("width", "25%")
+            d3.select(".qp3").attr("data-per","P25").style("width", "25%").attr("class", "p25")
           } else {
-              d3.select(".qp3").attr("data-per","P0").style("width", "1%")
+              d3.select(".qp3").attr("data-per","P0").style("width", "1%").attr("class", "p1")
           }
       })
   }
@@ -132,25 +132,25 @@ function  rawCalcRS(input, rslevel){
           //
           let percentileArray =  rawCalcRS(awardArray, rslevel)
           if (document.querySelector(".rs2").getAttribute('data-content') > percentileArray[0]){
-              d3.select(".rs2").attr("data-per","P90").style("width", "100%")
+              d3.select(".rs2").attr("data-per","P90").style("width", "100%").attr("class", "p100")
           } else if (document.querySelector(".rs2").getAttribute('data-content') >= percentileArray[1]){
-              d3.select(".rs2").attr("data-per","P75").style("width", "75%")
+              d3.select(".rs2").attr("data-per","P75").style("width", "75%").attr("class", "p75")
           } else if (document.querySelector(".rs2").getAttribute('data-content') >= percentileArray[2]){
-              d3.select(".rs2").attr("data-per","P50").style("width", "50%")
+              d3.select(".rs2").attr("data-per","P50").style("width", "50%").attr("class", "p50")
           } else if (document.querySelector(".rs2").getAttribute('data-content') >= percentileArray[3]){
-            d3.select(".rs2").attr("data-per","P25").style("width", "25%")
+            d3.select(".rs2").attr("data-per","P25").style("width", "25%").attr("class", "p1")
          } else {
               d3.select(".rs2").attr("data-per","P0").style("width", "1%")
           }
           percentileArray =  rawCalcQP(awardArray, qplevel)
           if (document.querySelector(".qp2").getAttribute('data-content') > percentileArray[0]){
-              d3.select(".qp2").attr("data-per","P90").style("width", "100%")
+              d3.select(".qp2").attr("data-per","P90").style("width", "100%").attr("class", "p100")
           } else if (document.querySelector(".qp2").getAttribute('data-content') >= percentileArray[1]){
-              d3.select(".qp2").attr("data-per","P75").style("width", "75%")
+              d3.select(".qp2").attr("data-per","P75").style("width", "75%").attr("class", "p75")
           } else if (document.querySelector(".qp2").getAttribute('data-content') >= percentileArray[2]){
-              d3.select(".qp2").attr("data-per","P50").style("width", "50%")
+              d3.select(".qp2").attr("data-per","P50").style("width", "50%").attr("class", "p50")
           } else if (document.querySelector(".qp2").getAttribute('data-content') >= percentileArray[3]){
-            d3.select(".qp2").attr("data-per","P25").style("width", "25%")
+            d3.select(".qp2").attr("data-per","P25").style("width", "25%").attr("class", "p1")
           } else {
               d3.select(".qp2").attr("data-per","P0").style("width", "1%")
           }
@@ -170,27 +170,27 @@ function  rawCalcRS(input, rslevel){
           //
           let percentileArray =  rawCalcRS(awardArray, rslevel)
           if (document.querySelector(".rs").getAttribute('data-content') > percentileArray[0]){
-              d3.select(".rs").attr("data-per","P90").style("width", "100%")
+              d3.select(".rs").attr("data-per","P90").style("width", "100%").attr("class", "p100")
           } else if (document.querySelector(".rs").getAttribute('data-content') >= percentileArray[1]){
-              d3.select(".rs").attr("data-per","P75").style("width", "75%")
+              d3.select(".rs").attr("data-per","P75").style("width", "75%").attr("class", "p75")
           } else if (document.querySelector(".rs").getAttribute('data-content') >= percentileArray[2]){
-              d3.select(".rs").attr("data-per","P50").style("width", "50%")
+              d3.select(".rs").attr("data-per","P50").style("width", "50%").attr("class", "p50")
           } else if (document.querySelector(".rs").getAttribute('data-content') >= percentileArray[3]){
-            d3.select(".rs").attr("data-per","P25").style("width", "25%")
+            d3.select(".rs").attr("data-per","P25").style("width", "25%").attr("class", "p25")
          } else {
-              d3.select(".rs").attr("data-per","P0").style("width", "1%")
+              d3.select(".rs").attr("data-per","P0").style("width", "1%").attr("class", "p1")
           }
           percentileArray =  rawCalcQP(awardArray, qplevel)
           if (document.querySelector(".qp").getAttribute('data-content') > percentileArray[0]){
-              d3.select(".qp").attr("data-per","P90").style("width", "100%")
+              d3.select(".qp").attr("data-per","P90").style("width", "100%").attr("class", "p100")
           } else if (document.querySelector(".qp").getAttribute('data-content') >= percentileArray[1]){
-              d3.select(".qp").attr("data-per","P75").style("width", "75%")
+              d3.select(".qp").attr("data-per","P75").style("width", "75%").attr("class", "p75")
           } else if (document.querySelector(".qp").getAttribute('data-content') >= percentileArray[2]){
-              d3.select(".qp").attr("data-per","P50").style("width", "50%")
+              d3.select(".qp").attr("data-per","P50").style("width", "50%").attr("class", "p50")
           } else if (document.querySelector(".qp").getAttribute('data-content') >= percentileArray[3]){
-            d3.select(".qp").attr("data-per","P25").style("width", "25%")
+            d3.select(".qp").attr("data-per","P25").style("width", "25%").attr("class", "p25")
           } else {
-              d3.select(".qp").attr("data-per","P0").style("width", "1%")
+              d3.select(".qp").attr("data-per","P0").style("width", "1%").attr("class", "p1")
           }
       })
   }
