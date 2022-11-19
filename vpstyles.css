@@ -459,6 +459,9 @@ padding-right: 57px;
    .p1:after{
      background: #f44336;
    }
+   .p25:after{
+    background: #febd09;
+  }
    .p50:after{
      background: #febd09;
    }
@@ -492,6 +495,9 @@ padding-right: 57px;
    .p1:before{
      background: #f44336;
    }
+   .p25:before{
+    background: #febd09;
+  }
    .p50:before{
      background: #febd09;
    }
