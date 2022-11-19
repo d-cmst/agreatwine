@@ -157,9 +157,11 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
           const RSper90Calc =  Math.floor(arrayRSLength*.9) - 1;
           const RSper75Calc =  Math.floor(arrayRSLength*.75) - 1;
           const RSper50Calc =  Math.floor(arrayRSLength*.5) - 1;
+          const RSper25Calc =  Math.floor(arrayRSLength*.25) - 1;
           const RSper90 = arrayRSSort[RSper90Calc];
           const RSper75 = arrayRSSort[RSper75Calc];
           const RSper50 = arrayRSSort[RSper50Calc];
+          const RSper25 = arrayRSSort[RSper25Calc];
           //QP calc
           const arrayQPString = []
           for (const j of denominazioneList) {
@@ -183,9 +185,11 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
             const QPper90Calc = Math.floor(arrayQPLength * .9) - 1;
             const QPper75Calc = Math.floor(arrayQPLength * .75) - 1;
             const QPper50Calc = Math.floor(arrayQPLength * .5) - 1;
+            const QPper25Calc = Math.floor(arrayQPLength * .25) - 1;
             const QPper90 = arrayQPSort[QPper90Calc];
             const QPper75 = arrayQPSort[QPper75Calc];
             const QPper50 = arrayQPSort[QPper50Calc];
+            const QPper25 = arrayQPSort[QPper25Calc];
             //
           
             d3.select(`table tr[data-th="${i.WineryName}-${i.FullName}"] td[data-th='RS']`).style("width",function(d) {
@@ -196,7 +200,9 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
                     return "75%" 
                 } else if (RS < RSper75 && RS > RSper50) {
                     return "50%" 
-                } else if (RS <= RSper50) {
+                } else if (RS < RSper50 && RS > RSper25) {
+                    return "25%" 
+                } else if (RS <= RSper25) {
                     return "1%" 
                 }
             }).attr("class", function(d){
@@ -207,7 +213,9 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
                     return "p75" 
                 } else if (RS < RSper75 && RS > RSper50) {
                     return "p50" 
-                } else if (RS <= RSper50) {
+                } else if (RS < RSper50 && RS > RSper25) {
+                    return "p25" 
+               }  else if (RS <= RSper25) {
                     return "p1" 
                 }
             })
@@ -219,7 +227,9 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
                  return "75%" 
               } else if (QP < QPper75 && QP > QPper50) {
                  return "50%" 
-              } else if (QP <= QPper50) {
+              } else if (QP < QPper50 && QP > QPper25) {
+                 return "25%" 
+             } else if (QP <= QPper25) {
                  return "1%" 
             }
             }).attr("class", function(d){
@@ -230,7 +240,9 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
                     return "p75" 
                 } else if (QP < QPper75 && QP > QPper50) {
                     return "p50" 
-                } else if (QP <= QPper50) {
+                } else if (QP < QPper50 && QP > QPper25) {
+                    return "p25%" 
+               } else if (QP <= QPper25) {
                     return "p1" 
                 }
             })
