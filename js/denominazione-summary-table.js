@@ -360,7 +360,7 @@ const RSper25 = arrayRSSort[RSper25Calc];
                  return  (75 * 90) / 100 + "%" 
               } else if (QP < QPper75 && QP > QPper50) {
                  return  (50 * 90) / 100 + "%" 
-              } else if (QP < QPper50 && QP > QPper25) {
+              } else if (QP <= QPper50 && QP > QPper25) {
                  return  (25 * 90) / 100 + "%" 
              } else if (QP <= QPper25) {
                  return  (1 * 90) / 100 + "%"  
@@ -372,7 +372,7 @@ const RSper25 = arrayRSSort[RSper25Calc];
                     return "p75" 
                 } else if (QP < QPper75 && QP > QPper50) {
                     return "p50" 
-                } else if (QP < QPper50 && QP > QPper25) {
+                } else if (QP <= QPper50 && QP > QPper25) {
                     return "p25%" 
                } else if (QP <= QPper25) {
                     return "p1" 
