@@ -93,28 +93,12 @@ t1:nth-of-type(7) =
   }
    .winery-table td[data-th="RS"]:after, .winery-table td[data-th="QP"]:after{
     position: absolute;
-    background: repeating-linear-gradient(
-      -45deg,
-      #84baf0,
-      #84baf0 10px,
-      #1976d2 10px,
-      #1976d2 20px
-    );
     height:20px;
     content: '';
     left:0px;
     width: inherit;
     border-radius:2px;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.5)
-  }
-   .winery-table td[data-th="QP"]:after{
-    background: repeating-linear-gradient(
-    -45deg,
-    #a4d7a6,
-    #a4d7a6 10px,
-    #4caf50 10px,
-    #4caf50 20px
-    );
   }
   .winery-table td[data-th="QP"]:before{
     background-color: lightgreen;
