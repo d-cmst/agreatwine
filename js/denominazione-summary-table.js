@@ -350,7 +350,7 @@ const RSper25 = arrayRSSort[RSper25Calc];
                 } else if (RS <= RSper50 && RS > RSper25) {
                     return "p25" 
                }  else if (RS <= RSper25) {
-                    return "p1" 
+                    return "p25" 
                 }
           }).text(`${RS}`)
           produttoreBodyRow.append("td").attr("data-th", "QP").attr("title", `${QP}`).style("width", function(d) {
@@ -375,7 +375,7 @@ const RSper25 = arrayRSSort[RSper25Calc];
                 } else if (QP <= QPper50 && QP > QPper25) {
                     return "p25" 
                } else if (QP <= QPper25) {
-                    return "p1" 
+                    return "p25" 
                 }
            }).text(`${QP}`)
         }

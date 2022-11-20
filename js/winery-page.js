@@ -216,7 +216,7 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
                 } else if (RS <= RSper50 && RS > RSper25) {
                     return "p25" 
                }  else if (RS <= RSper25) {
-                    return "p1" 
+                    return "p25" 
                 }
             })
             d3.select(`table tr[data-th="${i.WineryName}-${i.FullName}"] td[data-th='QP']`).style("width",function(d) {
@@ -241,9 +241,9 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
                 } else if (QP < QPper75 && QP > QPper50) {
                     return "p50" 
                 } else if (QP <= QPper50 && QP > QPper25) {
-                    return "p25%" 
+                    return "p25" 
                } else if (QP <= QPper25) {
-                    return "p1" 
+                    return "p25" 
                 }
             })
            
