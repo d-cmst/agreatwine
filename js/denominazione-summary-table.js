@@ -234,7 +234,7 @@ const RSper25 = arrayRSSort[RSper25Calc];
             }
         }
         if (pageCat == "Third Level Comparison" || pageCat == "Second Level Comparison"){
-          output = `<div><b>Aggregated appellations: </b></div><div>${output.slice(0, -2)}</div>`
+          output = `<div><b>Aggregated appellations: </b></div><div class="appellations-list">${output.slice(0, -2)}</div>`
         } else {
           output = ''
         }

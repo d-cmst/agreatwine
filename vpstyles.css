@@ -492,6 +492,10 @@ padding-right: 57px;
 }
 
 @media screen and (max-width: 599px) {
+   .appellations-list{
+      max-height: 70px;
+      overflow: auto;
+   }
    .p1:before{
      background: #f44336;
    }
