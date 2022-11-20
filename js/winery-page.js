@@ -200,7 +200,7 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
                     return  (75 * 90) / 100 + "%" 
                 } else if (RS < RSper75 && RS > RSper50) {
                     return (50 * 90) / 100 + "%" 
-                } else if (RS < RSper50 && RS > RSper25) {
+                } else if (RS <= RSper50 && RS > RSper25) {
                     return (25 * 90) / 100 + "%" 
                 } else if (RS <= RSper25) {
                     return (1 * 90) / 100 + "%"  
@@ -213,7 +213,7 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
                     return "p75" 
                 } else if (RS < RSper75 && RS > RSper50) {
                     return "p50" 
-                } else if (RS < RSper50 && RS > RSper25) {
+                } else if (RS <= RSper50 && RS > RSper25) {
                     return "p25" 
                }  else if (RS <= RSper25) {
                     return "p1" 

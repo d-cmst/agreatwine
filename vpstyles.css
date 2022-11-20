@@ -101,7 +101,7 @@ t1:nth-of-type(7) =
     box-shadow: 1px 1px 1px rgba(0,0,0,0.5)
   }
   .winery-table td[data-th="QP"]:before{
-    background-color: lightgreen;
+    background-color: lightgray;
     content: '';
     height: 21px;
     width: 90%;
@@ -110,7 +110,7 @@ t1:nth-of-type(7) =
     left: 0
   }
   .winery-table td[data-th="RS"]:before{
-    background-color: lightblue;
+    background-color: lightgray;
     content: '';
     height: 21px;
     width: 90%;
