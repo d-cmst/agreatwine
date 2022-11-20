@@ -2,7 +2,7 @@
 title: 4. Fair Comparison
 description: Documentation
 published: true
-date: 2022-11-15T11:09:51.194Z
+date: 2022-11-20T21:33:38.275Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:21:11.567Z
@@ -43,5 +43,5 @@ The available second level comparisons can be found in the [second level compari
 ## Region
 At the top of the speculative mountain, *AGReATWine* also provide ~~not-so-fair~~ regional comparisons, whose only significance could be to discover which wine has the best track record of evaluations within a region, whatever that may mean.
 
-The available second level comparisons can be found in the [third level comparison](/third-level-comparisons) index page.
+The available third level comparisons can be found in the [third level comparison](/third-level-comparisons) index page.
 
