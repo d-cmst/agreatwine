@@ -2,7 +2,7 @@
 title: AGReATWine
 description: Another Geeky Retrospective Aggregator Tool (for) Wine
 published: true
-date: 2022-11-19T18:23:31.000Z
+date: 2022-11-21T07:47:26.186Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-16T17:39:08.270Z
@@ -29,8 +29,8 @@ Wine
 
 ## Wine comparisons
 [Appellation comparisons](/appellation-comparisons)
-[Second level comparisons](/second-level-comparisons)
-[Third level comparisons](/third-level-comparisons)
+[Composition comparisons](/second-level-comparisons)
+[Regionale comparisons](/third-level-comparisons)
 
 ## Status
 [Content status](/Documentation/status)
