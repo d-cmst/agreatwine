@@ -103,7 +103,7 @@ function  rawCalcRS(input, rslevel){
           } else if (document.querySelector(".rs3").getAttribute('data-content') >= percentileArray[3]){
             d3.select(".rs3").attr("data-per","P25").style("width", "25%").attr("class", "rs p25")
          } else {
-              d3.select(".rs3").attr("data-per","P0").style("width", "1%").attr("class", "rs p25")
+              d3.select(".rs3").attr("data-per","P0").style("width", "25%").attr("class", "rs p25")
           }
           percentileArray =  rawCalcqp3(awardArray, qp3level)
           if (document.querySelector(".qp3").getAttribute('data-content') > percentileArray[0]){
@@ -115,7 +115,7 @@ function  rawCalcRS(input, rslevel){
           } else if (document.querySelector(".qp3").getAttribute('data-content') >= percentileArray[3]){
             d3.select(".qp3").attr("data-per","P25").style("width", "25%").attr("class", "qp p25")
           } else {
-              d3.select(".qp3").attr("data-per","P0").style("width", "1%").attr("class", "qp p25")
+              d3.select(".qp3").attr("data-per","P0").style("width", "25%").attr("class", "qp p25")
           }
       })
   }
@@ -140,7 +140,7 @@ function  rawCalcRS(input, rslevel){
           } else if (document.querySelector(".rs2").getAttribute('data-content') >= percentileArray[3]){
             d3.select(".rs2").attr("data-per","P25").style("width", "25%").attr("class", "rs p25")
          } else {
-              d3.select(".rs2").attr("data-per","P0").style("width", "1%")
+              d3.select(".rs2").attr("data-per","P0").style("width", "25%")
           }
           percentileArray =  rawCalcQP(awardArray, qplevel)
           if (document.querySelector(".qp2").getAttribute('data-content') > percentileArray[0]){
@@ -152,7 +152,7 @@ function  rawCalcRS(input, rslevel){
           } else if (document.querySelector(".qp2").getAttribute('data-content') >= percentileArray[3]){
             d3.select(".qp2").attr("data-per","P25").style("width", "25%").attr("class", "qp p25")
           } else {
-              d3.select(".qp2").attr("data-per","P0").style("width", "1%")
+              d3.select(".qp2").attr("data-per","P0").style("width", "25%")
           }
       })
   }
@@ -178,7 +178,7 @@ function  rawCalcRS(input, rslevel){
           } else if (document.querySelector(".rs").getAttribute('data-content') >= percentileArray[3]){
             d3.select(".rs").attr("data-per","P25").style("width", "25%").attr("class", "rs p25")
          } else {
-              d3.select(".rs").attr("data-per","P0").style("width", "1%").attr("class", "rs p25")
+              d3.select(".rs").attr("data-per","P0").style("width", "25%").attr("class", "rs p25")
           }
           percentileArray =  rawCalcQP(awardArray, qplevel)
           if (document.querySelector(".qp").getAttribute('data-content') > percentileArray[0]){
@@ -190,7 +190,7 @@ function  rawCalcRS(input, rslevel){
           } else if (document.querySelector(".qp").getAttribute('data-content') >= percentileArray[3]){
             d3.select(".qp").attr("data-per","P25").style("width", "25%").attr("class", "qp p25")
           } else {
-              d3.select(".qp").attr("data-per","P0").style("width", "1%").attr("class", "qp p25")
+              d3.select(".qp").attr("data-per","P0").style("width", "25%").attr("class", "qp p25")
           }
       })
   }

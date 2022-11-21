@@ -203,7 +203,7 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
                 } else if (RS <= RSper50 && RS > RSper25) {
                     return (25 * 90) / 100 + "%" 
                 } else if (RS <= RSper25) {
-                    return (1 * 90) / 100 + "%"  
+                    return (25 * 90) / 100 + "%"  
                 }
             }).attr("class", function(d){
                 const RS =  i.RS 
@@ -230,7 +230,7 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
               } else if (QP <= QPper50 && QP > QPper25) {
                  return (25 * 90) / 100 + "%" 
              } else if (QP <= QPper25) {
-                 return (1 * 90) / 100 + "%" 
+                 return (25 * 90) / 100 + "%" 
             }
             }).attr("class", function(d){
                 const QP =  i.QP 
