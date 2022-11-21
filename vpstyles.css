@@ -966,7 +966,7 @@ div.t1:nth-of-type(5) .star:before{
 /**/
 
 .contents{
-  max-width:900px
+  max-width:1000px
 }
 
 @media only screen and (min-width:550px) and (max-width:900px), only screen and (min-width:1260px) and (max-width:1400px) {
