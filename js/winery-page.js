@@ -251,7 +251,7 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
       //statistiche wineryName prima di dataTable
       const arrayWines = document.querySelectorAll(".winery-table td[data-th='Wine']")
       //media delle medie
-      const arrayAvgTd = document.querySelectorAll(".winery-table td[data-th='Raw Avg Evaluation']")
+      const arrayAvgTd = document.querySelectorAll(".winery-table td[data-th='Raw-Avg-Ev']")
       const arrayAvgString = []
       for (const i of arrayAvgTd) {
           arrayAvgString.push(i.innerText)
