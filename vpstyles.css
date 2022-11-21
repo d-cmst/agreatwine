@@ -437,7 +437,12 @@ padding-right: 57px;
     color: #424242;
     content: attr(title);
     text-align: left;
-    text-shadow: 3px 3px 4px white,-3px -3px 4px white,-3px 3px 4px white,3px -3px 4px white;
+    padding: 1px 0px 0px 1px;
+    text-align: left;
+    text-shadow: 1px 1px 1px grey;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: normal;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
   }
    .p1:after{
