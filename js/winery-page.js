@@ -1,5 +1,6 @@
+import {sanitizeInputCc} from './helper-functions.js';
 export function wineryPage(wineryName, wineryNameS, region, regionS, countryName, years, listCheck) {
-  //destroyEmptiness
+//destroyEmptiness
   function destroyEmptiness(){
     //var startTime2 = performance.now()
     for (const i of years) {
@@ -122,7 +123,7 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
       }
       for (const i of allVintagesArray) {
         const wineryTableBodyRow = d3.select(`.winery-table tbody`).append("tr").attr("data-th", `${i.WineryName}-${i.FullName}`)
-        wineryTableBodyRow.append("td").attr("data-th", "Wine").attr("title", `${i.FullName}`).html(`<a href="/en/Wines/${countryName}/${regionS}/${wineryNameS}/${i.FullName.replaceAll(' ', '-').replaceAll("'", '-')}/all-vintages.html">${i.FullName}</a>`)
+        wineryTableBodyRow.append("td").attr("data-th", "Wine").attr("title", `${i.FullName}`).html(`<a href="/en/Wines/${countryName}/${sanitizeInputCc(region)}/${sanitizeInputCc(wineryName)}/${sanitizeInputCc(i.FullName)}/all-vintages.html">${i.FullName}</a>`)
         wineryTableBodyRow.append("td").attr("data-th", "Raw-Avg-Ev").text(`${i.RawAvg}`)
         wineryTableBodyRow.append("td").attr("data-th", "Price").html(`${calcPrice(i)}`)
         wineryTableBodyRow.append("td").attr("data-th", "RS").attr("title", `${i.RS}`).text(`${i.RS}`)
