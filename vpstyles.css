@@ -434,12 +434,12 @@ padding-right: 57px;
     width: inherit;
     /* z-index: 9999999999; */
     border-radius:2px;
-    color: #424242;
+    color: #F9F9F9;
     content: attr(title);
     text-align: left;
     padding: 1px 0px 0px 1px;
     text-align: left;
-    text-shadow: 1px 1px 1px grey;
+    text-shadow: 1px 1px 1px #424242;
     font-size: 14px;
     font-family: Roboto;
     font-weight: normal;
