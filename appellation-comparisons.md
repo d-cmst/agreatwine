@@ -2,7 +2,7 @@
 title: ¹Appellation Comparisons
 description: 
 published: true
-date: 2022-11-16T14:23:26.227Z
+date: 2022-11-24T15:47:59.923Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:20:37.783Z
@@ -37,13 +37,14 @@ Italy has 78 DOCG appellations, 341 DOC appellations and 118 IGT appellations.
   - Piemonte
     - [Barolo](/Appellations/Italy/Piemonte/DOCG-Barolo)
     - [Barbera D'Asti](/Appellations/Italy/Piemonte/DOCG-Barbera-D-Asti)
+    - [Barbera Del Monferrato Superiore](/Appellations/Italy/Piemonte/DOCG-Barbera-Del-Monferrat-Superiore)
     - [Barbaresco](/Appellations/Italy/Piemonte/DOCG-Barbaresco)
     - [Alta Langa](/Appellations/Italy/Piemonte/DOCG-Alta-Langa)
     - [Gattinara](/Appellations/Italy/Piemonte/DOCG-Gattinara)
     - [Ghemme](/Appellations/Italy/Piemonte/DOCG-Ghemme)
     - [Gavi](/Appellations/Italy/Piemonte/DOCG-Gavi)
     - [Nizza](/Appellations/Italy/Piemonte/DOCG-Nizza)
-    - [Barbera Del Monferrato Superiore](/Appellations/Italy/Piemonte/DOCG-Barbera-Del-Monferrat-Superiore)
+    - [Roero](/Appellations/Italy/Piemonte/DOCG-Roero)
     - [Terre Alfieri](/Appellations/Italy/Piemonte/DOCG-Terre-Alfieri)
   - Romagna
     - [Albana](/Appellations/Italy/Romagna/DOCG-Romagna-Albana)
