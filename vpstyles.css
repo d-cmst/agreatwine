@@ -93,12 +93,17 @@ t1:nth-of-type(7) =
   }
    .winery-table td[data-th="RS"]:after, .winery-table td[data-th="QP"]:after{
     position: absolute;
-    height:20px;
-    content: '';
-    left:0px;
+    height: 20px;
+    content: attr(title);
+    color: #f9f9f9;
+    left: 0px;
     width: inherit;
-    border-radius:2px;
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.5)
+    border-radius: 2px;
+    text-shadow: 1px 1px 1px #424242;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: normal;
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
   }
   .winery-table td[data-th="QP"]:before{
     background-color: lightgray;
