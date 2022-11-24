@@ -2,7 +2,7 @@
 title: AGReATWine
 description: Another Geeky Retrospective Aggregator Tool (for) Wine
 published: true
-date: 2022-11-21T07:48:16.289Z
+date: 2022-11-24T15:46:35.225Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-16T17:39:08.270Z
@@ -21,6 +21,9 @@ Wine
 > This website Is in heavy development. Full of typos. Surf at your own risk.
 {.is-warning}
 
+## News
+
+New appellation: [DOCG Roero](/Appellations/Italy/Piemonte/DOCG-Roero)  
 
 ## Documentation highlights
 [Index](/Documentation/index)
@@ -30,7 +33,7 @@ Wine
 ## Wine comparisons
 [Appellation comparisons](/appellation-comparisons)
 [Composition comparisons](/second-level-comparisons)
-[Regionale comparisons](/third-level-comparisons)
+[Regional comparisons](/third-level-comparisons)
 
 ## Status
 [Content status](/Documentation/status)
