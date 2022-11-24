@@ -730,8 +730,8 @@ margin:auto
 table.summary-table td,table.summary-table th{ padding: 3px 6px!important;}
 
 table.summary-table th:nth-child(1) {text-align: left; cursor:pointer }
-table.summary-table th:nth-child(1n+4) {text-align: right;}
-table.summary-table td:nth-child(1n+4) {text-align: right;}
+table.summary-table th:nth-child(1n+3) {text-align: right;}
+table.summary-table td:nth-child(1n+3) {text-align: right;}
 
 @media screen and (max-width: 599px) {
   .summary-table tr {
