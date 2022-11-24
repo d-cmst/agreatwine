@@ -1691,7 +1691,7 @@ max-width: 350px
   text-align:right;
   display:inline-block;
   border-radius: 3px;
-  width:100%;
+  width:inherit;
   height:90%;
   position:absolute;
   font-weight:bold;
