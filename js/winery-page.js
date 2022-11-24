@@ -10,10 +10,11 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
       for (const j of all13) {
           all.push(j.innerText)
       }
+        console.log(all)
       const allEqual = arr => arr.every( v => v === arr[0] )
       if (all.length == 1) { // se la tabella contiene un solo vino
       } else {
-          if (allEqual(all) == true){ 
+          if (allEqual(all) == true && (all[0] == "sv" || all[1] == "sv" || all[2] == "sv")){ 
               all132.remove()
               for (const i of all13){
                   i.remove()
@@ -279,9 +280,10 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
       d3.text(`/csv/${regionS}.csv`).then( function(data) {
         const csv = d3.csvParse(data);
         const singleVintagesFilter = function(d) {
-          return d.WineryName == wineryName&& d.Entry === "2"
+          return d.WineryName == wineryName && d.Entry === "2"
         }
         const singleVintagesArray = csv.filter(singleVintagesFilter)
+          console.log(singleVintagesArray)
         for (const k of singleVintagesArray) {
           d3.select(`.winery-table tr[data-th="${k.WineryName}-${k.FullName}"] td[data-th="${k.Vintage}"]`).attr("title", `${k.EvaluationAvg}`).text(`${k.EvaluationAvg}`)
         }
