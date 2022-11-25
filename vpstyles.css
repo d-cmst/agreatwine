@@ -975,8 +975,15 @@ div.t1:nth-of-type(5) .star:before{
 .v-main .contents table {margin:0px}
 /**/
 
+/* content width */
 .contents{
   max-width:1000px
+}
+
+/* hide login */
+
+a[href="/login"]{
+  display:none
 }
 
 @media only screen and (min-width:550px) and (max-width:900px), only screen and (min-width:1260px) and (max-width:1400px) {
