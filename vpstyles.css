@@ -129,6 +129,35 @@ t1:nth-of-type(7) =
    .winery-table {
     background-color: white;
   }
+  /*mobile table head*/
+  .winery-table thead tr{
+    background-color:lightgray!important;
+    border-bottom: 1px solid black!important;
+    padding: 4px 0px
+  }
+  .winery-table thead tr th{
+    background-color:lightgray!important;
+    padding: 4px 0px
+    
+  }
+  .winery-table thead tr th a{
+    text-decoration: none!important;
+  }
+  /*mobile table head end*/
+  /*mobile table background*/
+  .winery-table tbody tr:nth-child(n+1){
+    background-color:#f1f1f1!important
+  }
+  .winery-table tbody tr:nth-child(n+1) td{
+    background-color:#f1f1f1!important
+  }
+    .winery-table tbody tr:nth-child(2n+2){
+    background-color:white!important
+  }
+  .winery-table tbody tr:nth-child(2n+2) td{
+    background-color:white!important
+  }
+  /*mobile table background end*/
    .winery-table td[title="sv"]{
     display:none
   }
@@ -175,6 +204,9 @@ t1:nth-of-type(7) =
     font-weight: bold;
     width:max-content
   }
+    .winery-table td[data-th="Price"]:after{
+     content: '€'
+    }
 
    .winery-table td[data-th="RS"]:before, .winery-table td[data-th="QP"]:before{
     position: absolute;
@@ -212,7 +244,7 @@ t1:nth-of-type(7) =
 
    .winery-table td[data-th="RS"], .winery-table td[data-th="QP"]{
     min-width:100%
-  }
+   }
 
    .winery-table{
     overflow:hidden;
@@ -269,12 +301,6 @@ t1:nth-of-type(7) =
      min-width: 70px;
      text-overflow: ellipsis;
    }
-    .winery-table th:nth-child(2) a {  
-      color: #673ab7!important;
-    }
-    .winery-table th:nth-child(3) a {  
-      color: orangered!important;
-    }  
    .winery-table th{padding:0px}
    .winery-table th:nth-child(1n-4) {
     border-bottom: 0px solid transparent!important; 
@@ -508,6 +534,35 @@ padding-right: 57px;
   .denominazione-table {
     background-color: white;
   }
+  /*mobile table head*/
+  .denominazione-table thead tr{
+    background-color:lightgray!important;
+    border-bottom: 1px solid black!important;
+    padding: 4px 0px
+  }
+  .denominazione-table thead tr th{
+    background-color:lightgray!important;
+    padding: 4px 0px
+    
+  }
+  .denominazione-table thead tr th a{
+    text-decoration: none!important;
+  }
+  /*mobile table head end*/
+  /*mobile table background*/
+  .denominazione-table tbody tr:nth-child(n+1){
+    background-color:#f1f1f1!important
+  }
+  .denominazione-table tbody tr:nth-child(n+1) td{
+    background-color:#f1f1f1!important
+  }
+    .denominazione-table tbody tr:nth-child(2n+2){
+    background-color:white!important
+  }
+  .denominazione-table tbody tr:nth-child(2n+2) td{
+    background-color:white!important
+  }
+  /*mobile table background end*/
   .denominazione-table td[title="sv"]{
     display:none
   }
@@ -519,7 +574,7 @@ padding-right: 57px;
      position: relative;
      top:20px;
      left:5px;
-     height:50px
+     height: 50px;
   }
   .denominazione-table td[data-th^='20']:not([title='sv']):before,.denominazione-table td[data-th^='19']:not([title='sv']):before {
      position:absolute;
@@ -588,9 +643,7 @@ padding-right: 57px;
     overflow:hidden;
     width: 100%
   }
-  .denominazione-table tbody td:nth-child(1),.denominazione-table tbody td:nth-child(2){
-    background-color:#f1f1f1;
-  }
+
   .denominazione-table tbody td{
     padding:2px 3px!important;
     border: 0px solid white!important
@@ -658,52 +711,8 @@ padding-right: 57px;
     font-weight: bold;
     width:max-content
   }
-  
-  .denominazione-table th:nth-child(3) a {  
-    color: #673ab7!important;
-  }
-  .denominazione-table th:nth-child(4) a {  
-    color: orangered!important;
-  }
 }
 /* #endregion */
-
-/* #region SUMMARY TABLES ESPERIENZE*/
-
-.esperienza-table td[data-th="Notes"],.esperienza-table th:nth-child(7){
-  display:none
-}
-@media screen and (max-width: 599px) {
-
-  table.esperienza-table thead tr{
-    height: 50px;
-    align-items: center;
-    display: inline-flex;
-  } 
-  table.esperienza-table th:nth-child(1){display:none}
-  table.esperienza-table th:nth-child(6){display:block!important}
-  table.esperienza-table th:nth-child(5){display:block!important}
-  .esperienza-table td[data-th="Score"],.esperienza-table td[data-th="Tasting"]{
-    display: inline-flex;
-    width:50%;
-    text-align:center;
-    height:50px;
-    justify-content:center;
-    align-items:end;
-    position: relative;
-    font-size:100%;
-    font-weight: bold
-  }
-  .esperienza-table td[data-th="Punteggio"]:before,.esperienza-table td[data-th="Degustazione"]:before{
-    font-size:80%;
-    font-weight:normal;
-    position:absolute;
-    top:0px;
-    left:50%;
-    transform: translateX(-50%)
-  }
-}
-/* #endregion SUMMARY TABLES ESPERIENZE*/
 
 /* #region SUMMARY TABLES ALL*/
 
