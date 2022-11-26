@@ -443,12 +443,11 @@ padding-right: 57px;
     text-align: left;
     position:relative;
   }
-  .denominazione-table td[data-th="RS"]:after,.denominazione-table td[data-th="QP"]:after{
+  .denominazione-table td[data-th="RS"] span:after,.denominazione-table td[data-th="QP"] span:after{
     position: absolute;
     height:20px;
     left:0px;
     width: inherit;
-    /* z-index: 9999999999; */
     border-radius:2px;
     color: #F9F9F9;
     content: attr(title);
@@ -476,16 +475,16 @@ padding-right: 57px;
    .p100:after{
      background: #1976d2;
    }
-  .denominazione-table td[data-th="QP"]:before{
+  .denominazione-table td[data-th="QP"] span:before{
     background-color: lightgray;
-    content: '';
+    content: 'rrr';
     height: 21px;
     width: 90%;
     position: absolute;
     border-radius: 2px;
     left: 0
   }
-  .denominazione-table td[data-th="RS"]:before{
+  .denominazione-table td[data-th="RS"] span:before{
     background-color: lightgray;
     content: '';
     height: 21px;
