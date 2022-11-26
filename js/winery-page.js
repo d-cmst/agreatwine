@@ -127,8 +127,8 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
         wineryTableBodyRow.append("td").attr("data-th", "Wine").attr("title", `${i.FullName}`).html(`<a href="/en/Wines/${countryName}/${sanitizeInputCc(region)}/${sanitizeInputCc(wineryName)}/${sanitizeInputCc(i.FullName)}/all-vintages.html">${i.FullName}</a>`)
         wineryTableBodyRow.append("td").attr("data-th", "Raw-Avg-Ev").text(`${i.RawAvg}`)
         wineryTableBodyRow.append("td").attr("data-th", "Price").html(`${calcPrice(i)}`)
-        wineryTableBodyRow.append("td").attr("data-th", "RS").attr("title", `${i.RS}`).text(`${i.RS}`)
-        wineryTableBodyRow.append("td").attr("data-th", "QP").attr("title", `${i.QP}`).text(`${i.QP}`)
+        wineryTableBodyRow.append("td").attr("data-th", "RS").append("span").attr("title", `${i.RS}`).text(`${i.RS}`)
+        wineryTableBodyRow.append("td").attr("data-th", "QP").append("span").attr("title", `${i.QP}`).text(`${i.QP}`)
         for (const j in years) {
             wineryTableBodyRow.append("td").attr("data-th", `${years[j]}`).attr("title", "sv").text("sv")
         }  
@@ -194,7 +194,7 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
             const QPper25 = arrayQPSort[QPper25Calc];
             //
           
-            d3.select(`table tr[data-th="${i.WineryName}-${i.FullName}"] td[data-th='RS']`).style("width",function(d) {
+            d3.select(`table tr[data-th="${i.WineryName}-${i.FullName}"] td[data-th='RS'] span`).style("width",function(d) {
               const RS =  i.RS 
               if (RS > RSper90) {
                     return  (100 * 90) / 100 + "%"    
@@ -221,7 +221,7 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
                     return "p25" 
                 }
             })
-            d3.select(`table tr[data-th="${i.WineryName}-${i.FullName}"] td[data-th='QP']`).style("width",function(d) {
+            d3.select(`table tr[data-th="${i.WineryName}-${i.FullName}"] td[data-th='QP'] span`).style("width",function(d) {
               const QP =  i.QP 
               if (QP > QPper90) {
                  return (100 * 90) / 100 + "%" 
