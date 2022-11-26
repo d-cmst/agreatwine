@@ -87,14 +87,13 @@ t1:nth-of-type(7) =
     position:sticky;
     left:343px
   }
-   .winery-table td[data-th="RS"], .winery-table td[data-th="QP"]{
-    color: transparent;
-    text-align: left;
+   .winery-table td[data-th="RS"] span, .winery-table td[data-th="QP"] span{
+    color: transparent!important;
   }
    .winery-table td[data-th="RS"] span:after, .winery-table td[data-th="QP"] span:after{
     position: absolute;
     height: 20px;
-    content: attr(title);
+    content:attr(data-th) " " attr(title);
     color: #f9f9f9;
     left: 0px;
     width: inherit;
@@ -105,30 +104,12 @@ t1:nth-of-type(7) =
     font-weight: normal;
     box-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
   }
-  .winery-table td[data-th="QP"]:before{
-    background-color: lightgray;
-    content: '';
-    height: 21px;
-    width: 90%;
-    position: absolute;
-    border-radius: 2px;
-    left: 0
-  }
-  .winery-table td[data-th="RS"]:before{
-    background-color: lightgray;
-    content: '';
-    height: 21px;
-    width: 90%;
-    position: absolute;
-    border-radius: 2px;
-    left: 0
-  }
 }
 
 @media screen and (max-width: 599px) {
    .winery-table {
     background-color: white;
-  }
+   }
   /*mobile table head*/
   .winery-table thead tr{
     background-color:lightgray!important;
@@ -209,6 +190,9 @@ t1:nth-of-type(7) =
     display:inline-flex;
     width: 50%;
     }
+     .winery-table td[data-th="RS"], .winery-table td[data-th="QP"]{
+       color: transparent
+     }
    .winery-table td[data-th="RS"] span:before, .winery-table td[data-th="QP"] span:before{
     position: absolute;
     content: '';
@@ -220,15 +204,16 @@ t1:nth-of-type(7) =
     box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     color: transparent;
   }
-   .winery-table td[data-th="RS"]:after, .winery-table td[data-th="QP"]:after{
+   .winery-table td[data-th="RS"] span:after, .winery-table td[data-th="QP"] span:after{
     position:absolute;
-    content: 'RS';
+    content: attr(data-th) " " attr(title);
     font-weight: normal;
     text-align:right;
     left: 4px;
-    top: 3px;
+    top: 4px;
     color: #F9f9f9;
-   text-shadow: 1px 1px 1px #424242;
+    text-shadow: 1px 1px 1px #424242;
+     font-size: 90%;
   }
    /**/
    .winery-table{
@@ -565,10 +550,6 @@ padding-right: 57px;
      top:-20px;
      left:-4px
   }
-  .denominazione-table td[data-th="RS"],.denominazione-table td[data-th="QP"]{
-    text-align: right;
-    position: relative
-  }
   .denominazione-table td[data-th="Wine"] a{
     display:inline-block;
     max-width:85%
@@ -584,8 +565,15 @@ padding-right: 57px;
     top: 0px;
     right: 0px;
   }
+  .denominazione-table td[data-th="RS"],.denominazione-table td[data-th="QP"]{
+    position: relative;
+    display:inline-flex;
+    width: 50%;
+    text-align:left;
+    color:transparent
+  }
 
-  .denominazione-table td[data-th="RS"]:before,.denominazione-table td[data-th="QP"]:before{
+  .denominazione-table td[data-th="RS"] span:before,.denominazione-table td[data-th="QP"] span:before{
     position: absolute;
     content: '';
     height:22px;
@@ -595,33 +583,19 @@ padding-right: 57px;
     width: inherit;
     border-radius:2px;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    color: transparent;
   }
-  .denominazione-table td[data-th="RS"]:after{
+  .denominazione-table td[data-th="RS"] span:after,  .denominazione-table td[data-th="QP"] span:after{
     position:absolute;
-    content: 'RS';
+    content: attr(data-th) " " attr(title);
     font-weight: normal;
+    height:22px;
     text-align:right;
-    
     left: 4px;
     top: 3px;
-    color: #424242;
-    text-shadow: 3px 3px 4px white,-3px -3px 4px white,-3px 3px 4px white,3px -3px 4px white;
+    color: #F9F9F9;
+    text-shadow: 1px 1px 1px #424242
   }
-  .denominazione-table td[data-th="QP"]:after{
-    position:absolute;
-    content: "QP";
-    font-weight: normal;
-    text-align:right;
-    left: 4px;
-    top: 4px;
-    color: #424242;
-    text-shadow: 3px 3px 4px white,-3px -3px 4px white,-3px 3px 4px white,3px -3px 4px white;
-  }
-
-  .denominazione-table td[data-th="RS"],.denominazione-table td[data-th="QP"]{
-    min-width:100%
-  }
+  
 
   .denominazione-table{
     overflow:hidden;

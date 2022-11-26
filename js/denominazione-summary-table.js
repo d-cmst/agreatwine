@@ -328,7 +328,7 @@ const RSper25 = arrayRSSort[RSper25Calc];
           produttoreBodyRow.append("td").attr("data-th", "Wine").attr("title", `${i.FullName}`).html(`<a href="/en/Wines/${country}/${regionCc}/${i.WineryName.replaceAll("' ", '-').replaceAll(' ', '-').replaceAll("'", '-').replaceAll("è", 'e').replaceAll("à", 'a').replaceAll("é", 'e').replaceAll("ù", 'u')}/${i.FullName.replaceAll(' ', '-').replaceAll("'", '-').replaceAll("à", 'a').replaceAll("é", 'e')}/all-vintages.html">${i.FullName}</a>`)
           produttoreBodyRow.append("td").attr("data-th", "Raw-Avg-Ev").text(`${i.RawAvg}`)
           produttoreBodyRow.append("td").attr("data-th", "Price").html(`${calcPrice(i)}`)
-          produttoreBodyRow.append("td").attr("data-th", "RS").append("span").attr("title", `${RS}`).style("width", function(d) {
+          produttoreBodyRow.append("td").attr("data-th", "RS").append("span").attr("data-th", "RS").attr("title", `${RS}`).style("width", function(d) {
               if (RS > RSper90) {
                     return (100 * 90) / 100 + "%"     
                 } else if (RS <= RSper90 && RS >= RSper75) {
@@ -353,7 +353,7 @@ const RSper25 = arrayRSSort[RSper25Calc];
                     return "p25" 
                 }
           }).text(`${RS}`)
-          produttoreBodyRow.append("td").attr("data-th", "QP").append("span").attr("title", `${QP}`).style("width", function(d) {
+          produttoreBodyRow.append("td").attr("data-th", "QP").append("span").attr("data-th", "QP").attr("title", `${QP}`).style("width", function(d) {
               if (QP > QPper90) {
                     return  (100 * 90) / 100 + "%"    
               } else if (QP <= QPper90 && QP >= QPper75) {
