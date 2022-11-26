@@ -1,5 +1,5 @@
 Region,Appellation,Wines,Total,Progress
--,-,3517,4512,78
+-,-,3520,4510,78
 Abruzzo,Montepulciano d’Abruzzo Colline Teramane,0,47,0
 Basilicata,Aglianico del Vulture Superiore,0,90,0
 Campania,Taurasi,0,64,0
@@ -10,7 +10,7 @@ Emilia,Colli Bolognesi Classico Pignoletto,50,50,100
 Friuli,Colli Orientali del Friuli Picolit,30,30,100
 Friuli,Ramandolo,11,11,100
 Friuli,Rosazzo,5,5,100
-Lazio,Cesanese del Piglio / Piglio***,52,52,100
+Lazio,Cesanese del Piglio / Piglio,52,52,100
 Lazio,Frascati Superiore,25,25,100
 Lazio,Cannellino di Frascati,5,5,100
 Lombardia,Franciacorta,333,333,100
@@ -61,7 +61,7 @@ Toscana,Montecucco Sangiovese,0,24,0
 Toscana,Val di Cornia Rosso / Rosso della Val di Cornia,0,4,0
 Toscana,Suvereto,0,3,0
 Umbria,Montefalco Sagrantino,79,79,100
-Umbria,Torgiano Rosso Riserva,0,5,0
+Umbria,Torgiano Rosso Riserva,3,3,100
 Veneto,Amarone della Valpolicella,176,176,100
 Veneto,Recioto della Valpolicella,47,47,100
 Veneto,Recioto di Soave,20,20,100
