@@ -1,5 +1,5 @@
 Region,Appellation,Wines,Total,Progress
--,-,3438,4477,77
+-,-,3517,4512,78
 Abruzzo,Montepulciano d’Abruzzo Colline Teramane,0,47,0
 Basilicata,Aglianico del Vulture Superiore,0,90,0
 Campania,Taurasi,0,64,0
@@ -60,7 +60,7 @@ Toscana,Carmignano,0,27,0
 Toscana,Montecucco Sangiovese,0,24,0
 Toscana,Val di Cornia Rosso / Rosso della Val di Cornia,0,4,0
 Toscana,Suvereto,0,3,0
-Umbria,Montefalco Sagrantino,0,44,0
+Umbria,Montefalco Sagrantino,79,79,100
 Umbria,Torgiano Rosso Riserva,0,5,0
 Veneto,Amarone della Valpolicella,176,176,100
 Veneto,Recioto della Valpolicella,47,47,100
