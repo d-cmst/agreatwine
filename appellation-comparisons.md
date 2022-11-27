@@ -2,7 +2,7 @@
 title: ¹Appellation Comparisons
 description: 
 published: true
-date: 2022-11-24T15:47:59.923Z
+date: 2022-11-27T07:06:05.917Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-14T15:20:37.783Z
@@ -56,6 +56,9 @@ Italy has 78 DOCG appellations, 341 DOC appellations and 118 IGT appellations.
     - [Morellino Di Scansano](/Appellations/Italy/Toscana/DOCG-Morellino-Di-Scansano)
     - [Vernaccia Di San Gimignano](/Appellations/Italy/Toscana/DOCG-Vernaccia-Di-San-Gimignano)
     - [Elba Aleatico](/Appellations/Italy/Toscana/DOCG-Elba-Aleatico)
+  - Umbria
+  	- [Montefalco Sagrantino](/Appellations/Italy/Umbria/DOCG-Montefalco-Sagrantino)
+    - [Rosso Torgiano Riserva](/Appellations/Italy/Umbria/DOCG-Torgiano-Rosso-Riserva)
   - Veneto
     - [Amarone Della Valpolicella](/Appellations/Italy/Veneto/DOCG-Amarone-Della-Valpolicella)
     - [Recioto Della Valpolicella](/Appellations/Italy/Veneto/DOCG-Recioto-Della-Valpolicella)
