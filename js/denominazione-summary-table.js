@@ -337,7 +337,7 @@ const RSper25 = arrayRSSort[RSper25Calc];
                     return  (50 * 90) / 100 + "%" 
                 } else if (RS <= RSper50 && RS > RSper25) {
                     return  (25 * 90) / 100 + "%" 
-                } else if (RS <= RSper25) {
+                } else {
                     return  (25 * 90) / 100 + "%"  
                 }
           }).attr("class", function(d) {
@@ -349,7 +349,7 @@ const RSper25 = arrayRSSort[RSper25Calc];
                     return "p50" 
                 } else if (RS <= RSper50 && RS > RSper25) {
                     return "p25" 
-               }  else if (RS <= RSper25) {
+               }  else {
                     return "p25" 
                 }
           }).text(`${RS}`)
@@ -362,7 +362,7 @@ const RSper25 = arrayRSSort[RSper25Calc];
                  return  (50 * 90) / 100 + "%" 
               } else if (QP <= QPper50 && QP > QPper25) {
                  return  (25 * 90) / 100 + "%" 
-             } else if (QP <= QPper25) {
+             } else {
                  return  (25 * 90) / 100 + "%"  
             }
           }).attr("class", function(d) {
@@ -374,7 +374,7 @@ const RSper25 = arrayRSSort[RSper25Calc];
                     return "p50" 
                 } else if (QP <= QPper50 && QP > QPper25) {
                     return "p25" 
-               } else if (QP <= QPper25) {
+               } else {
                     return "p25" 
                 }
            }).text(`${QP}`)

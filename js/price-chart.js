@@ -95,7 +95,6 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
         y : avgPrice
       }
     plotWine.push(pointWinePlot)
-      console.log(pointWinePlot)
     }
   }
   

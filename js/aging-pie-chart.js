@@ -27,7 +27,6 @@ export function agingPie(allVintagesArray, typeCounter){
        }
      }
   }
-  console.log(agingTypeArray)
 
   var counted = [];
   var result = {};

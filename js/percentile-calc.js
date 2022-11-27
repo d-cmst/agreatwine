@@ -131,7 +131,6 @@ function  rawCalcRS(input, rslevel){
           const qplevel = "qp2"
           //
           let percentileArray =  rawCalcRS(awardArray, rslevel)
-          console.log(percentileArray)
           if (document.querySelector(".rs2").getAttribute('data-content') > percentileArray[0]){
               d3.select(".rs2").attr("data-per","P90").style("width", "100%").attr("class", "rs2 p100")
           } else if (document.querySelector(".rs2").getAttribute('data-content') >= percentileArray[1]){
