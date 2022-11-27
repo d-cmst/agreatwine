@@ -2,7 +2,7 @@
 title: AGReATWine
 description: Another Geeky Retrospective Aggregator Tool (for) Wine
 published: true
-date: 2022-11-26T14:05:28.590Z
+date: 2022-11-27T06:49:37.931Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-16T17:39:08.270Z
@@ -22,7 +22,7 @@ Wine
 {.is-warning}
 
 ## News
-**2022-11-26 |** New appellation: [DOCG Montefalco Sagrantino](/Appellations/Italy/Umbria/DOCG-Montefalco-Sagrantino) (39 wineries, 79 wines)
+**2022-11-26 |** New appellations: [DOCG Montefalco Sagrantino](/Appellations/Italy/Umbria/DOCG-Montefalco-Sagrantino) (39 wineries, 79 wines); [DOCG Torgiano Rosso Riserva](/Appellations/Italy/Umbria/DOCG-Torgiano-Rosso-Riserva) (2 wineries, 3 wines)
 **2022-11-24 |** New appellation: [DOCG Roero](/Appellations/Italy/Piemonte/DOCG-Roero) (28 wineries, 55 wines) 
 
 ## Documentation highlights
