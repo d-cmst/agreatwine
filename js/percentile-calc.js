@@ -93,7 +93,7 @@ function  rawCalcRS(input, rslevel){
           const rslevel = "rs3"
           const qplevel = "qp3"
           //
-          let percentileArray =  rawCalcRS(awardArray, rs3level)
+          let percentileArray =  rawCalcRS(awardArray, rslevel)
           if (document.querySelector(".rs3").getAttribute('data-content') > percentileArray[0]){
               d3.select(".rs3").attr("data-per","P90").style("width", "100%").attr("class", "rs3 p100")
           } else if (document.querySelector(".rs3").getAttribute('data-content') >= percentileArray[1]){
@@ -105,7 +105,7 @@ function  rawCalcRS(input, rslevel){
          } else {
               d3.select(".rs3").attr("data-per","P0").style("width", "25%").attr("class", "rs3 p25")
           }
-          percentileArray =  rawCalcQP(awardArray, qp3level)
+          percentileArray =  rawCalcQP(awardArray, qplevel)
           if (document.querySelector(".qp3").getAttribute('data-content') > percentileArray[0]){
               d3.select(".qp3").attr("data-per","P90").style("width", "100%").attr("class", "qp3 p100")
           } else if (document.querySelector(".qp3").getAttribute('data-content') >= percentileArray[1]){
