@@ -203,7 +203,7 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
 })
 }
 
-export function priceChartAppellation(regionS, appellationName, wineType, typeCounter){
+export function priceChartAppellation(pageCat, regionS, appellationName, wineType, typeCounter){
   //median calculator function
   const myMedian = arr => {
   const mid = Math.floor(arr.length / 2),
@@ -217,8 +217,14 @@ export function priceChartAppellation(regionS, appellationName, wineType, typeCo
 d3.text(`/csv/${regionS}.csv`).then(function(data) {
   const csv = d3.csvParse(data);
   // tutti i vini della stessa denominazione/tipologia
-  const filterTuttiDenominazione = function(d) {return d.WineType == wineType && d.AppellationName == appellationName && d.Entry === "2"}
-  const tuttiDenominazione = csv.filter(filterTuttiDenominazione)    
+  let tuttiDenominazione
+  if (pageCat == "Third Level Comparison"){
+    const filterTuttiDenominazione = function(d) {return d.WineType == wineType && d.Entry === "2"}
+    tuttiDenominazione = csv.filter(filterTuttiDenominazione)   
+  } else {
+    const filterTuttiDenominazione = function(d) {return d.WineType == wineType && d.AppellationName == appellationName && d.Entry === "2"}
+    tuttiDenominazione = csv.filter(filterTuttiDenominazione) 
+  }
   //Assi
   const margin = {top: 20, right: 30, bottom: 10, left: 60},
   width = 20,

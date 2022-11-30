@@ -462,7 +462,7 @@ const RSper25 = arrayRSSort[RSper25Calc];
         document.querySelector(`div[data-tab="${typeCounter}"] .appellation-stats div:nth-child(8)`).innerText = globalAvg    
         //
         agingPie(allVintagesArray, typeCounter)
-        priceChartAppellation(regionS, appellationName, wineType, typeCounter)
+        priceChartAppellation(pageCat, regionS, appellationName, wineType, typeCounter)
 
   }).then(function() {
         myDataTable()
