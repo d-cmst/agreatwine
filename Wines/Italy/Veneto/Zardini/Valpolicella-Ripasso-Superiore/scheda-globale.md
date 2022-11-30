@@ -1,5 +1,5 @@
 ---
-title: Valpolicella Ripasso Superiore – Valpolicella Ripasso Superiore DOC – Pietro Zardini – Veneto (IT) – 15-19€ – 3★
+title: Valpolicella Ripasso Superiore – Valpolicella Ripasso Superiore DOC – Pietro Zardini – Veneto (IT)
 description: Corvina 50% + Corvinone 40% + Rondinella 10% | Tagliatelle al ragù di lepre
 published: true
 date: 2022-01-28T17:14:37.370Z

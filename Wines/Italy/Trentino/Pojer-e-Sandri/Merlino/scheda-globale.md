@@ -1,5 +1,5 @@
 ---
-title: Merlino – Vino generico – Pojer e Sandri – Trentino (IT) – 20-24€ – 3★-4★
+title: Merlino – Vino generico – Pojer e Sandri – Trentino (IT)
 description: Lagrein 75% + Brandy 25% | Torta Sacher – Tortino al cioccolato con cuore fondente – Cioccolato – Zelten – Torta foresta nera
 published: true
 date: 2022-03-11T21:36:30.016Z
