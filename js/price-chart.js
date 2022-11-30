@@ -39,7 +39,7 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   let tutteLeAnnate = []
   function tutteLeAnnateGet(){
     for (const i of tuttiDenominazione){
-      if (i.RatingYear == 2017 || i.RatingYear == 2018 || i.RatingYear == 2019 || i.RatingYear == 2020 || i.RatingYear == 2021 || i.RatingYear == 2022){
+      if (i.RatingYear == 2017 || i.RatingYear == 2018 || i.RatingYear == 2019 || i.RatingYear == 2020 || i.RatingYear == 2021 || i.RatingYear == 2022 || i.RatingYear == 2023){
         tutteLeAnnate.push(i.RatingYear)
       }
     }
@@ -245,7 +245,7 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   let tutteLeAnnate = []
   function tutteLeAnnateGet(){
     for (const i of tuttiDenominazione){
-      if (i.RatingYear == 2017 || i.RatingYear == 2018 || i.RatingYear == 2019 || i.RatingYear == 2020 || i.RatingYear == 2021 || i.RatingYear == 2022){
+      if (i.RatingYear == 2017 || i.RatingYear == 2018 || i.RatingYear == 2019 || i.RatingYear == 2020 || i.RatingYear == 2021 || i.RatingYear == 2022 || i.RatingYear == 2023){
         tutteLeAnnate.push(i.RatingYear)
       }
     }
