@@ -221,6 +221,10 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   if (pageCat == "Third Level Comparison"){
     const filterTuttiDenominazione = function(d) {return d.WineType == wineType && d.Entry === "2"}
     tuttiDenominazione = csv.filter(filterTuttiDenominazione)   
+  } else if (pageCat == "Second Level Comparison"){
+    const getComparisonName = document.querySelector(".comparison-name").innerText
+    const filterTuttiDenominazione = function(d) {return d.SLC == getComparisonName && d.WineType == wineType && d.Entry === "2"}
+    tuttiDenominazione = csv.filter(filterTuttiDenominazione)
   } else {
     const filterTuttiDenominazione = function(d) {return d.WineType == wineType && d.AppellationName == appellationName && d.Entry === "2"}
     tuttiDenominazione = csv.filter(filterTuttiDenominazione) 

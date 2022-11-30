@@ -225,6 +225,7 @@ const RSper25 = arrayRSSort[RSper25Calc];
         //denominazioni
         let appellationsTemp = []
         let output = ``
+        let comparisonName
         for (const i of allVintagesArray){
             if (appellationsTemp.includes(i.AppellationName)){
              //do nothing
@@ -232,11 +233,15 @@ const RSper25 = arrayRSSort[RSper25Calc];
                 appellationsTemp.push(i.AppellationName) 
                 output += `<a href="/Appellations/Italy/${i.Region.replaceAll(" ","-")}/${i.AppellationLevel}-${i.AppellationName.replaceAll(" ","-")}.html">${i.AppellationName}</a>, `
             }
+            comparisonName = i.SLC
         }
-        if (pageCat == "Third Level Comparison" || pageCat == "Second Level Comparison"){
+        if (pageCat == "Second Level Comparison"){
+          output = `<div><b>Comparison name: </b></div><div class="comparison-name">${comparisonName}</div>
+                    <div><b>Aggregated appellations: </b></div><div class="appellations-list">${output.slice(0, -2)}</div>`
+        } else if (pageCat == "Third Level Comparison"){
           output = `<div><b>Aggregated appellations: </b></div><div class="appellations-list">${output.slice(0, -2)}</div>`
         } else {
-          output = ''
+            output = ``
         }
         return output
       }
