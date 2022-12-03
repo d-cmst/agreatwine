@@ -1,6 +1,6 @@
 ---
 title: San Leonardo – Vigneti delle Dolomiti IGT – Tenuta San Leonardo – Trentino (IT)
-description: Cabernet Sauvignon 60% + Carmenère 30% + Merlot 10% | Filetto alle erbe aromatiche – Guancia di vitello a bassa temperatura/brasata – Bitto d'alpeggio – Faraona all'arancia
+description: Cabernet Sauvignon + Carmenère + Merlot | Filetto alle erbe aromatiche – Guancia di vitello a bassa temperatura/brasata – Bitto d'alpeggio – Faraona all'arancia
 published: true
 date: 2021-10-01T20:15:02.935Z
 tags: 
@@ -15,9 +15,9 @@ dateCreated: 2021-09-07T09:47:22.370Z
 - **Tipologia:** Rosso fermo
 - **Denominazione:** [Vigneti delle Dolomiti IGT](/denominazioni/Italia/Trentino/IGT/Vigneti-delle-Dolomiti)
 - **Produttore:** [Tenuta San Leonardo](/produttori/Italia/Trentino/Tenuta-San-Leonardo) 
-- **Composizione:** 60% [Cabernet Sauvignon](/vitigni/Francia/cabernet-sauvignon) + 30% [Carmènere](/vitigni/Francia/carmenere.md) + 10% [Merlot](/vitigni/Francia/merlot)
+- **Composizione:** [Cabernet Sauvignon](/vitigni/Francia/cabernet-sauvignon) + [Carmènere](/vitigni/Francia/carmenere.md) + [Merlot](/vitigni/Francia/merlot)
 - **Affinamento:** 24 mesi in barrique + 2 anni in bottiglia 
-- **Alcol:** 13%
+- **Alcol:**
 - **Fascia di prezzo:** 50-54€
 {.grid-list}
 

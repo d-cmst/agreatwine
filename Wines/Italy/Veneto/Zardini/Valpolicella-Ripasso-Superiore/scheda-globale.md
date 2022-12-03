@@ -1,6 +1,6 @@
 ---
 title: Valpolicella Ripasso Superiore – Valpolicella Ripasso Superiore DOC – Pietro Zardini – Veneto (IT)
-description: Corvina 50% + Corvinone 40% + Rondinella 10% | Tagliatelle al ragù di lepre
+description: Corvina + Corvinone + Rondinella | Tagliatelle al ragù di lepre
 published: true
 date: 2022-01-28T17:14:37.370Z
 tags: 
@@ -15,9 +15,9 @@ dateCreated: 2022-01-27T15:21:34.303Z
 - **Tipologia:** Rosso fermo
 - **Denominazione:** <span class="denominazione">[Valpolicella DOC](/denominazioni/Italia/Veneto/DOC/Valpolicella)</span> (Ripasso, Superiore)
 - **Produttore:** <span class="cantina">[Pietro Zardini](/produttori/Italia/Veneto/Pietro-Zardini)</span> 
-- **Composizione:** 50% [Corvina](/vitigni/Italia/corvina) + 40% [Corvinone](/vitigni/Italia/corvinone) + 10% [Rondinella](/vitigni/Italia/rondinella)
+- **Composizione:** [Corvina](/vitigni/Italia/corvina) + [Corvinone](/vitigni/Italia/corvinone) + [Rondinella](/vitigni/Italia/rondinella)
 - **Affinamento:** 24 mesi in botte grande
-- **Alcol:** 14%
+- **Alcol:**
 - **Fascia di prezzo:** 15-19€
 {.grid-list}
 

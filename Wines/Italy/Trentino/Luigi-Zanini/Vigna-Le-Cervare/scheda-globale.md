@@ -1,6 +1,6 @@
 ---
 title: Vigna Le Cervare – Teroldego Rotaliano DOC – Luigi Zanini – Trentino (IT)
-description: Teroldego 100% | Lepre alla cacciatora – Sella di cervo in crosta di erbe
+description: Teroldego | Lepre alla cacciatora – Sella di cervo in crosta di erbe
 published: true
 date: 2021-10-01T20:01:19.242Z
 tags: 
@@ -15,7 +15,7 @@ dateCreated: 2021-09-28T20:44:27.577Z
 - **Tipologia:** Rosso fermo
 - **Denominazione:** [Teroldego Rotaliano DOC](/denominazioni/Italia/Trentino/DOC/Vigneti-delle-Dolomiti)
 - **Produttore:** [Luigi Zanini](/produttori/Italia/Trentino/Luigi Zanini) 
-- **Composizione:** 100% [Teroldego](/vitigni/Italia/teroldego)
+- **Composizione:** [Teroldego](/vitigni/Italia/teroldego)
 - **Affinamento:** 12 mesi in barrique 
 - **Alcol:** 13.5%
 - **Fascia di prezzo:** 10-14€
