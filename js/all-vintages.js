@@ -73,6 +73,13 @@ export function allVintages(regionS, headlineArray, listCheck) {
             : 
             ((avAgingMonths == "-") ? (`<div>Aging: </div><div>${avAgingType}</div>`) : (`<div>Aging: </div><div>${avAgingMonths} months in ${avAgingType}</div>`))
           }
+          ${avVintageNV == "" ? "" 
+            : 
+          `<div>Vintage: </div><div>${avVintageNV}</div>
+           <div>Method: </div><div>${avMethod}</div>
+           <div>Sweetness style: </div><div>${avSweetness}</div>
+          `
+          }
           <div>Alcohol: </div><div>${avAlcohol}°</div>
           <div>Price: </div><div>${avPrice}€</div>
           </div>
