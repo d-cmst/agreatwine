@@ -124,7 +124,7 @@ function  rawCalcRS(input, rslevel){
       d3.text(`/csv/${regionS}.csv`).then(function(data) {
           const csv = d3.csvParse(data);
           const awardFilter = function(d) { 
-            return d.Region == avRegion && d.WineType == avWineType && d.AppellationName == avAppellationName && d.SLC == avSLC && d.Entry === "1"
+            return d.Region == avRegion && d.WineType == avWineType && d.SLC == avSLC && d.Entry === "1"
           }
           const awardArray = csv.filter(awardFilter)
           const rslevel = "rs2"
