@@ -87,7 +87,7 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
     document.querySelector('h1').textContent = wineryName
     let headersList = ["Info", "Wines List"]
     for (const h of headersList){
-      d3.select(`h2:nth-of-type(${headersList.indexOf(h)+1})`).attr("id",`${h.replaceAll(" ","-").toLowerCase()}`).html(`<a href="#${h.replaceAll(" ","-").toLowerCase()}" class="toc-anchor">¶</a>${h}`)
+      d3.select(`h2:nth-of-type(${headersList.indexOf(h)+1})`).html(`<a href="#${h.replaceAll(" ","-").toLowerCase()}" class="toc-anchor">¶</a>${h}`)
     }
     if (listCheck == null){} else {
       document.querySelector("div[role='list'] > div:nth-of-type(1) .v-list-item__title").innerText = wineryName

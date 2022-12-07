@@ -132,7 +132,7 @@ export function allVintages(regionS, headlineArray, listCheck) {
       document.querySelector('h1').textContent = avFullName
       let headersList = ["Basic Data", "Scores", "Pairings", "Vintages", "Price Chart"]
       for (const h of headersList){
-        d3.select(`h2:nth-of-type(${headersList.indexOf(h)+1})`).attr("id",`${h.replaceAll(" ","-").toLowerCase()}`).html(`<a href="#${h.replaceAll(" ","-").toLowerCase()}" class="toc-anchor">¶</a>${h}`)
+        d3.select(`h2:nth-of-type(${headersList.indexOf(h)+1})`).html(`<a href="#${h.replaceAll(" ","-").toLowerCase()}" class="toc-anchor">¶</a>${h}`)
       }
       //copy headers in TOC
       if (listCheck == null){} else {

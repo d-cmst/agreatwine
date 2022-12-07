@@ -423,10 +423,11 @@ const RSper25 = arrayRSSort[RSper25Calc];
       `
       
       //insert templates
-      d3.select(`h2:nth-of-type(${typeCounter})`).attr("id",`${wineType.replaceAll(" ","-").toLowerCase()}`).html(`<a href="#${wineType.replaceAll(" ","-").toLowerCase()}" class="toc-anchor">¶</a>${wineType}`)
-      d3.select(`div[data-tab="${typeCounter}"]`).html(`${htmlTemplate}`)
-      //copy headers in TOC
+      d3.select(`h2:nth-of-type(${typeCounter})`).html(`<a href="#${wineType.replaceAll(" ","-").toLowerCase()}" class="toc-anchor">¶</a>${wineType}`)
       
+      d3.select(`div[data-tab="${typeCounter}"]`).html(`${htmlTemplate}`)
+      
+      //copy headers in TOC
       if (listCheck == null){} else {
         document.querySelector("div[role='list'] > div:nth-of-type(1) .v-list-item__title").innerText = headlineTitle
         document.querySelector(`div[role='list'] > div:nth-of-type(${Number(typeCounter)+1}) .v-list-item__title`).innerText = wineType
