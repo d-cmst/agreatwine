@@ -122,8 +122,15 @@ export function allVintages(regionS, headlineArray, listCheck) {
       //single vintages
         for (const i of singleVintagesArray.reverse()) {
           const singleVintagesTableBodyRow = d3.select('div.t1:nth-of-type(5)')
-          singleVintagesTableBodyRow.append("div").html(`${i.Vintage}`) 
-          singleVintagesTableBodyRow.append("div").html(`${i.EvaluationAvg}<span class="star"></span> -- ${i.ScoreAvg}/100`)
+          if (i.Tasting == ""){                
+            singleVintagesTableBodyRow.append("div").html(`${i.Vintage}`) 
+            singleVintagesTableBodyRow.append("div").html(`${i.EvaluationAvg}<span class="star"></span> -- ${i.ScoreAvg}/100`)
+            singleVintagesTableBodyRow.append("div").attr("class",`tasting`).html(``)
+          } else {
+            singleVintagesTableBodyRow.append("div").html(`${i.Vintage}`) 
+            singleVintagesTableBodyRow.append("div").html(`${i.EvaluationAvg}<span class="star"></span> -- ${i.ScoreAvg}/100`)
+            singleVintagesTableBodyRow.append("div").attr("class",`tasting`).attr("class",`tasting-${i.Vintage}`).html(`${i.Tasting}`)
+          }
         }
         d3.select("div.t1:nth-of-type(5)").append("div").text("Global Avg")
         d3.select("div.t1:nth-of-type(5)").append("div").attr("class","globalavg").text(avScoreAvg)
@@ -157,5 +164,18 @@ export function allVintages(regionS, headlineArray, listCheck) {
   }).then(function() {
       document.querySelector('.contents').style.opacity = "1"
       priceChart(regionS, headlineArray)
+      const vintages = document.querySelectorAll("div.t1:nth-of-type(5) div:nth-child(3n+1)")
+      for (const i of vintages){
+            i.addEventListener("click", function(){
+                  const tastingTarget = i.nextSibling.nextSibling 
+                  if (tastingTarget.style.display == "none") {
+                    tastingTarget.style.display = "block"
+                  } else {
+                    tastingTarget.style.display = "none"     
+                  }
+            });
+      }
+
+        
   })
 }

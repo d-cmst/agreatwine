@@ -822,12 +822,21 @@ table.summary-table td:nth-child(1n+3) {text-align: right;}
 div.t1:nth-of-type(5){
   display:grid;
   column-gap: 20px;
-  grid-template-columns: max-content max-content
+  grid-template-columns: repeat(2, max-content);
 }
 
-div.t1:nth-of-type(5) div:nth-child(odd){
-  font-weight:bold
+div.t1:nth-of-type(5) div:nth-child(3n+1){
+  font-weight:bold;
+  grid-column: span 1;
 }
+
+div.t1:nth-of-type(5) div:nth-child(3n+3){
+  grid-column: span 2;
+  max-width:300px;
+  display:none;
+  text-align:justify
+}
+
 div.t1:nth-of-type(5) .star:before{
   font-size:70%;
   position:relative;
