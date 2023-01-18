@@ -22,7 +22,7 @@ Wine
 {.is-warning}
 
 ## News
-**2023-12-28 |** Barolo wines vintages from 2023 guides added in comparisons
+**2023-12-28 |** [Barolo](/Appellations/Italy/Piemonte/DOCG-Barolo.html) and [Barbaresco](/Appellations/Italy/Piemonte/DOCG-Barbaresco.html) wines vintages from 2023 guides added in comparisons
 [News Archive](/Documentation/news-archive) 
 
 ## Documentation highlights
