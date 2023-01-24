@@ -22,6 +22,7 @@ Wine
 {.is-warning}
 
 ## News
+**2023-01-24 |** [Brunello](/Appellations/Italy/Toscana/DOCG-Brunello-Di-Montalcino.html) wines vintages from 2023 added in comparisons
 **2023-01-23 |** [Bolgheri](/Appellations/Italy/Toscana/DOC-Bolgheri.html) wines vintages from 2023 added in comparisons
 **2023-01-21 |** All Piemonte wines vintages from 2023 guides added in comparisons
 **2023-01-18 |** [Gattinara](/Appellations/Italy/Piemonte/DOCG-Gattinara.html), [Ghemme](/Appellations/Italy/Piemonte/DOCG-Ghemme.html) and [Terre Alfieri](/Appellations/Italy/Piemonte/DOCG-Terre-Alfieri) wines vintages from 2023 guides added in comparisons
