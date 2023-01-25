@@ -2,7 +2,7 @@
 title: AGReATWine
 description: Another Geeky Retrospective Aggregator Tool (for) Wine
 published: true
-date: 2022-12-02T17:35:47.364Z
+date: 2023-01-25T15:18:30.957Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-16T17:39:08.270Z
@@ -22,6 +22,7 @@ Wine
 {.is-warning}
 
 ## News
+**2023-01-25 |** [Chianti Classico](/Appellations/Italy/Toscana/DOCG-Chianti-Classico.html) wines vintages from 2023 added in comparisons
 **2023-01-24 |** [Brunello](/Appellations/Italy/Toscana/DOCG-Brunello-Di-Montalcino.html) wines vintages from 2023 added in comparisons
 **2023-01-23 |** [Bolgheri](/Appellations/Italy/Toscana/DOC-Bolgheri.html) wines vintages from 2023 added in comparisons
 **2023-01-21 |** All Piemonte wines vintages from 2023 guides added in comparisons
