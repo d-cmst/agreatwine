@@ -22,6 +22,7 @@ Wine
 {.is-warning}
 
 ## News
+**2023-01-26 |** All Toscana wines vintages from 2023 guides added in comparisons
 **2023-01-26 |** [Chianti](/Appellations/Italy/Toscana/DOCG-Chianti.html) wines vintages from 2023 added in comparisons
 **2023-01-25 |** [Chianti Classico](/Appellations/Italy/Toscana/DOCG-Chianti-Classico.html) wines vintages from 2023 added in comparisons
 **2023-01-24 |** [Brunello](/Appellations/Italy/Toscana/DOCG-Brunello-Di-Montalcino.html) wines vintages from 2023 added in comparisons
