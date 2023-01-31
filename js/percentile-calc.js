@@ -96,14 +96,19 @@ function  rawCalcRS(input, rslevel){
           let percentileArray =  rawCalcRS(awardArray, rslevel)
           if (document.querySelector(".rs3").getAttribute('data-content') > percentileArray[0]){
               d3.select(".rs3").attr("data-per","P90").style("width", "100%").attr("class", "rs3 p100")
+              d3.select(".rank3").attr("class", "rank3 p100")                        
           } else if (document.querySelector(".rs3").getAttribute('data-content') >= percentileArray[1]){
               d3.select(".rs3").attr("data-per","P75").style("width", "75%").attr("class", "rs3 p75")
+              d3.select(".rank3").attr("class", "rank3 p75")
           } else if (document.querySelector(".rs3").getAttribute('data-content') >= percentileArray[2]){
               d3.select(".rs3").attr("data-per","P50").style("width", "50%").attr("class", "rs3 p50")
+              d3.select(".rank3").attr("class", "rank3 p50")              
           } else if (document.querySelector(".rs3").getAttribute('data-content') >= percentileArray[3]){
             d3.select(".rs3").attr("data-per","P25").style("width", "25%").attr("class", "rs3 p25")
+            d3.select(".rank3").attr("class", "rank3 p25")
          } else {
               d3.select(".rs3").attr("data-per","P0").style("width", "25%").attr("class", "rs3 p25")
+              d3.select(".rank").attr("class", "rank p25")
           }
           percentileArray =  rawCalcQP(awardArray, qplevel)
           if (document.querySelector(".qp3").getAttribute('data-content') > percentileArray[0]){
@@ -133,26 +138,32 @@ function  rawCalcRS(input, rslevel){
           let percentileArray =  rawCalcRS(awardArray, rslevel)
           if (document.querySelector(".rs2").getAttribute('data-content') > percentileArray[0]){
               d3.select(".rs2").attr("data-per","P90").style("width", "100%").attr("class", "rs2 p100")
+              d3.select(".rank2").attr("class", "rank2 p100")              
           } else if (document.querySelector(".rs2").getAttribute('data-content') >= percentileArray[1]){
               d3.select(".rs2").attr("data-per","P75").style("width", "75%").attr("class", "rs2 p75")
+              d3.select(".rank2").attr("class", "rank2 p75")                           
           } else if (document.querySelector(".rs2").getAttribute('data-content') >= percentileArray[2]){
               d3.select(".rs2").attr("data-per","P50").style("width", "50%").attr("class", "rs2 p50")
+              d3.select(".rank2").attr("class", "rank2 p50")              
           } else if (document.querySelector(".rs2").getAttribute('data-content') >= percentileArray[3]){
             d3.select(".rs2").attr("data-per","P25").style("width", "25%").attr("class", "rs2 p25")
+            d3.select(".rank2").attr("class", "rank2 p25")                            
          } else {
               d3.select(".rs2").attr("data-per","P0").style("width", "25%").attr("class", "rs2 p25")
+              d3.select(".rank2").attr("class", "rank2 p25")            
           }
           percentileArray =  rawCalcQP(awardArray, qplevel)
           if (document.querySelector(".qp2").getAttribute('data-content') > percentileArray[0]){
               d3.select(".qp2").attr("data-per","P90").style("width", "100%").attr("class", "qp2 p100")
           } else if (document.querySelector(".qp2").getAttribute('data-content') >= percentileArray[1]){
-              d3.select(".qp2").attr("data-per","P75").style("width", "75%").attr("class", "qp2 p75")
+              d3.select(".qp2").attr("data-per","P75").style("width", "75%").attr("class", "qp2 p75") 
           } else if (document.querySelector(".qp2").getAttribute('data-content') >= percentileArray[2]){
               d3.select(".qp2").attr("data-per","P50").style("width", "50%").attr("class", "qp2 p50")
           } else if (document.querySelector(".qp2").getAttribute('data-content') >= percentileArray[3]){
             d3.select(".qp2").attr("data-per","P25").style("width", "25%").attr("class", "qp2 p25")
           } else {
               d3.select(".qp2").attr("data-per","P0").style("width", "25%").attr("class", "qp2 p25")
+              d3.select(".rank").attr("class", "rank p25")
           }
       })
   }
@@ -171,14 +182,19 @@ function  rawCalcRS(input, rslevel){
           let percentileArray =  rawCalcRS(awardArray, rslevel)
           if (document.querySelector(".rs").getAttribute('data-content') > percentileArray[0]){
               d3.select(".rs").attr("data-per","P90").style("width", "100%").attr("class", "rs p100")
+              d3.select(".rank").attr("class", "rank p100")
           } else if (document.querySelector(".rs").getAttribute('data-content') >= percentileArray[1]){
               d3.select(".rs").attr("data-per","P75").style("width", "75%").attr("class", "rs p75")
+              d3.select(".rank").attr("class", "rank p75")
           } else if (document.querySelector(".rs").getAttribute('data-content') >= percentileArray[2]){
               d3.select(".rs").attr("data-per","P50").style("width", "50%").attr("class", "rs p50")
+              d3.select(".rank").attr("class", "rank p50")
           } else if (document.querySelector(".rs").getAttribute('data-content') >= percentileArray[3]){
             d3.select(".rs").attr("data-per","P25").style("width", "25%").attr("class", "rs p25")
+            d3.select(".rank").attr("class", "rank p25")
          } else {
               d3.select(".rs").attr("data-per","P0").style("width", "25%").attr("class", "rs p25")
+              d3.select(".rank").attr("class", "rank p25")
           }
           percentileArray =  rawCalcQP(awardArray, qplevel)
           if (document.querySelector(".qp").getAttribute('data-content') > percentileArray[0]){

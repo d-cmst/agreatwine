@@ -445,19 +445,19 @@ padding-right: 57px;
     font-weight: normal;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
   }
-   .p1:after{
+   .p1:after,.p1{
      background: #f44336;
    }
-   .p25:after{
+   .p25:after,.p25{
     background: #f44336;
   }
-   .p50:after{
+   .p50:after,.p50{
      background: #febd09;
    }
-   .p75:after{
+   .p75:after,.p75{
      background: #4caf50;
    }
-   .p100:after{
+   .p100:after,.p100{
      background: #1976d2;
    }
   .denominazione-table td[data-th="QP"] span:before{
@@ -1664,8 +1664,16 @@ max-width: 350px
 }
 .rs-summary{
   display: grid;
-  grid-template-columns: max-content 100px;
+  grid-template-columns: max-content 100px 50px;
   column-gap:15px
+}
+
+.rank,.rank2,.rank3 {
+  font-weight: bold;
+  color:white;
+  width: max-content;
+  padding: 0 7px;
+  border-radius: 50%
 }
 
 .rs,.qp,.rs2,.qp2,.rs2,.rs3,.qp3{
