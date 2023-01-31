@@ -90,10 +90,12 @@ function  rawCalcRS(input, rslevel){
           }
           //
           const awardArray = csv.filter(awardFilter)
+          const rankLength = awardArray.length
           const rslevel = "rs3"
           const qplevel = "qp3"
           //
           let percentileArray =  rawCalcRS(awardArray, rslevel)
+          d3.select(".rank3").append("span").text("/" + rankLength)
           if (document.querySelector(".rs3").getAttribute('data-content') > percentileArray[0]){
               d3.select(".rs3").attr("data-per","P90").style("width", "100%").attr("class", "rs3 p100")
               d3.select(".rank3").attr("class", "rank3 p100")                        
@@ -132,10 +134,12 @@ function  rawCalcRS(input, rslevel){
             return d.Region == avRegion && d.WineType == avWineType && d.SLC == avSLC && d.Entry === "1"
           }
           const awardArray = csv.filter(awardFilter)
+          const rankLength = awardArray.length
           const rslevel = "rs2"
           const qplevel = "qp2"
           //
           let percentileArray =  rawCalcRS(awardArray, rslevel)
+          d3.select(".rank2").append("span").text("/" + rankLength)
           if (document.querySelector(".rs2").getAttribute('data-content') > percentileArray[0]){
               d3.select(".rs2").attr("data-per","P90").style("width", "100%").attr("class", "rs2 p100")
               d3.select(".rank2").attr("class", "rank2 p100")              
@@ -176,10 +180,12 @@ function  rawCalcRS(input, rslevel){
           }
           //
           const awardArray = csv.filter(awardFilter)
+          const rankLength = awardArray.length
           const rslevel = "rs"
           const qplevel = "qp"
           //
           let percentileArray =  rawCalcRS(awardArray, rslevel)
+          d3.select(".rank").append("span").text("/" + rankLength)
           if (document.querySelector(".rs").getAttribute('data-content') > percentileArray[0]){
               d3.select(".rs").attr("data-per","P90").style("width", "100%").attr("class", "rs p100")
               d3.select(".rank").attr("class", "rank p100")

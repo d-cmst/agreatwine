@@ -448,16 +448,32 @@ padding-right: 57px;
    .p1:after,.p1{
      background: #f44336;
    }
+   .rank.p25,.rank2.p25,.rank3.p25{
+     color: #f44336;
+     font-weight: bold
+   }
    .p25:after,.p25{
     background: #f44336;
   }
+   .rank.p50,.rank2.p50,.rank3.p50{
+     color: #febd09;
+     font-weight: bold     
+   }
    .p50:after,.p50{
      background: #febd09;
    }
-   .p75:after,.p75{
+   .rank.p75,.rank2.p75,.rank3.p75{
+     color: #4caf50;
+     font-weight: bold     
+   }
+   .p75:after{
      background: #4caf50;
    }
-   .p100:after,.p100{
+   .rank.p100,.rank2.p100,.rank3.p100{
+     color:#1976d2;
+     font-weight: bold
+   }
+   .p100:after{
      background: #1976d2;
    }
   .denominazione-table td[data-th="QP"] span:before{
@@ -1667,13 +1683,10 @@ max-width: 350px
   grid-template-columns: max-content 100px 50px;
   column-gap:15px
 }
-
-.rank,.rank2,.rank3 {
-  font-weight: bold;
-  color:white;
-  width: max-content;
-  padding: 0 7px;
-  border-radius: 50%
+.rank span,.rank2 span,.rank3 span{
+  color: black;
+  font-weight: normal;
+  font-size:85%
 }
 
 .rs,.qp,.rs2,.qp2,.rs2,.rs3,.qp3{
