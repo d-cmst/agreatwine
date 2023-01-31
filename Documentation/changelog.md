@@ -21,5 +21,6 @@ dateCreated: 2022-11-14T15:20:54.738Z
 - [] all Italian DOCG wines
 
 ## Known issues
-- the price plot is missing for many wines (to be fixed when 2023 guides are out)
+- ~~the price plot is missing for many wines (to be fixed when 2023 guides are out)~~ FIXED
+- Wines from 2023 guides do not have individual pages
 {.grid-list}
