@@ -445,13 +445,13 @@ padding-right: 57px;
     font-weight: normal;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
   }
-   .p1:after,.p1{
+   .p1:after{
      background: #f44336;
    }
-   .p25:after,.p25{
+   .p25:after{
     background: #f44336;
    }
-   .p50:after,.p50{
+   .p50:after{
      background: #febd09;
    }
    .p75:after{
@@ -479,6 +479,7 @@ padding-right: 57px;
     left: 0;
   }
 }
+
 .rank.p25,.rank2.p25,.rank3.p25{
  color: #f44336;
  font-weight: bold
