@@ -448,30 +448,14 @@ padding-right: 57px;
    .p1:after,.p1{
      background: #f44336;
    }
-   .rank.p25,.rank2.p25,.rank3.p25{
-     color: #f44336;
-     font-weight: bold
-   }
    .p25:after,.p25{
     background: #f44336;
-  }
-   .rank.p50,.rank2.p50,.rank3.p50{
-     color: #febd09;
-     font-weight: bold     
    }
    .p50:after,.p50{
      background: #febd09;
    }
-   .rank.p75,.rank2.p75,.rank3.p75{
-     color: #4caf50;
-     font-weight: bold     
-   }
    .p75:after{
      background: #4caf50;
-   }
-   .rank.p100,.rank2.p100,.rank3.p100{
-     color:#1976d2;
-     font-weight: bold
    }
    .p100:after{
      background: #1976d2;
@@ -494,6 +478,22 @@ padding-right: 57px;
     border-radius: 2px;
     left: 0;
   }
+}
+.rank.p25,.rank2.p25,.rank3.p25{
+ color: #f44336;
+ font-weight: bold
+}
+.rank.p50,.rank2.p50,.rank3.p50{
+ color: #febd09;
+ font-weight: bold     
+}
+.rank.p75,.rank2.p75,.rank3.p75{
+ color: #4caf50;
+ font-weight: bold     
+}
+.rank.p100,.rank2.p100,.rank3.p100{
+ color:#1976d2;
+ font-weight: bold
 }
 
 @media screen and (max-width: 599px) {
@@ -1680,7 +1680,7 @@ max-width: 350px
 }
 .rs-summary{
   display: grid;
-  grid-template-columns: max-content 100px 50px;
+  grid-template-columns: max-content 60px min-content;
   column-gap:15px
 }
 .rank span,.rank2 span,.rank3 span{
