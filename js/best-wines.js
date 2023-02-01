@@ -3,45 +3,52 @@ export function bestWines() {
     //Checks
     const table = document.querySelector(".table-container")
     let csvArray = [ "abruzzo", "alto-adige", "emilia", "friuli-venezia-giulia", "lazio", "lombardia", "marche", "piemonte", "puglia", "romagna", "sardegna", "sicilia"]
-
+    let bestWinesArray = []
     for (const i of csvArray){
-    d3.text(`/csv/status-${i}.csv`).then( function(data) {
-        const bestWinesFilter = function(d) { 
-         return d.RANK == 1
-        }
-    }).then(function(){
-    //start dataTable
-      const dataTable = new simpleDatatables.DataTable(`.table-container[tabindex="${i}"] .summary-table`, {
-        layout: {
-          top: "{search}",
-          bottom: "{pager}",
-        },
-        labels: {
-          placeholder: "Filter",
-          perPage: "{select} results for page",
-          noRows: "No results",
-          info: "{start} to {end} of {rows} entries",
-        },
-      searchable: true,
-        perPage: 10,
-        columns: [
-          { select: [2,3,4], type: "number"},
-          { select: 2, type: "number", sort: "desc"}
-        ],
-        nextPrev: false
-      })
-      dataTable.on("datatable.sort", function(){
-        cssTable()
-      })
-      dataTable.on("datatable.page", function(){
-        cssTable()
-      })
-      dataTable.on("datatable.search", function(){
-        cssTable()
-      })
-    }).then(function(){
-        cssTable()
-        document.querySelector(".ev-total").innerText = totalGrand
-       })
+        d3.text(`/csv/${i}.csv`).then( function(data) {
+            const csv = d3.csvParse(data);
+            const bestWinesFilter = function(d) { 
+             return d.RANK == 1
+            }
+            const bestWinesTest = csv.filter(bestWinesFilter)
+            for (const i of bestWinesTest){
+                if (typeof i !== 'undefined'){
+                    bestWinesArray.push(i)
+                } else {}
+            }
+     })
     }
+    function bestWinesTablePopulate(){
+        const bestWinesTableHead = d3.select('.best-wines-table thead tr')
+        bestWinesTableHead.append("th").text("Region")
+        bestWinesTableHead.append("th").text("Appellation")
+        bestWinesTableHead.append("th").text("Winery")
+        bestWinesTableHead.append("th").text("Wine")
+
+        for (let i of bestWinesArray) {
+            const bestWinesTableBodyRow = d3.select(`.best-wines-table tbody`).append("tr")
+            bestWinesTableBodyRow.append("td").text(`${i.Region}`)
+            bestWinesTableBodyRow.append("td").text(`${i.AppellationName}`)
+            bestWinesTableBodyRow.append("td").text(`${i.WineryName}`)
+            bestWinesTableBodyRow.append("td").html(`<a href="/en/Wines/test/all-vintages.html">${i.FullName}</a>`)
+        }
+        const dataTable = new simpleDatatables.DataTable(`.best-wines-table`, {
+          layout: {
+            top: "{search}",
+            bottom: "{pager}",
+          },
+          labels: {
+            placeholder: "Filter",
+            perPage: "{select} results per page",
+            noRows: "No results",
+            info: "{start} to {end} of {rows} entries",
+          },
+        searchable: true,
+          columns: [
+            { select: 0, sort: "asc"}
+          ],
+          nextPrev: false
+        })
+    }
+    setTimeout(bestWinesTablePopulate, 1500)
   }
