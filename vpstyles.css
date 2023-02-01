@@ -8,12 +8,46 @@ t1:nth-of-type(6) = Price Charts
 t1:nth-of-type(7) =
 */
 
+/* #region BEST WINES TABLE */
+@media screen and (min-width: 600px) {
+  .best-wines-table {
+    margin:auto;
+    white-space: nowrap;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    max-width: min-content
+}
+}
+
+@media screen and (max-width: 599px) {
+  .winery-table {
+   background-color: white;
+  }
+ /*mobile table head*/
+ .winery-table thead tr{
+   background-color:lightgray!important;
+   border-bottom: 1px solid black!important;
+   padding: 4px 0px
+ }
+ .winery-table thead tr th{
+   background-color:lightgray!important;
+   padding: 4px 0px
+   
+ }
+ .winery-table thead tr th a{
+   text-decoration: none!important;
+ }
+}
+/* #endregion BEST WINES TABLE */
+
 /* #region SUMMARY TABLES PRODUTTORE*/
 .winery-table td[data-th='Prezzo']:after{
   content: '€'
 }
 
-@media screen and (min-width: 599px) {
+@media screen and (min-width: 600px) {
 
   [role="region"][aria-labelledby][tabindex] {
     width: 90%;
