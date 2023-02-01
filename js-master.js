@@ -132,6 +132,7 @@ const listCheck = document.querySelector("div[role='list'] .v-list-item__title")
         document.querySelector('.contents').style.opacity = "1"
     } else if (window.location.href.indexOf("best-wines") != -1) {
       bestWines()
+      document.querySelector('.contents').style.opacity = "1"
     } else {
      document.querySelector('.contents').style.opacity = "1"
     }
