@@ -1,3 +1,4 @@
+import {sanitizeInputCc} from './helper-functions.js';
 export function bestWines() {
 
     //Checks
@@ -30,7 +31,7 @@ export function bestWines() {
             bestWinesTableBodyRow.append("td").text(`${i.Region}`)
             bestWinesTableBodyRow.append("td").text(`${i.AppellationName}`)
             bestWinesTableBodyRow.append("td").text(`${i.WineryName}`)
-            bestWinesTableBodyRow.append("td").html(`<a href="/en/Wines/test/all-vintages.html">${i.FullName}</a>`)
+            bestWinesTableBodyRow.append("td").html(`<a href="/en/Wines/Italy/${sanitizeInputCc(i.Region)}/${sanitizeInputCc(i.WineryName)}/${sanitizeInputCc(i.FullName)}">${i.FullName}</a>`)
         }
         const dataTable = new simpleDatatables.DataTable(`.best-wines-table`, {
           layout: {
