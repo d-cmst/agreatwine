@@ -7,6 +7,7 @@ import {sanitizeInput} from './en/js/helper-functions.js';
 import {sanitizeInputCc} from './en/js/helper-functions.js';
 //import {searchLabel} from './en/js/mobile-nav-bottom.js';
 import {statusTable} from './en/js/status.js';
+import {bestWines} from './en/js/best-wines.js';
 import {firstWordBold} from './en/js/vitigni-first-word-bold.js';
 import {sentoreCheck} from './en/js/listone-olfattivo.js';
 import {esperienzeImport} from './en/js/esperienze-import.js';
@@ -129,6 +130,8 @@ const listCheck = document.querySelector("div[role='list'] .v-list-item__title")
     } else if (window.location.href.indexOf("vintage-") != -1) {
         schedaSingolaImport()
         document.querySelector('.contents').style.opacity = "1"
+    } else if (window.location.href.indexOf("best-wines") != -1) {
+      bestWines()
     } else {
      document.querySelector('.contents').style.opacity = "1"
     }
