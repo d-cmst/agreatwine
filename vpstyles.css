@@ -22,21 +22,21 @@ t1:nth-of-type(7) =
 }
 
 @media screen and (max-width: 599px) {
-  .winery-table {
+  .best-wines-table {
    background-color: white;
   }
  /*mobile table head*/
- .winery-table thead tr{
+ .best-wines-table thead tr{
    background-color:lightgray!important;
    border-bottom: 1px solid black!important;
    padding: 4px 0px
  }
- .winery-table thead tr th{
+ .best-wines-table thead tr th{
    background-color:lightgray!important;
    padding: 4px 0px
    
  }
- .winery-table thead tr th a{
+ .best-wines-table thead tr th a{
    text-decoration: none!important;
  }
 }
