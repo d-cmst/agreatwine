@@ -21,15 +21,13 @@ export function bestWines() {
     }
     function bestWinesTablePopulate(){
         const bestWinesTableHead = d3.select('.best-wines-table thead tr')
-        bestWinesTableHead.append("th").text("Region")
-        bestWinesTableHead.append("th").text("Appellation")
+        bestWinesTableHead.append("th").text("Region - Appellation")
         bestWinesTableHead.append("th").text("Winery")
         bestWinesTableHead.append("th").text("Wine")
 
         for (let i of bestWinesArray) {
             const bestWinesTableBodyRow = d3.select(`.best-wines-table tbody`).append("tr")
-            bestWinesTableBodyRow.append("td").text(`${i.Region}`)
-            bestWinesTableBodyRow.append("td").text(`${i.AppellationName}`)
+            bestWinesTableBodyRow.append("td").text(`${i.Region} - ${i.AppellationLevel} ${i.AppellationName}`)
             bestWinesTableBodyRow.append("td").text(`${i.WineryName}`)
             bestWinesTableBodyRow.append("td").html(`<a href="/en/Wines/Italy/${sanitizeInputCc(i.Region)}/${sanitizeInputCc(i.WineryName)}/${sanitizeInputCc(i.FullName)}">${i.FullName}</a>`)
         }
