@@ -39,6 +39,7 @@ t1:nth-of-type(7) =
       top: 0;
       z-index: 1;
       background: white;
+      text-align:left
   }
 
   .best-wines-table td, .best-wines-table th {
@@ -49,7 +50,7 @@ t1:nth-of-type(7) =
   }
 
   .best-wines-table td:nth-child(n+2) {
-      text-align: center
+      text-align: left
   }
 
   .best-wines-table th:nth-child(1) {
