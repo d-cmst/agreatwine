@@ -8,8 +8,8 @@ t1:nth-of-type(6) = Price Charts
 t1:nth-of-type(7) =
 */
 
-/* #regio,best WINES TABLES*/
-,best-wines-table td[data-th='Prezzo']:after{
+/* #regio.best WINES TABLES*/
+.best-wines-table td[data-th='Prezzo']:after{
   content: '€'
 }
 
@@ -23,7 +23,7 @@ t1:nth-of-type(7) =
   [role="region"][aria-labelledby][tabindex]:focus {
     outline: 0;
   }
-   ,best-wines-table {
+   .best-wines-table {
     margin:auto;
     white-space: nowrap;
     border: none;
@@ -32,23 +32,23 @@ t1:nth-of-type(7) =
     table-layout: fixed;
     max-width: min-content
   }
-   ,best-wines-table th {
+   .best-wines-table th {
     padding: 3px;
     position: sticky;
     top: 0;
     z-index: 1;
     background: white;
   }
-   ,best-wines-table td, ,best-wines-table th {
+   .best-wines-table td, .best-wines-table th {
     background: #fff;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;      
   }
-   ,best-wines-table td:nth-child(n+2){
+   .best-wines-table td:nth-child(n+2){
     text-align:center
   }
-  ,best-wines-table th:nth-child(1) {
+  .best-wines-table th:nth-child(1) {
     position: sticky;
     left: 0px;
     z-index: 2;
@@ -57,40 +57,40 @@ t1:nth-of-type(7) =
     text-align: left
   }
 
-  ,best-wines-table td:nth-child(1){
+  .best-wines-table td:nth-child(1){
     position:sticky;
     left:0px;
     min-width:300px;
     max-width:300px;
   }
-  ,best-wines-table th:nth-child(2) {
+  .best-wines-table th:nth-child(2) {
     max-width: 80px
   }
-  ,best-wines-table th:nth-child(3) {
+  .best-wines-table th:nth-child(3) {
     max-width: 80px
   }
-  ,best-wines-table th:nth-child(4) {
+  .best-wines-table th:nth-child(4) {
     position: sticky;
     left: 300px;
     z-index: 2;
   }
-  ,best-wines-table td:nth-child(4){
+  .best-wines-table td:nth-child(4){
     position:sticky;
     left:300px
   }
-  ,best-wines-table th:nth-child(5) {
+  .best-wines-table th:nth-child(5) {
     position: sticky;
     left: 343px;
     z-index: 2;
   }
-  ,best-wines-table td:nth-child(5){
+  .best-wines-table td:nth-child(5){
     position:sticky;
     left:343px
   }
-   ,best-wines-table td[data-th="RS"] span, ,best-wines-table td[data-th="QP"] span{
+   .best-wines-table td[data-th="RS"] span, .best-wines-table td[data-th="QP"] span{
     color: transparent!important;
   }
-   ,best-wines-table td[data-th="RS"] span:after, ,best-wines-table td[data-th="QP"] span:after{
+   .best-wines-table td[data-th="RS"] span:after, .best-wines-table td[data-th="QP"] span:after{
     position: absolute;
     height: 20px;
     content:attr(data-th) " " attr(title);
@@ -107,42 +107,42 @@ t1:nth-of-type(7) =
 }
 
 @media screen and (max-width: 599px) {
-   ,best-wines-table {
+   .best-wines-table {
     background-color: white;
    }
   /*mobile table head*/
-  ,best-wines-table thead tr{
+  .best-wines-table thead tr{
     background-color:lightgray!important;
     border-bottom: 1px solid black!important;
     padding: 4px 0px
   }
-  ,best-wines-table thead tr th{
+  .best-wines-table thead tr th{
     background-color:lightgray!important;
     padding: 4px 0px
     
   }
-  ,best-wines-table thead tr th a{
+  .best-wines-table thead tr th a{
     text-decoration: none!important;
   }
   /*mobile table head end*/
   /*mobile table background*/
-  ,best-wines-table tbody tr:nth-child(n+1){
+  .best-wines-table tbody tr:nth-child(n+1){
     background-color:#f1f1f1!important
   }
-  ,best-wines-table tbody tr:nth-child(n+1) td{
+  .best-wines-table tbody tr:nth-child(n+1) td{
     background-color:#f1f1f1!important
   }
-    ,best-wines-table tbody tr:nth-child(2n+2){
+    .best-wines-table tbody tr:nth-child(2n+2){
     background-color:white!important
   }
-  ,best-wines-table tbody tr:nth-child(2n+2) td{
+  .best-wines-table tbody tr:nth-child(2n+2) td{
     background-color:white!important
   }
   /*mobile table background end*/
-   ,best-wines-table td[title="sv"]{
+   .best-wines-table td[title="sv"]{
     display:none
   }
-   ,best-wines-table td[data-th^='20']:not([title='sv']), ,best-wines-table td[data-th^='19']:not([title='sv']) {
+   .best-wines-table td[data-th^='20']:not([title='sv']), .best-wines-table td[data-th^='19']:not([title='sv']) {
      display: inline-flex;
      width:50px;
      text-align:
@@ -153,20 +153,20 @@ t1:nth-of-type(7) =
      left:5px;
      height:50px
   }
-   ,best-wines-table td[data-th^='20']:not([title='sv']):before, ,best-wines-table td[data-th^='19']:not([title='sv']):before {
+   .best-wines-table td[data-th^='20']:not([title='sv']):before, .best-wines-table td[data-th^='19']:not([title='sv']):before {
      position:absolute;
      top:-20px;
      left:-4px
   }
 
-   ,best-wines-table tr{
+   .best-wines-table tr{
     position: relative;
     text-align: left;
   }
-   ,best-wines-table td[data-th="Wine"]{
+   .best-wines-table td[data-th="Wine"]{
     height:54px
    }
-   ,best-wines-table td[data-th="Raw-Avg-Ev"]{
+   .best-wines-table td[data-th="Raw-Avg-Ev"]{
     position: absolute;
      top: 29px;
      right: 0px;
@@ -174,26 +174,26 @@ t1:nth-of-type(7) =
      font-weight: bold;
     }
   
-   ,best-wines-table td[data-th="Price"]{
+   .best-wines-table td[data-th="Price"]{
     position:absolute;
     top: 1px;
     right: 0px;
     font-weight: bold;
     width:max-content
   }
-    ,best-wines-table td[data-th="Price"]:after{
+    .best-wines-table td[data-th="Price"]:after{
      content: '€'
     }
     /**/
-   ,best-wines-table td[data-th="RS"], ,best-wines-table td[data-th="QP"]{
+   .best-wines-table td[data-th="RS"], .best-wines-table td[data-th="QP"]{
     position:relative;
     display:inline-flex;
     width: 50%;
     }
-     ,best-wines-table td[data-th="RS"], ,best-wines-table td[data-th="QP"]{
+     .best-wines-table td[data-th="RS"], .best-wines-table td[data-th="QP"]{
        color: transparent
      }
-   ,best-wines-table td[data-th="RS"] span:before, ,best-wines-table td[data-th="QP"] span:before{
+   .best-wines-table td[data-th="RS"] span:before, .best-wines-table td[data-th="QP"] span:before{
     position: absolute;
     content: '';
     height:22px;
@@ -204,7 +204,7 @@ t1:nth-of-type(7) =
     box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     color: transparent;
   }
-   ,best-wines-table td[data-th="RS"] span:after, ,best-wines-table td[data-th="QP"] span:after{
+   .best-wines-table td[data-th="RS"] span:after, .best-wines-table td[data-th="QP"] span:after{
     position:absolute;
     content: attr(data-th) " " attr(title);
     font-weight: normal;
@@ -216,40 +216,40 @@ t1:nth-of-type(7) =
      font-size: 90%;
   }
    /**/
-   ,best-wines-table{
+   .best-wines-table{
     overflow:hidden;
     width: 100%
   }
-   ,best-wines-table tbody td:nth-child(1){
+   .best-wines-table tbody td:nth-child(1){
     background-color:#f1f1f1;
   }
-   ,best-wines-table tbody td{
+   .best-wines-table tbody td{
     padding:2px 3px!important;
     border: 0px solid white!important
   }
-   ,best-wines-table tbody td:first-child{
+   .best-wines-table tbody td:first-child{
     padding:2px 3px!important;
   }
  
-   ,best-wines-table td {
+   .best-wines-table td {
     display: block;
     font-size: 1em;
     text-align: left
   }
-   ,best-wines-table td:nth-child(1) {
+   .best-wines-table td:nth-child(1) {
     font-weight:bold
   }
-   ,best-wines-table td:nth-child(n+2){
+   .best-wines-table td:nth-child(n+2){
     text-align: right;
   }
   
-   ,best-wines-table td:nth-child(n+4):before {
+   .best-wines-table td:nth-child(n+4):before {
     content: attr(data-th);
     float: left;
     font-weight: normal
   } 
 
-   ,best-wines-table thead {
+   .best-wines-table thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -258,32 +258,32 @@ t1:nth-of-type(7) =
     padding: 0;
     /* position: absolute; */
     width: 1px; }
-   ,best-wines-table thead tr {
+   .best-wines-table thead tr {
     display: flex;
     justify-content: space-around;
     position: sticky;
   }
-   ,best-wines-table th{display:none}
-   ,best-wines-table th:nth-child(2), ,best-wines-table th:nth-child(3), ,best-wines-table th:nth-child(4), ,best-wines-table th:nth-child(5) {display:block}
-   ,best-wines-table th:nth-child(2) {
+   .best-wines-table th{display:none}
+   .best-wines-table th:nth-child(2), .best-wines-table th:nth-child(3), .best-wines-table th:nth-child(4), .best-wines-table th:nth-child(5) {display:block}
+   .best-wines-table th:nth-child(2) {
      white-space:nowrap;
      overflow:hidden;
      min-width: 70px;
      text-overflow: ellipsis;
    }
-   ,best-wines-table th{padding:0px}
-   ,best-wines-table th:nth-child(1n-4) {
+   .best-wines-table th{padding:0px}
+   .best-wines-table th:nth-child(1n-4) {
     border-bottom: 0px solid transparent!important; 
     font-size: 90%;
     padding:0px 5px!important
   }
-   ,best-wines-table {
+   .best-wines-table {
     border: 0; 
     margin: 0 0px!important;
   }
 }
 
-/* #endregio,best WINES */
+/* #endregio.best WINES */
 
 /* #region SUMMARY TABLES PRODUTTORE*/
 .winery-table td[data-th='Prezzo']:after{
