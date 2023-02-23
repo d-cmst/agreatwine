@@ -2,7 +2,7 @@
 title: AGReATWine
 description: Another Geeky Retrospective Aggregator Tool (for) Wine
 published: true
-date: 2023-01-25T15:18:30.957Z
+date: 2023-02-23T16:15:30.092Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-16T17:39:08.270Z
@@ -22,7 +22,7 @@ Wine
 {.is-warning}
 
 ## News
-**2023-02-23 |** New appellation: [DOCG Valtellina Superiore](/Appellations/Italy/Lombardia/DOCG-Valtellina-Superiore). New 2nd Level Comparison: [Lombarida Nebbiolo](/Appellations/Italy/Lombardia/Lombardia-Nebbiolo.html) 
+**2023-02-23 |** New appellation: [DOCG Valtellina Superiore](/Appellations/Italy/Lombardia/DOCG-Valtellina-Superiore). New 2nd Level Comparison: [Lombardia Nebbiolo](/Appellations/Italy/Lombardia/Lombardia-Nebbiolo.html) 
 **2023-01-31 |** All wines vintages from 2023 guides added in comparisons
 **2023-01-26 |** All Toscana wines vintages from 2023 guides added in comparisons
 **2023-01-26 |** [Chianti](/Appellations/Italy/Toscana/DOCG-Chianti.html) wines vintages from 2023 added in comparisons
