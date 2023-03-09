@@ -330,7 +330,19 @@ const RSper25 = arrayRSSort[RSper25Calc];
             if(pageCat == "Second Level Comparison"){RS = i.RS2; QP = i.QP2} else if(pageCat == "Third Level Comparison"){RS = i.RS3; QP = i.QP3} else {RS = i.RS; QP = i.QP}
           const produttoreBodyRow = d3.select(`div[data-tab="${typeCounter}"] .denominazione-table tbody`).append("tr").attr("data-th", `${i.WineryName}-${i.FullName}`)
           produttoreBodyRow.append("td").attr("data-th", "Winery").attr("title", `${i.WineryName}`).html(`<a href="/en/Wineries/${country}/${regionCc}/${i.WineryName.replaceAll(' ', '-').replaceAll("'", '-')}.html">${i.WineryName}</a>`)
-          produttoreBodyRow.append("td").attr("data-th", "Wine").attr("title", `${i.FullName}`).html(`<a href="/en/Wines/${country}/${regionCc}/${i.WineryName.replaceAll("' ", '-').replaceAll(' ', '-').replaceAll("'", '-').replaceAll("è", 'e').replaceAll("à", 'a').replaceAll("é", 'e').replaceAll("ù", 'u')}/${i.FullName.replaceAll(' ', '-').replaceAll("'", '-').replaceAll("à", 'a').replaceAll("é", 'e')}/all-vintages.html">${i.FullName}</a>`)
+          produttoreBodyRow.append("td").attr("data-th", "Wine").attr("title", `${i.FullName}`).html(`<a href="/en/Wines/${country}/${regionCc}/${i.WineryName.replaceAll("' ", '-').replaceAll(' ', '-').replaceAll("'", '-').replaceAll("è", 'e').replaceAll("à", 'a').replaceAll("é", 'e').replaceAll("ù", 'u')}/${i.FullName.replaceAll(' ', '-').replaceAll("'", '-').replaceAll("à", 'a').replaceAll("é", 'e')}/all-vintages.html">${i.FullName}</a>`).append("span").attr("class", function(d) {
+              if (RS > RSper90) {
+                    return "p100 table-rank"    
+                } else if (RS <= RSper90 && RS >= RSper75) {
+                    return "p75 table-rank" 
+                } else if (RS < RSper75 && RS > RSper50) {
+                    return "p50 table-rank" 
+                } else if (RS <= RSper50 && RS > RSper25) {
+                    return "p25 table-rank" 
+               } else {
+                    return "p25 table-rank" 
+                }
+           }).text(`${i.RANK}`)
           produttoreBodyRow.append("td").attr("data-th", "Raw-Avg-Ev").text(`${i.RawAvg}`)
           produttoreBodyRow.append("td").attr("data-th", "Price").html(`${calcPrice(i)}`)
           produttoreBodyRow.append("td").attr("data-th", "RS").append("span").attr("data-th", "RS").attr("title", `${RS}`).style("width", function(d) {

@@ -2195,3 +2195,51 @@ a.v-list-item > div.v-list-item__title {
   opacity: 0;
   transition: opacity 0.3s linear;
 }
+
+.table-rank{
+  position: absolute;
+  top:0px;
+  right:0px;
+  padding: 0px 2px;
+  line-height: 1;
+  border-radius: 2px;
+  font-size:90%;
+  font-weight: bold
+}
+
+  .table-rank.p1 {
+      background: #f44336;
+      color:white
+  }
+
+  .table-rank.p25 {
+      background: #f44336;
+      color:white
+  }
+
+  .table-rank.p50 {
+      background: #febd09;
+  }
+
+  .table-rank.p75 {
+      background: #4caf50;
+      color:white
+  }
+
+  .table-rank.p100 {
+      background: #1976d2;
+      color: white
+  }
+
+@media screen and (max-width: 599px) {
+  .table-rank{
+  position: absolute;
+  top:7px;
+  right:35px;
+  padding: 0px 2px;
+  line-height: 1;
+  border-radius: 2px;
+  font-size:90%;
+  font-weight: bold;
+}
+}

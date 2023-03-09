@@ -178,7 +178,5 @@ export function allVintages(regionS, headlineArray, listCheck) {
                   }
             });
       }
-
-        
   })
 }
