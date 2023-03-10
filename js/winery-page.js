@@ -124,13 +124,13 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
       for (const i of allVintagesArray) {
         const wineryTableBodyRow = d3.select(`.winery-table tbody`).append("tr").attr("data-th", `${i.WineryName}-${i.FullName}`)
         wineryTableBodyRow.append("td").attr("data-th", "Wine").attr("title", `${i.FullName}`).html(`<a href="/en/Wines/${countryName}/${sanitizeInputCc(region)}/${sanitizeInputCc(wineryName)}/${sanitizeInputCc(i.FullName)}/all-vintages.html">${i.FullName}</a>`).append("span").attr("class", function(d) {
-          if (RS > RSper90) {
+          if (i.RS > RSper90) {
                 return "p100 table-rank"    
-            } else if (RS <= RSper90 && RS >= RSper75) {
+            } else if (i.RS <= RSper90 && i.RS >= RSper75) {
                 return "p75 table-rank" 
-            } else if (RS < RSper75 && RS > RSper50) {
+            } else if (i.RS < RSper75 && i.RS > RSper50) {
                 return "p50 table-rank" 
-            } else if (RS <= RSper50 && RS > RSper25) {
+            } else if (i.RS <= RSper50 && i.RS > RSper25) {
                 return "p25 table-rank" 
            } else {
                 return "p25 table-rank" 
