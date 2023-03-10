@@ -136,6 +136,7 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
                 return "p25 table-rank" 
             }
        }).text(`${i.RANK}`)
+      }
       //90percentile
       for (const i of allVintagesArray){
           const denominazioneTemp = i.AppellationName
