@@ -127,7 +127,7 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
     ymax = plotWineMax
   }
   let ylength = ((ymax + 1) - (ymin - 1)) + 1 
-  if (ylength > 13) {
+  if (ylength > 10) {
     ylength = 10
   } else {
     ylength = ylength
@@ -313,8 +313,8 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   let ymax = plotAvgMax
   
   let ylength = ((ymax + 1) - (ymin - 1)) + 1 
-  if (ylength > 13) {
-    ylength = 13
+  if (ylength > 10) {
+    ylength = 10
   } else {
     ylength = ylength
   }
