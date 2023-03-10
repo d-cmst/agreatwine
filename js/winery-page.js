@@ -123,15 +123,19 @@ export function wineryPage(wineryName, wineryNameS, region, regionS, countryName
       }
       for (const i of allVintagesArray) {
         const wineryTableBodyRow = d3.select(`.winery-table tbody`).append("tr").attr("data-th", `${i.WineryName}-${i.FullName}`)
-        wineryTableBodyRow.append("td").attr("data-th", "Wine").attr("title", `${i.FullName}`).html(`<a href="/en/Wines/${countryName}/${sanitizeInputCc(region)}/${sanitizeInputCc(wineryName)}/${sanitizeInputCc(i.FullName)}/all-vintages.html">${i.FullName}</a>`)
-        wineryTableBodyRow.append("td").attr("data-th", "Raw-Avg-Ev").text(`${i.RawAvg}`)
-        wineryTableBodyRow.append("td").attr("data-th", "Price").html(`${calcPrice(i)}`)
-        wineryTableBodyRow.append("td").attr("data-th", "RS").append("span").attr("title", `${i.RS}`).text(`${i.RS}`)
-        wineryTableBodyRow.append("td").attr("data-th", "QP").append("span").attr("title", `${i.QP}`).text(`${i.QP}`)
-        for (const j in years) {
-            wineryTableBodyRow.append("td").attr("data-th", `${years[j]}`).attr("title", "sv").text("sv")
-        }  
-      }
+        wineryTableBodyRow.append("td").attr("data-th", "Wine").attr("title", `${i.FullName}`).html(`<a href="/en/Wines/${countryName}/${sanitizeInputCc(region)}/${sanitizeInputCc(wineryName)}/${sanitizeInputCc(i.FullName)}/all-vintages.html">${i.FullName}</a>`).append("span").attr("class", function(d) {
+          if (RS > RSper90) {
+                return "p100 table-rank"    
+            } else if (RS <= RSper90 && RS >= RSper75) {
+                return "p75 table-rank" 
+            } else if (RS < RSper75 && RS > RSper50) {
+                return "p50 table-rank" 
+            } else if (RS <= RSper50 && RS > RSper25) {
+                return "p25 table-rank" 
+           } else {
+                return "p25 table-rank" 
+            }
+       }).text(`${i.RANK}`)
       //90percentile
       for (const i of allVintagesArray){
           const denominazioneTemp = i.AppellationName

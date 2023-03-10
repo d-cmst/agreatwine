@@ -128,7 +128,7 @@ d3.text(`/csv/${regionS}.csv`).then(function(data) {
   }
   let ylength = ((ymax + 1) - (ymin - 1)) + 1 
   if (ylength > 13) {
-    ylength = 13
+    ylength = 10
   } else {
     ylength = ylength
   }

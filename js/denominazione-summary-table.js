@@ -342,7 +342,15 @@ const RSper25 = arrayRSSort[RSper25Calc];
                } else {
                     return "p25 table-rank" 
                 }
-           }).text(`${i.RANK}`)
+           }).text(function(d) {
+            if(pageCat == "Third Level Comparison"){
+                  return `${i.RANK3}`
+            } else if (pageCat == "Second Level Comparison"){
+                  return `${i.RANK2}`
+            } else {
+                  return `${i.RANK}`
+            }
+           })
           produttoreBodyRow.append("td").attr("data-th", "Raw-Avg-Ev").text(`${i.RawAvg}`)
           produttoreBodyRow.append("td").attr("data-th", "Price").html(`${calcPrice(i)}`)
           produttoreBodyRow.append("td").attr("data-th", "RS").append("span").attr("data-th", "RS").attr("title", `${RS}`).style("width", function(d) {
