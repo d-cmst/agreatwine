@@ -22,6 +22,7 @@ Wine
 {.is-warning}
 
 ## News
+**2023-03-13 |** New appellation: [DOCG Vermentino Di Gallura](/Appellations/Italy/Sardegna/DOCG-Vermentino-Di-Gallura).
 **2023-02-28 |** New appellation: [DOCG Moscato Di Scanzo](/Appellations/Italy/Lombardia/DOCG-Moscato-Di-Scanzo).
 **2023-02-23 |** New appellation: [DOCG Valtellina Superiore](/Appellations/Italy/Lombardia/DOCG-Valtellina-Superiore). New 2nd Level Comparison: [Lombardia Nebbiolo](/Appellations/Italy/Lombardia/Lombardia-Nebbiolo.html) 
 **2023-01-31 |** All wines vintages from 2023 guides added in comparisons
