@@ -2,7 +2,7 @@
 title: AGReATWine
 description: Another Geeky Retrospective Aggregator Tool (for) Wine
 published: true
-date: 2023-02-23T16:15:30.092Z
+date: 2023-03-15T17:59:09.623Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-16T17:39:08.270Z
@@ -22,7 +22,7 @@ Wine
 {.is-warning}
 
 ## News
-**2023-03-15 |** New appellations: [DOCG Bagnoli Friularo](/Appellations/Italy/Veneto/DOCG-Bagnoli-Friularo), [DOCG Malanotte Piave](/Appellations/Italy/Veneto/DOCG-Malanotte-Del-Piave); New Second Level Comparison: [Veneto Raboso](/Appellations/Italy/Veneto/Veneto-Raboso).
+**2023-03-15 |** New appellations: [DOCG Bagnoli Friularo](/Appellations/Italy/Veneto/DOCG-Bagnoli-Friularo), [DOCG Malanotte Piave](/Appellations/Italy/Veneto/DOCG-Malanotte-Del-Piave), [DOCG Montello Rosso](/Appellations/Italy/Veneto/DOCG-Montello-Rosso); New Second Level Comparison: [Veneto Raboso](/Appellations/Italy/Veneto/Veneto-Raboso).
 **2023-03-13 |** New appellation: [DOCG Vermentino Di Gallura](/Appellations/Italy/Sardegna/DOCG-Vermentino-Di-Gallura).
 **2023-02-28 |** New appellation: [DOCG Moscato Di Scanzo](/Appellations/Italy/Lombardia/DOCG-Moscato-Di-Scanzo).
 **2023-02-23 |** New appellation: [DOCG Valtellina Superiore](/Appellations/Italy/Lombardia/DOCG-Valtellina-Superiore). New 2nd Level Comparison: [Lombardia Nebbiolo](/Appellations/Italy/Lombardia/Lombardia-Nebbiolo.html) 
