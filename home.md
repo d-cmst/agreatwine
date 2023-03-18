@@ -22,6 +22,7 @@ Wine
 {.is-warning}
 
 ## News
+**2023-03-18 |** New appellation: [DOC Piave Raboso](/Appellations/Italy/Veneto/DOC-Piave-Raboso).
 **2023-03-15 |** New appellations: [DOCG Bagnoli Friularo](/Appellations/Italy/Veneto/DOCG-Bagnoli-Friularo), [DOCG Malanotte Piave](/Appellations/Italy/Veneto/DOCG-Malanotte-Del-Piave), [DOCG Montello Rosso](/Appellations/Italy/Veneto/DOCG-Montello-Rosso); New Second Level Comparison: [Veneto Raboso](/Appellations/Italy/Veneto/Veneto-Raboso).
 **2023-03-13 |** New appellation: [DOCG Vermentino Di Gallura](/Appellations/Italy/Sardegna/DOCG-Vermentino-Di-Gallura).
 **2023-02-28 |** New appellation: [DOCG Moscato Di Scanzo](/Appellations/Italy/Lombardia/DOCG-Moscato-Di-Scanzo).
